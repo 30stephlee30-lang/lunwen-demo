@@ -1,0 +1,2634 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: blob:; media-src data: blob:; font-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; form-action 'none'">
+<title>论文求生：从开题到答辩</title>
+<style>html,body{margin:0;height:100%;overflow:hidden;background:#000}canvas{display:block;width:100vw;height:100vh;touch-action:none;outline:none}</style></head><body><canvas id="game" tabindex="0"></canvas>
+<script>window.GAME={"title":"论文求生：从开题到答辩","rules":{"statMax":100,"typeSpeed":18,"autosave":true},"slots":{"hero":{"tile":false,"custom":false},"background":{"tile":false,"custom":false},"advisor":{"tile":false,"custom":false},"senior":{"tile":false,"custom":false},"junior":{"tile":false,"custom":false}},"assets":{"hero":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiI+CiAgPCEtLSBMaXR0bGUgcm91bmQgYWR2ZW50dXJlciwgZmFjaW5nIHRoZSB2aWV3ZXIuIEZsYXQgY2FydG9vbiwgZGFyayBvdXRsaW5lLiAtLT4KICA8IS0tIEdyb3VuZCBzaGFkb3cgLS0+CiAgPGVsbGlwc2UgY3g9IjEyOCIgY3k9IjIyOCIgcng9IjU4IiByeT0iMTYiIGZpbGw9IiMxZjRkMmUiIG9wYWNpdHk9IjAuMzUiLz4KICA8IS0tIEJhY2twYWNrIC0tPgogIDxyZWN0IHg9IjU2IiB5PSIxMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI1MiIgcng9IjEyIiBmaWxsPSIjZThhMTNjIiBzdHJva2U9IiMyYjFiMTIiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxwYXRoIGQ9Ik01NiAxMzJoNDAiIHN0cm9rZT0iIzJiMWIxMiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgPCEtLSBMZWdzIC0tPgogIDxyZWN0IHg9Ijg2IiB5PSIxNjgiIHdpZHRoPSIyNiIgaGVpZ2h0PSI0NCIgcng9IjEyIiBmaWxsPSIjMmY2YjRmIiBzdHJva2U9IiMyYjFiMTIiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxyZWN0IHg9IjEzNCIgeT0iMTY4IiB3aWR0aD0iMjYiIGhlaWdodD0iNDQiIHJ4PSIxMiIgZmlsbD0iIzJmNmI0ZiIgc3Ryb2tlPSIjMmIxYjEyIiBzdHJva2Utd2lkdGg9IjgiLz4KICA8IS0tIEJvb3RzIC0tPgogIDxyZWN0IHg9Ijc4IiB5PSIxOTgiIHdpZHRoPSI0MiIgaGVpZ2h0PSIyMiIgcng9IjEwIiBmaWxsPSIjN2E0YTJiIiBzdHJva2U9IiMyYjFiMTIiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxyZWN0IHg9IjEyOCIgeT0iMTk4IiB3aWR0aD0iNDIiIGhlaWdodD0iMjIiIHJ4PSIxMCIgZmlsbD0iIzdhNGEyYiIgc3Ryb2tlPSIjMmIxYjEyIiBzdHJva2Utd2lkdGg9IjgiLz4KICA8IS0tIEJvZHkgLS0+CiAgPHBhdGggZD0iTTc2IDk2YzAtMjYgMjAtNDYgNDYtNDZoMTJjMjYgMCA0NiAyMCA0NiA0NnY2MmMwIDIyLTE2IDQwLTM4IDQyaC0yOGMtMjItMi0zOC0yMC0zOC00MnoiIGZpbGw9IiNlODVkM2QiIHN0cm9rZT0iIzJiMWIxMiIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgPCEtLSBCZWx0IC0tPgogIDxyZWN0IHg9Ijc2IiB5PSIxNTAiIHdpZHRoPSIxMDQiIGhlaWdodD0iMTQiIGZpbGw9IiMyYjFiMTIiLz4KICA8cmVjdCB4PSIxMTgiIHk9IjE0OCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE4IiByeD0iNCIgZmlsbD0iI2YyYzE0ZSIgc3Ryb2tlPSIjMmIxYjEyIiBzdHJva2Utd2lkdGg9IjYiLz4KICA8IS0tIFNjYXJmIGtub3QgLS0+CiAgPHBhdGggZD0iTTk2IDk4YzggOCAyMCAxMiAzMiAxMnMyNC00IDMyLTEybC0xMCAxOGMtNiA2LTE2IDgtMjIgOHMtMTYtMi0yMi04eiIgZmlsbD0iIzNmOGY1YSIgc3Ryb2tlPSIjMmIxYjEyIiBzdHJva2Utd2lkdGg9IjciLz4KICA8IS0tIEFybXMgLS0+CiAgPHJlY3QgeD0iNDQiIHk9IjEwOCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjU0IiByeD0iMTUiIGZpbGw9IiNlODVkM2QiIHN0cm9rZT0iIzJiMWIxMiIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgPHJlY3QgeD0iMTgyIiB5PSIxMDgiIHdpZHRoPSIzMCIgaGVpZ2h0PSI1NCIgcng9IjE1IiBmaWxsPSIjZTg1ZDNkIiBzdHJva2U9IiMyYjFiMTIiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxjaXJjbGUgY3g9IjU5IiBjeT0iMTcwIiByPSIxNCIgZmlsbD0iI2Y3ZDlhOCIgc3Ryb2tlPSIjMmIxYjEyIiBzdHJva2Utd2lkdGg9IjgiLz4KICA8Y2lyY2xlIGN4PSIxOTciIGN5PSIxNzAiIHI9IjE0IiBmaWxsPSIjZjdkOWE4IiBzdHJva2U9IiMyYjFiMTIiIHN0cm9rZS13aWR0aD0iOCIvPgogIDwhLS0gSGVhZCAtLT4KICA8Y2lyY2xlIGN4PSIxMjgiIGN5PSI4MiIgcj0iNDIiIGZpbGw9IiNmN2Q5YTgiIHN0cm9rZT0iIzJiMWIxMiIgc3Ryb2tlLXdpZHRoPSI4Ii8+CiAgPCEtLSBFeWVzIC0tPgogIDxlbGxpcHNlIGN4PSIxMTIiIGN5PSI3OCIgcng9IjYiIHJ5PSI4IiBmaWxsPSIjMmIxYjEyIi8+CiAgPGVsbGlwc2UgY3g9IjE0NiIgY3k9Ijc4IiByeD0iNiIgcnk9IjgiIGZpbGw9IiMyYjFiMTIiLz4KICA8Y2lyY2xlIGN4PSIxMTQiIGN5PSI3NSIgcj0iMi40IiBmaWxsPSIjZmZmZmZmIi8+CiAgPGNpcmNsZSBjeD0iMTQ4IiBjeT0iNzUiIHI9IjIuNCIgZmlsbD0iI2ZmZmZmZiIvPgogIDwhLS0gQ2hlZWtzIC0tPgogIDxjaXJjbGUgY3g9Ijk4IiBjeT0iOTIiIHI9IjciIGZpbGw9IiNmMDhhNmUiIG9wYWNpdHk9IjAuOCIvPgogIDxjaXJjbGUgY3g9IjE1OCIgY3k9IjkyIiByPSI3IiBmaWxsPSIjZjA4YTZlIiBvcGFjaXR5PSIwLjgiLz4KICA8IS0tIE1vdXRoIC0tPgogIDxwYXRoIGQ9Ik0xMTggOTZjNCA1IDE2IDUgMjAgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmIxYjEyIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gSGF0IC0tPgogIDxwYXRoIGQ9Ik04NCA2NmMwLTIwIDE2LTM2IDM2LTM2aDE2YzIwIDAgMzYgMTYgMzYgMzZ2MTRIODR6IiBmaWxsPSIjM2Y4ZjVhIiBzdHJva2U9IiMyYjFiMTIiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxyZWN0IHg9Ijc4IiB5PSI3MiIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiMyZjZiNGYiIHN0cm9rZT0iIzJiMWIxMiIgc3Ryb2tlLXdpZHRoPSI4Ii8+Cjwvc3ZnPgo=","background":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iMTYwMCIgdmlld0JveD0iMCAwIDkwMCAxNjAwIj48IS0tIFBsYWNlaG9sZGVyIGZvciAi5a6e6aqM5a6k5aSc5pmvIjsgZHJhdyBvdmVyIHRoaXMgZmlsZSBvciBnZW5lcmF0ZSBhcnQgZm9yIHRoZSBzbG90LiAtLT48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjE2MDAiIGZpbGw9ImhzbCgxMzAgMzAlIDc4JSkiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjMyNCIgZmlsbD0iaHNsKDEzMCA0NSUgMjIlKSI+5a6ePC90ZXh0Pjwvc3ZnPgo=","advisor":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iMzIwIiB2aWV3Qm94PSIwIDAgMzIwIDMyMCI+PCEtLSBQbGFjZWhvbGRlciBmb3IgIuWvvOW4iCI7IGRyYXcgb3ZlciB0aGlzIGZpbGUgb3IgZ2VuZXJhdGUgYXJ0IGZvciB0aGUgc2xvdC4gLS0+PGNpcmNsZSBjeD0iMTYwIiBjeT0iMTYwIiByPSIxMzQiIGZpbGw9ImhzbCgxMDcgNjAlIDYyJSkiIHN0cm9rZT0iaHNsKDEwNyA0NSUgMjglKSIgc3Ryb2tlLXdpZHRoPSIxMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMTE1IiBmaWxsPSJoc2woMTA3IDQ1JSAyMiUpIj7lr7w8L3RleHQ+PC9zdmc+Cg==","senior":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iMzIwIiB2aWV3Qm94PSIwIDAgMzIwIDMyMCI+PCEtLSBQbGFjZWhvbGRlciBmb3IgIuW4iOWFhCI7IGRyYXcgb3ZlciB0aGlzIGZpbGUgb3IgZ2VuZXJhdGUgYXJ0IGZvciB0aGUgc2xvdC4gLS0+PGNpcmNsZSBjeD0iMTYwIiBjeT0iMTYwIiByPSIxMzQiIGZpbGw9ImhzbCgxMjMgNjAlIDYyJSkiIHN0cm9rZT0iaHNsKDEyMyA0NSUgMjglKSIgc3Ryb2tlLXdpZHRoPSIxMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMTE1IiBmaWxsPSJoc2woMTIzIDQ1JSAyMiUpIj7luIg8L3RleHQ+PC9zdmc+Cg==","junior":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iMzIwIiB2aWV3Qm94PSIwIDAgMzIwIDMyMCI+PCEtLSBQbGFjZWhvbGRlciBmb3IgIuW4iOWmuSI7IGRyYXcgb3ZlciB0aGlzIGZpbGUgb3IgZ2VuZXJhdGUgYXJ0IGZvciB0aGUgc2xvdC4gLS0+PGNpcmNsZSBjeD0iMTYwIiBjeT0iMTYwIiByPSIxMzQiIGZpbGw9ImhzbCgxMjggNjAlIDYyJSkiIHN0cm9rZT0iaHNsKDEyOCA0NSUgMjglKSIgc3Ryb2tlLXdpZHRoPSIxMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMTE1IiBmaWxsPSJoc2woMTI4IDQ1JSAyMiUpIj7luIg8L3RleHQ+PC9zdmc+Cg=="}};</script>
+<script>/* 论文求生：从开题到答辩 — 对话选择式视觉小说
+ * 单文件、无网络、DOM + Canvas 绘制。 */
+(function () {
+  'use strict';
+
+  var GAME = window.GAME || {};
+  var TITLE = GAME.title || '论文求生：从开题到答辩';
+  var ASSETS = GAME.assets || {};
+  var SLOTS = GAME.slots || {};
+  var RULES = GAME.rules || {};
+  var MAX = Number(RULES.statMax) || 100;
+
+  var SAVE_KEY = 'lunwen-vn-save-v1';
+  var UNLOCK_KEY = 'lunwen-vn-endings-v1';
+
+  function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
+  function $(id) { return document.getElementById(id); }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+  function rnd(n) { var x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); }
+
+  /* ============================================================
+   * 章节
+   * ============================================================ */
+  var CHAPTERS = {
+    ch0: { num: '序章', name: '开学第一课', sub: '命运的齿轮开始转动' },
+    ch1: { num: '第一章', name: '选题', sub: '导师的 idea，十年前就想过了' },
+    ch2: { num: '第二章', name: '实验', sub: 'loss 不降，头发在降' },
+    ch3: { num: '第三章', name: '写作', sub: '新建 Word，然后删除' },
+    ch4: { num: '第四章', name: '查重', sub: '查重 2.8%，AI 率 97%' },
+    ch5: { num: '第五章', name: '送审', sub: '刷新，是唯一的动作' },
+    ch6: { num: '第六章', name: '答辩', sub: '求放过' },
+    hch0: { num: '序章', name: '读书会', sub: '文科研究生没有实验室' },
+    hch1: { num: '第一章', name: '选题', sub: '题目不要太大，可以写一辈子' },
+    hch2: { num: '第二章', name: '文献', sub: '综述不是文献罗列' },
+    hch3: { num: '第三章', name: '田野', sub: '你以为你在研究他们' },
+    hch4: { num: '第四章', name: '写作', sub: '八万字正文，两万字注释' },
+    hch5: { num: '第五章', name: '外审', sub: '建议修改后答辩' },
+    hch6: { num: '第六章', name: '答辩', sub: '你的理论贡献是什么' }
+  };
+
+  var SPEAKERS = {
+    narrator: { name: '旁白', color: '#5a6270' },
+    hero: { name: '你', color: '#3f8f7a' },
+    advisor: { name: '王导', color: '#a4632f' },
+    senior: { name: '陈师兄', color: '#6b6b8a' },
+    junior: { name: '林师妹', color: '#b04a70' },
+    system: { name: '系统', color: '#4a6fa5' }
+  };
+
+  var STAT_LABELS = { progress: '论文进度', favor: '导师好感', sanity: '精神状态', hair: '发量' };
+  var STAT_SHORT = { progress: '论文', favor: '导师', sanity: '精神', hair: '发量' };
+  var HUM_NAMES = { advisor: '周导', senior: '赵师兄', junior: '苏师妹' };
+
+  /* ============================================================
+   * 剧本（STORY_DATA 区，便于替换）
+   * ============================================================ */
+  /* === STORY_DATA_START === */
+  var STEM_STORY = {
+    p1: { ch: 'ch0', day: 1, scene: 'lab', who: 'narrator', expr: 'tired', text: '九月，研二开学。\n你站在实验室门口，手里拎着半凉的包子。\n门内传来王导的声音：\n「这个 idea，我十年前就想过了。」\n——新学期的第一次组会，开始了。', next: 'p2' },
+    p2: { ch: 'ch0', day: 1, scene: 'lab', who: 'senior', expr: 'tired', text: '陈师兄从门里探出头，发际线比上学期又后退了一点。\n「来了？今天你第一个讲。」', choices: [
+      { label: '啊？不是下周才轮到我吗', tag: '装傻', fx: { sanity: -2, favor: -1 }, result: '师兄同情地看了你一眼：\n「上周你在群里回了个『收到』，那就是答应了。」\n你想起那个『收到』，想穿越回去删掉它。', next: 'p3' },
+      { label: '我准备了，讲文献综述', tag: '老实', fx: { favor: -2 }, result: '「文献综述？」师兄的表情像看到了一个还在用知网的人，\n「你研二了。」\n你默默把 PPT 第一页的『文献综述』改成了『研究进展』。', next: 'p3' },
+      { label: '师兄，救救我', tag: '求救', flag: { seniorHelp: true }, fx: { favor: 2, sanity: 3 }, result: '师兄叹了口气，把自己的 PPT 发给你：\n「改改，别全抄，查重。」\n你感动得差点叫爹。', rw: 'senior', re: 'smug', next: 'p3' },
+      { label: '先发个朋友圈：又要组会了', tag: '摸鱼', fx: { sanity: 2, progress: -1 }, result: '十分钟后，导师点了个赞。\n你吓得把朋友圈删了。', next: 'p3' }
+    ] },
+    p3: { ch: 'ch0', day: 1, scene: 'lab', who: 'narrator', expr: 'tired', text: '晚上十一点，你打开 PPT。\n第一页写什么，你盯着空白页面看了十分钟。\n右下角弹窗：「距离组会还有 10 小时。」', choices: [
+      { label: '通宵做完，卷死同门', tag: '硬核', cnt: { late: 1 }, fx: { progress: 6, sanity: -8, hair: -5 }, flag: { pptDone: true }, result: '凌晨四点，你做出了 38 页 PPT。\n其中 30 页是研究背景，2 页是致谢，剩下 6 页是目录。\n你觉得自己赢麻了。', next: 'p4' },
+      { label: '定个六点的闹钟，先睡', tag: '养生', fx: { sanity: 5, progress: -2 }, result: '你睡了。六点的闹钟响了，你按掉了它。\n七点半，你在床上惊醒，用了八分钟洗漱，三分钟跑到实验室。', next: 'p4' },
+      { label: '让 AI 帮我搭个框架', tag: '科技', flag: { aiUsed: true }, cnt: { ai: 1 }, fx: { progress: 4, sanity: -1 }, result: 'AI 三秒生成了二十页大纲，第一页写着『研究背景与意义』。\n你突然觉得，它比你更懂你的课题。', next: 'p4' },
+      { label: '先打一把，赢了就写', tag: '玄学', fx: { sanity: 2, progress: -4, hair: -2 }, result: '你连输四把。第五把终于赢了，天也亮了。\n胜利的代价是，你还没写 PPT。', next: 'p4' }
+    ] },
+    p4: { ch: 'ch0', day: 2, scene: 'meeting', who: 'advisor', expr: 'stern', text: '组会。王导坐在最中间，面前是一个印着校名的保温杯。\n「你先来。」他说。\n全组的目光落在你身上。', choices: [
+      { label: '如实汇报：这周主要在调研', tag: '诚实', fx: { favor: -3, sanity: -4 }, result: '王导点点头：「调研也是工作。」\n你刚松口气，他又补了一句：\n「调研了半年了。」', next: 'p5' },
+      { label: '把师兄的 PPT 改个名字', tag: '作死', req: { flag: 'seniorHelp' }, flag: { copied: true }, fx: { favor: 4, sanity: -6 }, result: '你讲得很顺，直到王导问：\n「这个实验，是你做的？」\n空气安静了三秒。师兄在桌子底下踢了你一脚。', rw: 'advisor', re: 'angry', next: 'p5' },
+      { label: '主动抛出问题，转移火力', tag: '反客为主', fx: { favor: 5, sanity: -3 }, result: '你问了一个连自己都没想明白的问题。\n王导眼睛一亮，开始讲了四十分钟。\n组会变成了导师个人演唱会。', rw: 'advisor', re: 'smug', next: 'p5' },
+      { label: '老师，我这周状态不太好', tag: '真诚', fx: { favor: -5, sanity: 8 }, result: '王导沉默了一下，说：「身体重要。」\n你差点哭出来。\n然后他说：「那下周多讲点。」', rw: 'advisor', re: 'normal', next: 'p5' }
+    ] },
+    p5: { ch: 'ch0', day: 2, scene: 'meeting', who: 'narrator', expr: 'tired', text: '组会结束。王导合上电脑，忽然转头看你：\n「你这个方向，我有一个想法。」\n所有师兄都低下了头。\n你知道，这句话的意思是：有新活了。', next: 'n6' },
+
+    n6: { ch: 'ch1', day: 8, scene: 'office', who: 'advisor', expr: 'normal', text: '王导从抽屉里拿出一张纸，上面是一个二〇一三年的 idea。\n「这个方向我十年前就想过了，一直没时间做。你去做吧，很有前景。」\n你查了一下，这个方向的最新论文停在二〇一九年。', choices: [
+      { label: '老师英明，我这就去做', tag: '听话', flag: { ideaOld: true }, fx: { favor: 8, progress: 2, sanity: -3 }, result: '王导满意地笑了。\n你后来才知道，这个方向在学术圈有个学名，叫『学术考古』。', rw: 'advisor', re: 'smug', next: 'n7' },
+      { label: '老师，我想做点新的', tag: '头铁', flag: { ideaOwn: true }, fx: { favor: -6, progress: 4, sanity: -2 }, result: '王导的笑容消失了零点五秒。\n「新的东西，风险大。你确定？」\n你点了点头，手心全是汗。', rw: 'advisor', re: 'stern', next: 'n7' },
+      { label: '把老师的 idea 和热点缝合一下', tag: '学术裁缝', flag: { ideaMix: true }, fx: { favor: 4, progress: 5, sanity: -4 }, result: '你在大模型后面加了一个十年前的模块。\n王导说：「有创新。」\n你知道，这叫缝合。\n但学术圈管它叫『交叉研究』。', next: 'n7' },
+      { label: '回去问问师兄', tag: '稳重', fx: { sanity: 2, favor: 1 }, result: '师兄说：「选哪个都一样，反正最后都要改。」\n你问：「那选什么？」\n他说：「选好写的。」', rw: 'senior', re: 'smug', next: 'n7' }
+    ] },
+
+    n7: { ch: 'ch1', day: 10, scene: 'lab', who: 'senior', expr: 'tired', text: '师兄听完你的选题，放下保温杯。里面泡着枸杞。\n「你知道开题最重要的是什么吗？」\n「创新点？」\n「不，是让评委相信你有创新点。」', choices: [
+      { label: '那怎么写？', tag: '求学', fx: { progress: 4, sanity: -1 }, result: '「把『首次』『提出』『框架』三个词用好。」\n师兄说，「论文嘛，三分做，七分写。」\n你掏出手机记了下来。', next: 'n8' },
+      { label: '师兄你当年怎么过的？', fx: { sanity: 3, hair: -1 }, result: '师兄沉默了很久。\n「我当年……延毕了半年。」\n他把保温杯拧紧，「所以我现在是博五。」\n你突然不知道该安慰谁。', rw: 'senior', re: 'sad', next: 'n8' },
+      { label: '我觉得还是得靠真本事', tag: '理想主义', flag: { idealist: true }, fx: { favor: 1, sanity: 2 }, result: '师兄笑了：「真本事也要包装。\n你看我，真本事，秃了。」\n你笑不出来。', rw: 'senior', re: 'smug', next: 'n8' }
+    ] },
+
+    n8: { ch: 'ch1', day: 21, scene: 'meeting', who: 'narrator', expr: 'panic', text: '开题报告会。你站在投影前，台下三位老师。\n「你这个研究的创新点是什么？」\n最中间的老师推了推眼镜。', choices: [
+      { label: '首次将 A 方法应用到 B 场景', tag: '标准答案', fx: { favor: 6, progress: 5, sanity: -3 }, result: '老师们点点头。\n你学会了第一个学术黑话：「首次」。\n第二个是：「具有重要的理论意义和现实意义」。', next: 'n9' },
+      { label: '工程价值比较大，能落地', tag: '实在', fx: { favor: -2, progress: 3, sanity: -1 }, result: '「工程价值也是价值。」老师说，\n「但这是学术论文。」\n你听懂了：得加个『首次』。', rw: 'advisor', re: 'stern', next: 'n9' },
+      { label: '创新点在于……嗯……', tag: '卡壳', fx: { favor: -8, sanity: -8, hair: -2 }, result: '空气凝固了。\n评委小声说：「有点抽象。」\n王导替你接了一句：「创新点我们还在凝练。」\n你坐下时，腿是软的。', next: 'n9' },
+      { label: '老师，这个方向是王导十年前提出的', tag: '甩锅', fx: { favor: -4, sanity: 1 }, result: '王导看了你一眼。\n那一眼，你记了三年。', rw: 'advisor', re: 'angry', next: 'n9' }
+    ] },
+
+    n9: { ch: 'ch1', day: 22, scene: 'meeting', who: 'narrator', expr: 'tired', text: '开题通过了。意见栏写着：\n「建议进一步聚焦研究问题，突出创新性。」\n你盯着『进一步』三个字，感觉它比你的论文还长。\n王导在群里发：「开题只是开始，抓紧做实验。」\n配图是一张鸡汤海报。', next: 'n10' },
+
+    n10: { ch: 'ch2', day: 30, scene: 'lab', who: 'narrator', expr: 'tired', text: '一个月后。凌晨两点，实验室只剩下你和一台嗡嗡响的服务器。\nloss 曲线像你的人生：高位震荡，偶尔下探，然后创新低。\n很抽象，但很真实。\n你盯着屏幕，屏幕上倒映着一个发际线可疑的人。', choices: [
+      { label: '调参，网格搜索，大力出奇迹', tag: '炼丹', cnt: { late: 1 }, fx: { progress: 7, sanity: -7, hair: -4 }, result: '你跑了四十七组参数。第四十八组终于收敛了。\n你怀疑是随机种子显灵，于是又跑了一遍。\n它又散了。', next: 'n11' },
+      { label: '检查数据泄漏', tag: '严谨', flag: { debugged: true }, fx: { progress: 5, sanity: -3 }, result: '你发现测试集混进了训练集。\n修正后，准确率从 98% 掉到了 62%。\n这才是真实的世界。', next: 'n11' },
+      { label: '换一个更强的 baseline', tag: '卷王', fx: { progress: 4, sanity: -5, hair: -2 }, result: '你换了最新的模型。\n它确实更强，强到把你的方法衬托得很朴素。', next: 'n11' },
+      { label: '去问师兄', tag: '求助', flag: { seniorHelp: true }, fx: { sanity: 2, progress: 3 }, result: '师兄看了一眼：「你学习率后面少了个零。」\n你想死的心都有了。', rw: 'senior', re: 'smug', next: 'n11' }
+    ] },
+
+    n11: { ch: 'ch2', day: 38, scene: 'lab', who: 'narrator', expr: 'sad', text: '终于，结果出来了。\n但是和你的假设相反：你的方法比 baseline 差了三个点。\n导师在群里问：「实验怎么样了？」', choices: [
+      { label: '如实汇报，负结果也是结果', tag: '诚实', fx: { favor: 2, sanity: -3, progress: 5 }, result: '王导回了一个「嗯」。\n你盯着这个字看了五分钟，试图从中读出情绪。\n最后你读出了：『继续』。', next: 'n12' },
+      { label: '挑几组好看的，先应付一下', tag: '危险', flag: { fakeData: true }, cnt: { lie: 1 }, fx: { favor: 5, progress: 6, sanity: -4 }, result: '你挑了三次里最好的一次。\n王导很满意：「这个结果可以冲一冲。」\n你笑得很勉强。', rw: 'advisor', re: 'smug', next: 'n12' },
+      { label: '重新设计实验，找出原因', tag: '科研精神', flag: { rigorous: true }, cnt: { late: 1 }, fx: { progress: 8, sanity: -6, hair: -2 }, result: '你熬了三个通宵，发现是数据预处理的问题。\n修正后，结果好了五个点。\n你第一次觉得，科研还是有希望的。', next: 'n12' },
+      { label: '硬解释：这说明我们的方法更鲁棒', tag: '嘴硬', cnt: { lie: 1 }, fx: { favor: 1, progress: 2, sanity: -2 }, result: '你在周报里写：「该现象表明模型具有更强的泛化潜力。」\n王导回：「继续。」\n你学会了第二个学术黑话：『鲁棒』。', next: 'n12' }
+    ] },
+
+    n12: { ch: 'ch2', day: 45, scene: 'office', who: 'advisor', expr: 'normal', text: '王导把你叫到办公室。\n「结果我看了，还不错。能不能再加一个实验？下个月组会讲。」\n你想起自己还没开始写论文。', choices: [
+      { label: '好的老师，我尽量', tag: '打工人', cnt: { late: 1 }, fx: { favor: 6, progress: 4, sanity: -6, hair: -2 }, result: '你接了。\n走出办公室时才想起来，下个月还有开题后的第一次汇报。\n你突然理解了师兄的保温杯。', next: 'n13' },
+      { label: '老师，我论文还没开始写', tag: '边界感', fx: { favor: -3, sanity: 4, progress: 2 }, result: '王导皱了皱眉：「写论文不着急，实验做扎实。」\n你心想：去年他也是这么说的。', rw: 'advisor', re: 'stern', next: 'n13' },
+      { label: '让师妹帮忙跑一下', tag: '传承', flag: { juniorHelp: true }, fx: { favor: 1, sanity: 2, progress: 2 }, result: '师妹很爽快地答应了：「师兄，我正好想学。」\n你突然有点愧疚。\n但只有一点。', rw: 'junior', re: 'happy', next: 'n13' },
+      { label: '画饼：这个实验可以冲顶会', tag: '画饼', cnt: { lie: 1 }, fx: { favor: 7, progress: 3, sanity: -4 }, result: '王导眼睛亮了：「好！有志气！」\n你走出办公室，开始后悔。\n顶会，顶会，顶不住的会。', rw: 'advisor', re: 'happy', next: 'n13' }
+    ] },
+
+    n13: { ch: 'ch2', day: 48, scene: 'lab', who: 'junior', expr: 'happy', text: '晚上十点，实验室。\n师妹凑过来：「师兄，你那个实验能不能带带我？我想学。」\n「还有，你最近班味有点重。」\n她眼睛里有光，像三年前的你。', choices: [
+      { label: '行，我教你', tag: '带人', flag: { juniorHelp: true }, fx: { sanity: 5, favor: 2, progress: -2 }, result: '你花了一个小时教她。\n她学会后说：「师兄你好厉害。」\n你笑了笑，没告诉她你也是刚学会的。', next: 'n14' },
+      { label: '我现在有点忙，改天', tag: '拒绝', fx: { progress: 4, sanity: -2, favor: -1 }, result: '她说「好的」，然后自己去看文档了。\n你看着她的背影，想起自己也被拒绝过。', rw: 'junior', re: 'sad', next: 'n14' },
+      { label: '你帮我把数据跑完，我教你', tag: '交易', flag: { juniorHelp: true }, fx: { progress: 5, sanity: -1 }, result: '她跑了一晚上数据。\n你教了她十分钟。\n你觉得自己越来越像师兄了。', next: 'n14' }
+    ] },
+
+    n14: { ch: 'ch2', day: 55, scene: 'lab', who: 'narrator', expr: 'tired', text: '实验终于告一段落。\n你打开 Word，准备写论文。\n光标在空白页上闪烁，像在嘲笑你。\n你突然想起，致谢还没写。', next: 'n15' },
+
+    n15: { ch: 'ch3', day: 55, scene: 'dorm', who: 'narrator', expr: 'tired', text: '写论文的第一天。\n你整理了桌面，泡了咖啡，打开了文献管理软件。\n三个小时后，你的参考文献从十二篇变成了八十七篇，正文还是零字。', choices: [
+      { label: '先写大纲，再填内容', tag: '方法论', fx: { progress: 6, sanity: -2 }, result: '你写了三级标题。\n看着目录，你产生了一种『论文已经写完了』的错觉。\n这种错觉持续了三天。', next: 'n16' },
+      { label: '从致谢开始写，先感动自己', tag: '感性', fx: { sanity: 5, progress: -2 }, result: '你写了三千字致谢，从导师写到食堂阿姨。\n正文：零字。\n但你的眼眶湿了。', next: 'n16' },
+      { label: '让 AI 先写一版，我再改', tag: '科技', flag: { aiUsed: true }, cnt: { ai: 1 }, fx: { progress: 8, sanity: 2 }, result: '十分钟后，你拥有了一篇结构完整、语言流畅、\n但你一个字都不信的初稿。', next: 'n16' },
+      { label: '先去实验室，写作明天再说', tag: '逃避', fx: { progress: -3, sanity: 3 }, result: '你在实验室坐了一天，跑了两个无关紧要的实验。\n你觉得自己很忙。\n确实很忙，但论文还是零字。', next: 'n16' }
+    ] },
+
+    n16: { ch: 'ch3', day: 62, scene: 'dorm', who: 'narrator', expr: 'sad', text: '凌晨一点，你写到『实验结果表明』，卡住了。\n手机亮了，是妈妈：「最近怎么样？钱够不够花？」\n你看着屏幕，突然有点想哭。', choices: [
+      { label: '挺好的，快写完了', tag: '报喜不报忧', cnt: { lie: 1 }, fx: { sanity: -4, favor: 1 }, result: '「那就好，别太累。」妈妈说。\n你挂了电话，盯着天花板看了很久。\n天花板上有一道裂缝，像你的论文结构。\n你想起那句话：读研哪有不疯的，硬撑罢了。', next: 'n17' },
+      { label: '妈，我有点写不下去了', tag: '示弱', fx: { sanity: 8, progress: -2 }, result: '妈妈沉默了一下：\n「写不下去就回来住几天，妈给你做好吃的。」\n你哭了。\n哭完继续写。', next: 'n17' },
+      { label: '发个朋友圈：科研好难', tag: '社交', fx: { sanity: 3, hair: -1 }, result: '十分钟后，导师点了个赞。\n你吓得把朋友圈设成了三天可见。', next: 'n17' },
+      { label: '谁都不回，继续写', tag: '硬撑', cnt: { late: 1 }, fx: { progress: 5, sanity: -6, hair: -3 }, result: '你写到天亮。\n正文多了两千字，其中一千八百字要删。', next: 'n17' }
+    ] },
+
+    n17: { ch: 'ch3', day: 70, scene: 'corridor', who: 'senior', expr: 'tired', text: '楼下便利店，你遇到师兄。他手里拎着两罐啤酒。\n「写不出来？」\n「嗯。」\n「正常。我写论文的时候，把知网翻成了推荐算法。」', choices: [
+      { label: '陪我喝一罐', fx: { sanity: 7, progress: -2, hair: -1 }, result: '你们坐在马路牙子上，从科研聊到人生。\n师兄说：「科研是份工作，别把它当命。」\n你点点头，觉得他说得对。\n然后他打了个嗝，说：「但也别不当回事。」', next: 'n17b' },
+      { label: '不了，我回去改论文', fx: { progress: 4, sanity: -3 }, result: '师兄看着你的背影喊：「别熬太晚！」\n你挥了挥手，没回头。', rw: 'senior', re: 'normal', next: 'n17b' },
+      { label: '师兄，你后悔读博吗？', fx: { sanity: 3 }, result: '他想了很久：「后悔。但让我再选一次，我可能还这样。」\n你突然不知道该说什么。\n风吹过来，带着烤肠的味道。', rw: 'senior', re: 'sad', next: 'n17b' }
+    ] },
+
+    n17b: { ch: 'ch3', day: 70, scene: 'night', who: 'narrator', expr: 'normal', text: '回宿舍的路上，你在便利店门口遇到一只猫。\n它蹭了蹭你的裤腿，抬头看你，眼睛很亮。', choices: [
+      { label: '蹲下来撸十分钟猫', tag: '猫德', fx: { sanity: 6, progress: -1 }, result: '猫在你手心里打了个呼噜。\n你突然觉得，论文也不是非写不可。\n——当然，还是得写。', next: 'n18' },
+      { label: '拍张照发师门群', tag: '分享', fx: { sanity: 3 }, result: '师妹秒回：「好可爱！」\n师兄回：「这是实验室楼下那只，它比我活得久。」\n导师没回。你松了口气。', next: 'n18' },
+      { label: '狠心离开，回去写论文', tag: '自律', fx: { progress: 3, sanity: -2 }, result: '你走了两步，回头看了一眼。\n猫还坐在那里。\n你觉得自己是个坏人。', next: 'n18' }
+    ] },
+
+    n18: { ch: 'ch3', day: 78, scene: 'lab', who: 'narrator', expr: 'panic', text: '初稿完成。你数了一下，四万三千字，比本科毕业论文多了三倍。\n你把稿子发给王导。\n两天后，批注回来了：满屏红色，第一页写着「重写」。', choices: [
+      { label: '逐条改，改到导师满意', tag: '听话', cnt: { late: 1 }, fx: { progress: 9, sanity: -8, hair: -4 }, result: '你改了两周。\n第三周，王导说：「还是第一版好一点。」\n你看着电脑，想把自己也重写一遍。\n你在心里默念：如何呢，又能怎。', next: 'n19' },
+      { label: '先改最关键的，其他解释', tag: '性价比', fx: { progress: 6, sanity: -4, favor: 1 }, result: '你改了三章，剩下的一一回复。\n王导说：「态度不错。」\n这是你听过最像表扬的批评。', next: 'n19' },
+      { label: '跟导师争一下，我觉得我没错', tag: '学术自信', flag: { argued: true }, fx: { favor: -4, sanity: 2, progress: 3 }, result: '你们争了半小时。\n最后王导说：「按你的来，出事你负责。」\n你突然有点怀念被改稿的日子。', rw: 'advisor', re: 'angry', next: 'n19' },
+      { label: '摆烂，先睡一觉', tag: '躺平', fx: { sanity: 6, progress: -4 }, result: '你睡了两天。\n醒来发现导师在群里@了你三次。\n最后一次是：「还在吗？」', next: 'n19' }
+    ] },
+
+    n19: { ch: 'ch3', day: 80, scene: 'dorm', who: 'narrator', expr: 'tired', text: '改完稿，你觉得自己已经不认识这篇文章了。\n但它确实比第一版好。\n你把它命名为：\n「终稿_最终版_真的最终版_v7.docx」。', next: 'n20' },
+
+    n20: { ch: 'ch4', day: 85, scene: 'lab', who: 'narrator', expr: 'panic', text: '查重报告出来了。\n总文字复制比：2.8%。你松了口气。\n往下翻：AIGC 检测结果 97.3%。\n你：？', choices: [
+      { label: '手动改，一句一句改', tag: '老实人', flag: { aiFixed: true }, cnt: { late: 1 }, fx: { progress: 6, sanity: -8, hair: -5 }, result: '你把「综上所述」改成「总的来看」，\n把「显著提升」改成「提升明显」。\n改到最后，AI 率降到了 12%。\n你感觉自己像一个正在学习说人话的机器人。', next: 'n20chat' },
+      { label: '加引用，疯狂加引用', tag: '学术裁缝', fx: { progress: 4, sanity: -3 }, result: '你加了四十篇参考文献。\nAI 率变成了 96.8%。\n你开始怀疑这个检测器是用脚写的。', next: 'n20chat' },
+      { label: '中英互译，来回三遍', tag: '玄学', fx: { progress: 1, sanity: -5, hair: -2 }, result: '翻译回来的句子像喝了假酒。\nAI 率 99.1%。\n你人麻了。', next: 'n20chat' },
+      { label: '不管了，能过查重就行', tag: '摆烂', flag: { aiCaught: true }, fx: { sanity: 2 }, result: '你把报告关掉。\n三天后，学院发了通知：\nAIGC 检测纳入盲审参考。', next: 'n20chat' }
+    ] },
+
+    n20chat: { ch: 'ch4', day: 85, scene: 'lab', who: 'narrator', expr: 'normal', text: '手机在桌上震了一下。\n屏幕亮起，是那个熟悉的头像。', chat: [
+      { text: '在吗' },
+      { text: '查重怎么样' },
+      { text: 'AI 率多少' }
+    ], choices: [
+      { label: '查了，2.8%，稳的', tag: '避重就轻', cnt: { lie: 1 }, fx: { favor: 1, sanity: -2 }, result: '（三秒后）\n王导：「AI 率呢？」\n你：「……97。」\n王导：「？」\n你：「老师我可以解释。」', next: 'n21' },
+      { label: '老师，AI 率有点高，我正在改', tag: '坦白', fx: { favor: 3, sanity: -3 }, result: '王导：「多少？」\n你：「97。」\n王导：「……」\n王导：「改。改完发我。」\n你看着屏幕，觉得那个省略号比骂人还重。', next: 'n21' },
+      { label: '装死，假装没看见', tag: '逃避', fx: { sanity: 4, favor: -6 }, result: '两小时后，王导在师门群里@了你。\n配文：「有的同学，微信不回，论文也不写。」\n全组已读。', next: 'n21' },
+      { label: '回：在的，老师您说', tag: '乖巧', fx: { sanity: -2, favor: 1 }, result: '王导：「查重多少？」\n你：「2.8。」\n王导：「AI 率？」\n你：「……」\n王导：「我就知道。」', next: 'n21' }
+    ] },
+
+    n21: { ch: 'ch4', day: 86, scene: 'office', who: 'advisor', expr: 'stern', text: '王导把你叫过去，指着屏幕：\n「你这个 AI 味，太冲了。」\n你闻了闻自己，只有三天没洗澡的味道。', choices: [
+      { label: '老师，我确实用了 AI 辅助', tag: '坦白', flag: { aiFixed: true }, fx: { favor: 3, sanity: -3 }, result: '王导叹了口气：\n「工具可以用，但脑子得是自己的。」\n你点了点头。\n这次是真心的。', rw: 'advisor', re: 'normal', next: 'n22' },
+      { label: '是润色软件自动改的', tag: '甩锅', cnt: { lie: 1 }, fx: { favor: -4, sanity: 1 }, result: '王导看了你一眼：\n「哪个润色软件会把『综上所述』用七次？」\n你张了张嘴，没说出话。', rw: 'advisor', re: 'angry', next: 'n22' },
+      { label: '我当场重写一段给您看', tag: '补救', cnt: { late: 1 }, fx: { favor: 6, progress: 4, sanity: -6 }, result: '你现场重写了摘要。\n王导看完说：「这不是会写吗？」\n你心想：那是因为您在旁边看着。', rw: 'advisor', re: 'smug', next: 'n22' },
+      { label: '老师，现在都这样', tag: '顶嘴', flag: { aiCaught: true }, fx: { favor: -8, sanity: 2 }, result: '王导沉默了很久：\n「那你毕业的时候，也让 AI 去答辩吧。」\n你意识到自己说错话了。', rw: 'advisor', re: 'angry', next: 'n22' }
+    ] },
+
+    n22: { ch: 'ch4', day: 88, scene: 'dorm', who: 'narrator', expr: 'tired', text: '降完 AI 率，你发了条朋友圈：\n「查重 2.8%，AI 率 97%，我成了 AI 的替身。已老实，求放过。」\n十分钟后，二十个赞，其中三个是实验室的。\n导师没点赞。你反而更慌了。', next: 'n23' },
+
+    n23: { ch: 'ch5', day: 95, scene: 'meeting', who: 'narrator', expr: 'panic', text: '预答辩。\n你讲了二十分钟，评委老师翻了翻论文，问：\n「你这个工作量，是不是有点单薄？」', choices: [
+      { label: '我回去加实验', tag: '听话', cnt: { late: 1 }, fx: { progress: 7, sanity: -7, hair: -3 }, result: '你又加了一个月的实验。\n论文从四万字变成了五万字，\n其中一万字是实验设置。', next: 'n24' },
+      { label: '老师，我这个方法比较新', tag: '辩解', fx: { favor: -2, progress: 2, sanity: -2 }, result: '「新不代表够。」老师说。\n你点了点头，把这句话记在了心里。\n然后发现这句话已经有人发过朋友圈了。', rw: 'advisor', re: 'stern', next: 'n24' },
+      { label: '老师，您觉得加什么合适？', tag: '请教', fx: { favor: 4, progress: 4, sanity: -2 }, result: '老师说了十分钟。\n你记了三条，其中两条互相矛盾。\n第三条是：「你自己把握。」', next: 'n24' },
+      { label: '沉默，微笑，点头', tag: '已老实', fx: { sanity: -5, favor: -1 }, result: '你笑得很得体。\n回宿舍后，你在床上躺了两个小时。\n室友以为你睡着了，其实你在想那句话。', next: 'n24' }
+    ] },
+
+    n24: { ch: 'ch5', day: 100, scene: 'lab', who: 'narrator', expr: 'panic', text: '送审前夜。\n你检查了十八遍格式，发现参考文献的逗号是全角。\n提交系统在 23:59 崩溃了。\n你盯着「提交失败」四个字，心跳到一百二。', choices: [
+      { label: '刷新，疯狂刷新', tag: '惊险', fx: { sanity: -6 }, result: '23:59:47，提交成功。\n你瘫在椅子上，像刚跑完一千米。\n然后发现，你把「致谢」写成了「致射」。\n你：蒜鸟，能提交就行。', next: 'n25' },
+      { label: '找师兄，他有经验', tag: '求助', flag: { seniorHelp: true }, fx: { sanity: 2, progress: 1 }, result: '师兄远程指挥你改格式：\n「参考文献用半角逗号，你们这届怎么什么都不会。」\n你很想说：你们那届也没教。', rw: 'senior', re: 'smug', next: 'n25' },
+      { label: '先睡，明天再说', tag: '佛系', fx: { sanity: 5, progress: -3 }, result: '第二天你被学院电话叫醒。\n截止时间延后了二十四小时。\n你第一次感谢行政效率。', next: 'n25' },
+      { label: '把电脑合上，去阳台看星星', tag: '摆烂', fx: { sanity: 6, hair: -1 }, result: '你看了十分钟星星。\n回来发现系统自动保存了。\n玄学，是科研的一部分。', next: 'n25' }
+    ] },
+
+    n25: { ch: 'ch5', day: 103, scene: 'dorm', who: 'narrator', expr: 'tired', text: '送审了。\n接下来的两周，你每天刷新三次系统。\n第一天：「已送审」。\n第三天：「已送审」。\n第七天：「已送审」。\n你开始研究盲审专家的籍贯和星座。', choices: [
+      { label: '继续刷，刷到出结果', tag: '焦虑', fx: { sanity: -8, hair: -2 }, result: '你刷新了二百一十四次。\n第二百一十五次，页面终于变了：\n「专家意见已返回」。\n你的手开始抖。', next: 'n26' },
+      { label: '去寺庙拜拜', tag: '玄学', flag: { prayed: true }, fx: { sanity: 6, progress: -1 }, result: '你在寺庙里许愿：\n「让我毕业，我愿意用师兄的头发换。」\n师兄在实验室打了个喷嚏。', next: 'n26' },
+      { label: '打游戏，转移注意力', tag: '逃避', fx: { sanity: 5, progress: -2 }, result: '你上了王者。\n但每次匹配加载，你都在想盲审。\n队友骂你演，你说：「我在等一个结果。」', next: 'n26' },
+      { label: '趁等待再改改论文', tag: '卷', fx: { progress: 5, sanity: -4, hair: -2 }, result: '你把绪论重写了一遍。\n后来发现，盲审专家根本不看绪论。', next: 'n26' }
+    ] },
+
+    n26: { ch: 'ch5', day: 108, scene: 'lab', who: 'narrator', expr: 'panic', text: '盲审意见回来了。\n三个专家：\n「选题有意义，工作量尚可，建议修改后答辩。」\n「创新性不足，建议补充实验。」\n「格式规范，同意答辩。」\n最后一行：「是否同意答辩：修改后答辩。」', branch: [
+      { if: function (s) { return s.flags.fakeData && !s.flags.dataFixed; }, to: 'n27fake' },
+      { if: function (s) { return s.flags.aiCaught && !s.flags.aiFixed; }, to: 'n26ai' }
+    ], next: 'n27' },
+
+    n26ai: { ch: 'ch5', day: 108, scene: 'lab', who: 'narrator', expr: 'panic', text: '意见最后还有一行小字：\n「建议说明 AIGC 工具的使用情况。」\n你想起王导那句「脑子得是自己的」，\n手心又开始出汗。', next: 'n27' },
+
+    n27fake: { ch: 'ch5', day: 109, scene: 'lab', who: 'narrator', expr: 'panic', text: '你刚松了口气，学院打来电话：\n「有一位专家提出，你的实验数据与原始记录不一致，请配合核查。」\n你的手心开始出汗。', choices: [
+      { label: '主动说明，重新跑实验', tag: '补救', flag: { dataFixed: true }, fx: { sanity: -10, progress: 5 }, result: '你花了两个通宵重跑。\n数据对上了，但你也把『挑数据』的事写进了说明。\n王导替你说了很多话。\n你第一次觉得，他其实挺护着你。', next: 'n27' },
+      { label: '删掉有问题的部分', tag: '掩盖', flag: { fakeCaught: true }, fx: { sanity: -12, favor: -10 }, result: '你删了数据。\n但原始记录还在服务器上。\n三天后，学院启动了学术不端调查。', ending: 'fake', next: '__end:fake' },
+      { label: '找导师帮忙', tag: '求助', flag: { dataFixed: true }, fx: { favor: -3, sanity: -5 }, result: '王导看了你很久：「你知道这是什么性质吗？」\n他帮你联系了学院，也让你写了检查。\n你写了八千字。比论文还真诚。', rw: 'advisor', re: 'stern', next: 'n27' },
+      { label: '装死，不回复', tag: '逃避', flag: { fakeCaught: true }, fx: { sanity: -15 }, result: '你没有回复。\n学院发了第二封邮件，抄送了导师和院长。\n你的手机响了。你没接。', ending: 'fake', next: '__end:fake' }
+    ] },
+
+    n27: { ch: 'ch5', day: 109, scene: 'lab', who: 'narrator', expr: 'tired', text: '你开始改论文。\n改到第三天，你发现专家说的『补充实验』，其实是要你重做一遍。\n你看着日历：距离答辩还有十五天。', choices: [
+      { label: '肝，通宵肝', tag: '硬核', cnt: { late: 1 }, fx: { progress: 8, sanity: -10, hair: -6 }, result: '你连续熬了五个通宵。\n第六天，你在实验室醒来，脸上印着键盘的痕迹。\n师妹说：「师兄，你好像那个表情包。」', next: 'n28' },
+      { label: '抓大放小，先保证能答辩', tag: '策略', fx: { progress: 5, sanity: -5 }, result: '你改了能改的，剩下的在回复里写「已补充说明」。\n你学会了学术界的太极拳。\n——打不过就绕着打。', next: 'n28' },
+      { label: '找师妹帮忙', tag: '摇人', req: { flag: 'juniorHelp' }, fx: { progress: 4, sanity: -2, favor: 1 }, result: '师妹帮你跑了两组实验。\n你说请她吃饭，她说：「师兄，你先毕业吧。」\n你差点又哭了。', rw: 'junior', re: 'happy', next: 'n28' },
+      { label: '先哭一场', tag: '情绪价值', fx: { sanity: 9, progress: -3 }, result: '你哭了二十分钟。\n哭完点了炸鸡，吃完打开电脑，继续改。\n成年人的崩溃，是要排期的。', next: 'n28' },
+      { label: '头发和论文，总要没一个', tag: '献祭', flag: { baldPush: true }, cnt: { late: 1 }, fx: { progress: 12, sanity: -10, hair: -15 }, result: '你又熬了五个通宵。\n头顶越来越亮，论文越来越厚。\n你安慰自己：聪明绝顶。\n镜子没有反驳你。', next: 'n28' }
+    ] },
+
+    n28: { ch: 'ch6', day: 112, scene: 'defense', who: 'narrator', expr: 'panic', text: '答辩日。\n你穿上了唯一一件衬衫，站在教室门口。\n王导走过来，帮你理了理领子：\n「别紧张，他们都是我朋友。」\n你更紧张了。', next: 'n29' },
+
+    n29: { ch: 'ch6', day: 115, scene: 'defense', who: 'narrator', expr: 'panic', text: '答辩开始。\n你讲了二十分钟，评委席上有人在看手机，有人在翻论文，还有人在打哈欠。\n提问环节。\n评委 A：「你这篇论文的创新点，用一句话概括。」', choices: [
+      { label: '首次提出了一个面向 X 的 Y 框架', tag: '背稿', fx: { favor: 4, progress: 2, sanity: -3 }, result: '评委 A 点了点头：「概念很完整。」\n你听不出这是夸奖还是别的什么。\n王导在台下微微点头。', next: 'n30' },
+      { label: '简单说，就是让 A 在 B 上更好用', tag: '说人话', fx: { favor: 2, sanity: 2 }, result: '评委 A 笑了一下：「这个说法倒是实在。」\n你松了口气。\n然后评委 B 翻开了论文。', next: 'n30' },
+      { label: '这个……王导比较清楚', tag: '社死', fx: { favor: -8, sanity: -6 }, result: '王导在台下闭上了眼睛。\n评委 B 说：「那你清楚什么？」\n你想原地消失。', rw: 'advisor', re: 'dead', next: 'n30' },
+      { label: '创新点在于把两个不相干的东西缝在一起', tag: '诚实', flag: { honest: true }, fx: { favor: -3, sanity: 3 }, result: '评委们互相看了一眼。\n评委 C 说：「缝合也是一种能力。」\n你分不清是不是在骂你。', next: 'n30' }
+    ] },
+
+    n30: { ch: 'ch6', day: 115, scene: 'defense', who: 'narrator', expr: 'panic', text: '评委 B 翻开论文，指着其中一页：\n「你这个方法和 XX 的方法，有什么区别？」\nXX 是你参考文献里的第四十七篇。你只看了摘要。', choices: [
+      { label: '他从 A 角度切入，我从 B 角度', tag: '糊弄', cnt: { lie: 1 }, fx: { favor: -2, sanity: -3 }, result: '评委 B 追问：「B 角度具体是什么？」\n你开始后悔没看那篇论文。\n也后悔把摘要复制进了笔记。', next: 'n31' },
+      { label: '我做了消融实验，证明模块有效', tag: '数据流', req: { flag: 'rigorous' }, fx: { favor: 5, progress: 2 }, result: '评委 B 翻了翻实验部分，没再追问。\n你偷偷松了口气。\n消融实验，是研究生的救命稻草。', next: 'n31' },
+      { label: '坦白：这篇我没细看', tag: '诚实', fx: { favor: -4, sanity: 4 }, result: '评委 B 愣了一下，笑了：「你倒是诚实。回去补上。」\n你点点头，觉得他比想象中好说话。', next: 'n31' },
+      { label: 'XX 的方法已经过时了', tag: '嘴硬', cnt: { lie: 1 }, fx: { favor: -6, sanity: 1 }, result: '评委 B 挑了下眉：「XX 是我师弟。」\n你想找个地缝。\n地缝里可能还有另一个评委。', next: 'n31' }
+    ] },
+
+    n31: { ch: 'ch6', day: 115, scene: 'defense', who: 'narrator', expr: 'panic', text: '评委 C 合上论文：\n「工作量感觉不太够啊。」\n这是今天第三次听到这句话。', choices: [
+      { label: '我补充了三个实验，在附录里', tag: '有备而来', req: { min: { progress: 75 } }, fx: { favor: 6, progress: 3 }, result: '评委 C 翻到附录，点了点头。\n王导在台下悄悄比了个大拇指。\n你第一次觉得，那些通宵没有白熬。', next: 'n32' },
+      { label: '老师，我已经尽力了', tag: '认怂', fx: { favor: -3, sanity: 3 }, result: '评委 C 叹了口气：「现在的学生都不容易。」\n你差点当场破防。\n但你忍住了。', next: 'n32' },
+      { label: '那您觉得加到多少算够？', tag: '反问', fx: { favor: -2, sanity: -2 }, result: '评委 C 看了你三秒：「至少再加一章。」\n你小声：「那咋了。」\n评委 C：「？」\n王导在台下扶额。', rw: 'advisor', re: 'dead', next: 'n32' },
+      { label: '沉默，然后开始讲情怀', tag: '煽情', fx: { favor: -4, sanity: 2 }, result: '你讲了你的研究理想。\n评委 C 打断你：「我问的是工作量。」\n情怀不能当章节用。', next: 'n32' }
+    ] },
+
+    n32: { ch: 'ch6', day: 116, scene: 'corridor', who: 'narrator', expr: 'panic', text: '答辩结束。你被请出教室，评委们开始闭门讨论。\n走廊里，你听到了自己的心跳。\n王导走出来，表情看不出喜怒。\n「进来吧。」', next: 'n33' },
+
+    n33: { ch: 'ch6', day: 120, scene: 'defense', who: 'narrator', expr: 'panic', text: '你深吸一口气，推开门。\n评委主席抬起头，摘下眼镜。\n「经过答辩委员会讨论……」\n你听见自己的心跳，比服务器风扇还响。', ending: true }
+  };
+
+  var ENDINGS = {
+    star: { name: '学术新星', rank: 'S+', color: '#ffd166', tag: '隐藏结局', sub: '你导逢人就介绍你', text: [
+      '你的论文被评为优秀毕业论文。答辩主席握着你的手说：「后生可畏。」',
+      '王导在朋友圈发了九宫格，配文：「这是我带过最省心的学生。」你看着这句话，想起那些通宵。',
+      '后来你读了博。再后来，你开始劝别人别读博。',
+      '命运的齿轮开始转动，但你至今不知道它往哪转。'
+    ] },
+    excellent: { name: '优秀毕业论文', rank: 'S', color: '#f2c96a', sub: '致谢写了三千字，正文也是', text: [
+      '优秀毕业论文。你在致谢里写了导师、师兄、师妹、食堂阿姨，还有楼下那只猫。',
+      '王导看完说：「还行。」你知道，这是他的最高评价。',
+      '毕业照上，你笑得很标准。只有你自己知道，为了这个笑，你熬了多少个夜。'
+    ] },
+    smooth: { name: '顺利毕业', rank: 'A', color: '#8bd17c', sub: '轻舟已过万重山', text: [
+      '顺利毕业。你穿着学位服在图书馆前拍照，发朋友圈：「轻舟已过万重山。」',
+      '评论区第一条：「延毕人发来贺电。」你笑了，然后给师兄点了个赞。',
+      '你把论文打印出来，厚厚一本。你摸了摸封面，觉得这三年，好像也没白过。'
+    ] },
+    scrape: { name: '擦边毕业', rank: 'B', color: '#7fb3e8', sub: '合格，也是一种及格', text: [
+      '答辩通过，成绩「合格」。王导说：「能毕业就行。」',
+      '你想想也对。毕竟「毕业」这两个字，本身就值三年。',
+      '你把「合格」两个字截图存了下来。以后每次自我怀疑，就拿出来看看。'
+    ] },
+    delay: { name: '延毕一年', rank: 'C', color: '#e8a45c', sub: '学校舍不得你', text: [
+      '你延毕了。看着同门一个个搬走，你成了实验室最老的人。',
+      '你开始理解师兄的保温杯，也开始在组会上对新来的师弟说：「科研是份工作。」',
+      '第二年，你终于写完了。你发现延毕也没那么可怕——可怕的是延毕了还没写完。'
+    ] },
+    dropout: { name: '人生是旷野', rank: 'D', color: '#9aa6b8', sub: '你去了大理', text: [
+      '你提交了退学申请。走出校门那天，天很蓝。',
+      '你去了大理，开了一家咖啡馆。菜单上有一道「论文拿铁」，拉花是一坨看不清的曲线。',
+      '有客人问这是什么。你说：「loss 曲线。」',
+      '你偶尔会想起实验室，但更多时候，你在看云。'
+    ] },
+    bald: { name: '变强了，也变秃了', rank: 'A-', color: '#e8d9b0', tag: '隐藏结局', sub: '知识就是力量，也是脱发剂', text: [
+      '答辩通过了。这学期你熬了 {late} 个通宵，学位照上，你的头顶反着光。',
+      '师妹说：「师兄，你变强了。」你摸了摸头，笑了。',
+      '王导在毕业典礼上拍了拍你的肩：「头发可以再长，学位只有一次。」',
+      '你觉得他说得对。但你还是买了顶帽子。'
+    ] },
+    fake: { name: '学术不端', rank: 'F', color: '#ef6b6b', sub: '有些捷径，尽头是悬崖', text: [
+      '学术不端调查成立。你的学位被撤销。',
+      '王导在办公室里坐了很久，没有骂你。他只是一根接一根地抽烟。',
+      '你后来去了一家公司。面试官问你为什么没有毕业，你说：「我犯过一个错。」',
+      '有些数据可以重跑，有些信任不行。'
+    ] },
+    burnout: { name: '休学去大理', rank: 'D', color: '#b39ddb', sub: '读研不是人生的全部', text: [
+      '你的精神状态清零了。你办理了休学，去了大理。',
+      '你在洱海边住了三个月，每天看云，偶尔想起实验室的服务器。',
+      '后来你回来了，换了一个课题，也换了一种活法。',
+      '读研不是人生的全部，你也不是。'
+    ] }
+  };
+  var HUM_STORY = {
+    h1: { ch: 'hch0', day: 1, scene: 'library', who: 'narrator', expr: 'tired', text: '九月，研二。\n文科研究生没有实验室。你的工位在图书馆四楼靠窗，\n左边是《乡村治理》，右边是《消费社会》。\n窗外的梧桐叶开始黄了。', next: 'h2' },
+
+    h2: { ch: 'hch0', day: 1, scene: 'library', who: 'senior', expr: 'tired', text: '赵师兄抱着一摞书坐下，发际线和书脊一起后移。\n「下周读书会，你讲哪篇？」', choices: [
+      { label: '讲经典，稳一点', tag: '稳妥', fx: { progress: 3, sanity: -2 }, result: '你选了那篇被引用了一万次的经典。\n赵师兄说：「安全，但没人会记得你讲了什么。」', next: 'h3' },
+      { label: '讲最新那篇 C 刊，显得我读过', tag: '时髦', fx: { progress: 4, favor: 1, sanity: -2 }, result: '你讲了最新的一篇。\n周导问：「你看懂了吗？」\n你说：「看懂了摘要。」', rw: 'advisor', re: 'stern', next: 'h3' },
+      { label: '装死，说还没准备好', tag: '摸鱼', fx: { sanity: 4, favor: -3 }, result: '赵师兄看了你一眼：「读书会不是组会，装死没用。」\n你被安排下周讲。', rw: 'senior', re: 'smug', next: 'h3' },
+      { label: '问师妹讲什么', tag: '结盟', fx: { sanity: 2, favor: 1 }, result: '苏师妹说：「我讲那篇方法论的，反正我也没看懂。」\n你们决定互相垫背。', rw: 'junior', re: 'happy', next: 'h3' }
+    ] },
+
+    h3: { ch: 'hch0', day: 2, scene: 'meeting', who: 'advisor', expr: 'normal', text: '读书会。周导坐在长桌一头，面前是一杯茶和一支红笔。\n「这篇文章的问题意识是什么？」\n他看着你。', choices: [
+      { label: '复述摘要', tag: '老实', fx: { favor: -2, sanity: -3 }, result: '你复述了摘要。\n周导说：「那是作者的问题意识，不是你的。」\n你似懂非懂。', rw: 'advisor', re: 'stern', next: 'h4' },
+      { label: '指出它的漏洞', tag: '批判', fx: { favor: 5, progress: 3, sanity: -3 }, result: '你指出了它的样本问题。\n周导点点头：「有点意思。但你的依据呢？」\n你卡住了。', next: 'h4' },
+      { label: '联系自己的田野', tag: '机灵', fx: { favor: 6, progress: 4, sanity: -2 }, result: '你说这个框架可以用在你老家的县城。\n周导眼睛亮了一下：「可以，下周写个一页纸给我。」', rw: 'advisor', re: 'normal', next: 'h4' },
+      { label: '反问：老师您怎么看？', tag: '转移', fx: { favor: 2, sanity: 3 }, result: '周导讲了二十分钟。\n你记了满满一页，最后发现全是书单。', next: 'h4' }
+    ] },
+
+    h4: { ch: 'hch0', day: 2, scene: 'office', who: 'advisor', expr: 'normal', text: '散会后，周导叫住你。\n「我有个课题，正好缺人。做县城青年的数字生活，经费不多，但田野点现成。」\n你想起自己还没定题。', choices: [
+      { label: '接，老师带带我', tag: '抱大腿', flag: { topicBoss: true }, fx: { favor: 8, progress: 3, sanity: -4 }, result: '周导很满意：「那就这么定了。」\n你走出办公室，才想起来问：田野点在哪？', rw: 'advisor', re: 'smug', next: 'h5' },
+      { label: '我想做自己感兴趣的', tag: '头铁', flag: { topicOwn: true }, fx: { favor: -5, progress: 4, sanity: -2 }, result: '周导沉默了一下：「感兴趣是好事。但你要想清楚，能不能做出来。」\n你点了点头，其实没想清楚。', rw: 'advisor', re: 'stern', next: 'h5' },
+      { label: '先看看课题材料', tag: '稳重', fx: { sanity: 2, favor: 2, progress: 2 }, result: '你抱回一摞材料。\n第一页写着「经费有限，自备录音笔」。\n你开始理解文科的田野。', next: 'h5' },
+      { label: '问师兄这个课题怎么样', tag: '打听', fx: { sanity: 3, favor: 1 }, result: '赵师兄说：「课题是好课题，就是结项压力大。」\n他顿了顿：「不过哪个课题没压力。」', rw: 'senior', re: 'tired', next: 'h5' }
+    ] },
+
+    h5: { ch: 'hch1', day: 8, scene: 'office', who: 'advisor', expr: 'normal', text: '周导把你的题目写在白板上：\n「数字时代青年的身份认同」。\n「这个题目可以写一辈子。」他说。\n你听不出是夸还是劝。', choices: [
+      { label: '缩小到县城青年', tag: '聚焦', fx: { favor: 5, progress: 5, sanity: -3 }, result: '周导画了个圈：「县城，好。具体到哪？做什么？和谁？」\n你发现题目变小了，问题变多了。', next: 'h6' },
+      { label: '就写这个大的', tag: '贪心', fx: { favor: -4, progress: 2, sanity: -2 }, result: '周导看了你一眼：「大的题目，最后都会写成文献综述。」\n你后来才知道，这是诅咒。', rw: 'advisor', re: 'stern', next: 'h6' },
+      { label: '缝合两个热点', tag: '学术裁缝', flag: { topicMix: true }, fx: { favor: 3, progress: 4, sanity: -3 }, result: '你在「数字生活」后面加了「乡村振兴」。\n周导说：「有现实意义。」\n你学会了第三个学术黑话：『现实意义』。', next: 'h6' },
+      { label: '问师兄怎么选', tag: '稳妥', fx: { sanity: 3, favor: 1 }, result: '赵师兄说：「选能做完的，不选想做的。」\n你问：「为什么？」\n他说：「因为你想做的，通常做不完。」', rw: 'senior', re: 'smug', next: 'h6' }
+    ] },
+
+    h6: { ch: 'hch1', day: 12, scene: 'corridor', who: 'senior', expr: 'tired', text: '赵师兄听完你的题目，叹了口气：\n「文科选题三件套：理论、田野、政策意义。\n缺一个，评委就问你缺的那个。」', choices: [
+      { label: '那我补哪个？', tag: '求学', fx: { progress: 4, sanity: -1 }, result: '「补田野。」他说，「理论可以借，田野不能编。」\n你把这句记在了本子上。', next: 'h7' },
+      { label: '师兄你当年缺哪个？', tag: '八卦', fx: { sanity: 3, hair: -1 }, result: '「缺觉。」他说。\n「还有头发。」\n你笑不出来。', rw: 'senior', re: 'sad', next: 'h7' },
+      { label: '我三个都不缺', tag: '自信', fx: { favor: 1, sanity: 2 }, result: '赵师兄看了你一眼：「年轻真好。」\n你后来才明白这句话的意思。', rw: 'senior', re: 'smug', next: 'h7' }
+    ] },
+
+    h7: { ch: 'hch1', day: 21, scene: 'meeting', who: 'narrator', expr: 'panic', text: '开题。你站在投影前，台下三位老师。\n「你的研究问题是什么？」\n最中间的老师推了推眼镜。', choices: [
+      { label: '数字技术如何影响县城青年的身份认同', tag: '标准', fx: { favor: 5, progress: 5, sanity: -3 }, result: '老师们点点头。\n你学会了第一个学术句式：「如何影响」。\n它万能，且不需要回答。', next: 'h8' },
+      { label: '我想研究他们为什么刷短视频', tag: '说人话', fx: { favor: 2, progress: 3, sanity: -1 }, result: '评委笑了：「这个问题，你妈也知道答案。」\n你赶紧补了一句：「但 academia 不知道。」\n评委笑得更厉害了。', next: 'h8' },
+      { label: '研究问题还在凝练', tag: '卡壳', fx: { favor: -7, sanity: -7, hair: -2 }, result: '空气安静了。\n周导替你接话：「问题意识还在打磨。」\n你坐下时，腿是软的。', next: 'h8' },
+      { label: '老师，这个题目是周导定的', tag: '甩锅', fx: { favor: -4, sanity: 1 }, result: '周导看了你一眼。\n那一眼，你记了两年。', rw: 'advisor', re: 'angry', next: 'h8' }
+    ] },
+
+    h8: { ch: 'hch1', day: 22, scene: 'meeting', who: 'narrator', expr: 'tired', text: '开题通过。意见栏写着：\n「题目有现实意义，但问题意识不够聚焦。」\n你盯着『不够聚焦』四个字，感觉它在说你的整个人生。', next: 'h9' },
+
+    h9: { ch: 'hch2', day: 30, scene: 'library', who: 'narrator', expr: 'tired', text: '你打开了文献库。\n关键词一搜，三千二百篇。\n你精读了四篇，下载了二百篇，剩下的一千篇在收藏夹里吃灰。', choices: [
+      { label: '一篇一篇精读', tag: '老实人', flag: { readDeep: true }, cnt: { late: 1 }, fx: { progress: 6, sanity: -7, hair: -3 }, result: '你读了三十篇，做了两万字笔记。\n读到第三十一天，你发现其中二十篇在互相引用。', next: 'h10' },
+      { label: '先读摘要，分类', tag: '方法论', flag: { readFast: true }, fx: { progress: 5, sanity: -2 }, result: '你建了一个表：理论、方法、结论。\n表很漂亮。\n但你还是不知道自己要写什么。', next: 'h10' },
+      { label: '让 AI 帮我总结', tag: '科技', flag: { aiUsed: true }, cnt: { ai: 1 }, fx: { progress: 7, sanity: 1 }, result: 'AI 三分钟总结了二百篇。\n你看着那些似曾相识的句子，产生了一种『我已经读完了』的错觉。', next: 'h10' },
+      { label: '先写，写完再补文献', tag: '硬写', fx: { progress: 3, sanity: 2 }, result: '你写了三千字，引用了四篇。\n周导后来说：「你这叫读后感，不叫文献综述。」', next: 'h10' }
+    ] },
+
+    h10: { ch: 'hch2', day: 36, scene: 'office', who: 'advisor', expr: 'stern', text: '周导把你的文献综述打印出来，用红笔划得密密麻麻。\n「你这是文献罗列，不是综述。综述要有对话。」', choices: [
+      { label: '什么是对话？', tag: '真不懂', fx: { favor: 1, sanity: 2 }, result: '「就是你说 A 说了什么，B 不同意，你站在哪边。」\n周导说，「不是把他们都夸一遍。」\n你恍然大悟。', rw: 'advisor', re: 'normal', next: 'h11' },
+      { label: '我回去重写', tag: '听话', cnt: { late: 1 }, fx: { progress: 8, sanity: -7, hair: -3 }, result: '你重写了三遍。\n第三遍，周导说：「有点综述的样子了。」\n你差点哭出来。', next: 'h11' },
+      { label: '加个理论框架撑一下', tag: '裱糊', flag: { theoryPatch: true }, fx: { favor: 3, progress: 4, sanity: -3 }, result: '你加了一个宏大的理论框架。\n周导说：「框架不是帽子，不能随便戴。」\n但他还是让你过了。', next: 'h11' },
+      { label: '我觉得这样挺好', tag: '顶嘴', fx: { favor: -6, sanity: 2 }, result: '周导把稿子放下：「那你答辩的时候，自己跟评委解释。」\n你突然觉得，还是重写比较好。', rw: 'advisor', re: 'angry', next: 'h11' }
+    ] },
+
+    h11: { ch: 'hch2', day: 42, scene: 'library', who: 'senior', expr: 'tired', text: '赵师兄看了一眼你的理论框架：\n「你这个理论，和你的田野，隔了十万八千里。」', choices: [
+      { label: '那怎么办？', tag: '求助', fx: { progress: 4, sanity: -2 }, result: '「先下田野。」他说，「理论是后来长出来的，不是先戴上去的。」\n你决定去县城。', next: 'h12' },
+      { label: '换一个更简单的理论', tag: '实用', fx: { progress: 3, favor: 1, sanity: -1 }, result: '你换了一个能解释你材料的理论。\n赵师兄说：「这才对。理论是工具，不是祖宗。」', next: 'h12' },
+      { label: '师兄你帮我看看外文文献', tag: '摇人', flag: { seniorHelp: true }, fx: { sanity: 3, progress: 2 }, result: '他给你发了三篇外文。\n你打开一看，第一页就查了二十个单词。', rw: 'senior', re: 'smug', next: 'h12' }
+    ] },
+
+    h12: { ch: 'hch2', day: 45, scene: 'corridor', who: 'narrator', expr: 'tired', text: '理论勉强搭好了。\n你买了去县城的车票。\n田野点是一个老社区，门口有一棵很大的槐树。', next: 'h13' },
+
+    h13: { ch: 'hch3', day: 48, scene: 'field', who: 'narrator', expr: 'panic', text: '你站在社区门口，手里拿着录音笔和知情同意书。\n一位大爷警惕地看着你：\n「你是记者？推销的？」', choices: [
+      { label: '我是学生，来做研究的', tag: '坦白', fx: { favor: 2, progress: 4, sanity: -4 }, result: '大爷说：「研究啥？我们这儿有啥好研究的？」\n你解释了半小时。\n他最后说：「那你问吧，别写我名。」', next: 'h14' },
+      { label: '先套近乎，聊家常', tag: '社牛', fx: { progress: 6, sanity: -3, favor: 2 }, result: '你陪大爷聊了一小时。\n他给你介绍了三个访谈对象，还留你吃了午饭。', next: 'h14' },
+      { label: '换个地方，这里不好进', tag: '撤退', fx: { progress: -2, sanity: 3 }, result: '你换了三个社区，都被拒了。\n你开始怀疑自己是不是不适合做田野。', next: 'h14' },
+      { label: '找社区干部帮忙', tag: '官方', flag: { gatekeeper: true }, fx: { progress: 5, favor: 1, sanity: -2 }, result: '社区干部很热情，给你安排了一屋子人。\n访谈很顺利，但每个人说的都像汇报材料。', next: 'h14' }
+    ] },
+
+    h14: { ch: 'hch3', day: 52, scene: 'cafe', who: 'narrator', expr: 'normal', text: '第一家咖啡馆。访谈对象小周，二十二岁，在县城做直播。\n你按下录音笔。\n「你们研究这个，有什么用？」她问。', choices: [
+      { label: '说实话：为了毕业', tag: '诚实', fx: { sanity: 4, progress: 3 }, result: '她笑了：「那你还挺实在。」\n后面的访谈，她说了很多真话。', next: 'h15' },
+      { label: '说为了理解这个时代', tag: '宏大', fx: { favor: 1, progress: 2, sanity: -2 }, result: '她愣了一下：「你们文化人说话就是不一样。」\n你突然觉得自己像个骗子。', next: 'h15' },
+      { label: '反问她：你觉得有什么用？', tag: '访谈技巧', fx: { progress: 5, sanity: -2 }, result: '她说了四十分钟。\n你第一次觉得，访谈对象比论文重要。', next: 'h15' },
+      { label: '低头看手机，掩饰尴尬', tag: '社恐', fx: { sanity: -3, progress: -1 }, result: '她也不说话了。\n你们沉默了两分钟，访谈草草结束。', next: 'h15' }
+    ] },
+
+    h15: { ch: 'hch3', day: 60, scene: 'cafe', who: 'narrator', expr: 'tired', text: '你录了二十个小时的访谈。\n转写、编码、归类。\n第三天，你发现材料里什么都有一点，但什么都不够。', choices: [
+      { label: '重新访谈，补样本', tag: '严谨', flag: { rigorous: true }, cnt: { late: 1 }, fx: { progress: 7, sanity: -6, hair: -2 }, result: '你又找了八个人。\n材料终于厚了。你的黑眼圈也厚了。', next: 'h16' },
+      { label: '把手头的材料挖深', tag: '质性研究', flag: { readDeep: true }, fx: { progress: 5, sanity: -3 }, result: '你把一个人的故事写成了八千字。\n赵师兄说：「这才叫质性研究。」', next: 'h16' },
+      { label: '访谈不够，先编几个', tag: '危险', flag: { fakeData: true }, cnt: { lie: 1 }, fx: { progress: 6, sanity: -2, favor: 3 }, result: '你编了三个访谈对象。\n他们说的话，比真的还像真的。\n你有点得意，也有点心虚。', next: 'h16' },
+      { label: '用 AI 生成访谈摘要', tag: '科技', flag: { aiUsed: true }, cnt: { ai: 1 }, fx: { progress: 4, sanity: 1 }, result: 'AI 把你的材料总结得井井有条。\n你看着那些漂亮的句子，忘了原话是什么。', next: 'h16' }
+    ] },
+
+    h16: { ch: 'hch3', day: 65, scene: 'office', who: 'advisor', expr: 'stern', text: '周导问：「访谈对象的知情同意书呢？」\n你翻了翻文件夹。\n只有三份。\n你访谈了十二个人。', choices: [
+      { label: '我回去补', tag: '补救', flag: { ethicsFixed: true }, fx: { sanity: -4, progress: 3, favor: 2 }, result: '你一个个联系访谈对象，补签了同意书。\n有一个阿姨说：「你早说啊，我还以为你要骗我。」', next: 'h17' },
+      { label: '都是熟人，没关系', tag: '糊弄', flag: { ethicsRisk: true }, fx: { favor: -5, sanity: 1 }, result: '周导看了你一眼：「伦理审查不看熟不熟。」\n你被退回重做。', rw: 'advisor', re: 'angry', next: 'h17' },
+      { label: '改匿名，删掉身份信息', tag: '补救', flag: { ethicsFixed: true }, fx: { progress: 2, sanity: -2 }, result: '你删掉了所有能识别身份的信息。\n周导说：「可以，但下次要一开始就做。」', next: 'h17' },
+      { label: '问师兄怎么办', tag: '求助', flag: { seniorHelp: true }, fx: { sanity: 3, progress: 2 }, result: '赵师兄叹了口气：「补吧。文科的雷，一半在伦理。」\n你补签了九份。', next: 'h17' }
+    ] },
+
+    h17: { ch: 'hch3', day: 68, scene: 'night', who: 'narrator', expr: 'normal', text: '晚上，你坐在社区门口的石阶上整理田野笔记。\n槐树的影子落在地上。\n你突然觉得，这些人的故事，比你论文里的理论重要。', choices: [
+      { label: '把这句话写进笔记', tag: '记录', fx: { progress: 4, sanity: 4 }, result: '你写了三千字田野笔记。\n后来，它成了论文里最好的一章。', next: 'h18' },
+      { label: '给妈妈打个电话', tag: '想家', fx: { sanity: 7, progress: -1 }, result: '妈妈说：「累了就回来。」\n你说：「快了。」\n其实你也不知道快什么。', next: 'h18' },
+      { label: '找师妹吐槽', tag: '同门', flag: { juniorHelp: true }, fx: { sanity: 5, progress: -1 }, result: '苏师妹说：「师兄，你至少还有田野。我问卷才收了三十份。」\n你突然平衡了。', rw: 'junior', re: 'happy', next: 'h18' }
+    ] },
+
+    h18: { ch: 'hch4', day: 72, scene: 'dorm', who: 'narrator', expr: 'tired', text: '你打开 Word，写下第一章。\n八万字的目标，像一座山。\n你写了三千字，删了两千。', choices: [
+      { label: '先搭章节，再填', tag: '方法论', fx: { progress: 6, sanity: -2 }, result: '你搭了六章。\n看着目录，你产生了一种『论文已经写完了』的错觉。', next: 'h19' },
+      { label: '从最精彩的案例写起', tag: '手感', fx: { progress: 7, sanity: 1 }, result: '你写了小周的故事。\n写得停不下来，一天写了八千字。\n然后发现，它和你的理论框架对不上。', next: 'h19' },
+      { label: '先写理论，硬写', tag: '硬核', cnt: { late: 1 }, fx: { progress: 5, sanity: -6, hair: -3 }, result: '你写了五千字理论。\n周导说：「这不是理论，是读书笔记。」', next: 'h19' },
+      { label: '让 AI 帮我扩写', tag: '科技', flag: { aiUsed: true }, cnt: { ai: 1 }, fx: { progress: 8, sanity: 2 }, result: 'AI 把三千字扩成了八千字。\n读起来很顺，但你不知道自己在说什么。', next: 'h19' }
+    ] },
+
+    h19: { ch: 'hch4', day: 78, scene: 'office', who: 'advisor', expr: 'stern', text: '周导的批注回来了。\n第一页写着：\n「描述很扎实，但理论贡献是什么？」', choices: [
+      { label: '我回去补理论', tag: '听话', cnt: { late: 1 }, fx: { progress: 6, sanity: -5, hair: -2 }, result: '你读了一个月的理论。\n最后选了那个你最不想选的。\n因为它最好写。', next: 'h20' },
+      { label: '我的贡献就是提供了案例', tag: '诚实', fx: { favor: 2, sanity: 3, progress: 2 }, result: '周导沉默了一下：「案例也是贡献。但你得说清楚，它贡献了什么。」\n你点点头。', rw: 'advisor', re: 'normal', next: 'h20' },
+      { label: '跟导师争：理论不是唯一标准', tag: '学术自信', flag: { argued: true }, fx: { favor: -5, sanity: 3, progress: 3 }, result: '你们争了半小时。\n周导说：「你可以有自己的立场，但答辩时你要能说服评委。」', rw: 'advisor', re: 'angry', next: 'h20' },
+      { label: '先哭一场', tag: '情绪价值', fx: { sanity: 8, progress: -3 }, result: '你哭了十分钟。\n哭完继续改。\n成年人的崩溃，是要排期的。', next: 'h20' }
+    ] },
+
+    h20: { ch: 'hch4', day: 80, scene: 'corridor', who: 'senior', expr: 'sad', text: '赵师兄要延毕了。\n他坐在楼梯口，手里是一杯凉掉的咖啡。\n「文科博士，延毕是常态。」', choices: [
+      { label: '师兄，你后悔吗？', tag: '认真', fx: { sanity: 3 }, result: '「后悔。」他说，「但让我再选一次，我可能还这样。」\n你突然不知道该说什么。', rw: 'senior', re: 'sad', next: 'h21' },
+      { label: '陪我喝一杯', tag: '陪伴', fx: { sanity: 6, progress: -2, hair: -1 }, result: '你们在便利店门口坐到十二点。\n他说：「别学我。」\n你说：「好。」\n你们都笑了。', next: 'h21' },
+      { label: '那我得赶紧写完', tag: '焦虑', fx: { progress: 5, sanity: -4 }, result: '你回图书馆写到凌晨。\n赵师兄的咖啡杯还放在楼梯口。', next: 'h21' }
+    ] },
+
+    h21: { ch: 'hch4', day: 82, scene: 'dorm', who: 'narrator', expr: 'tired', text: '初稿完成。\n正文八万字，注释两万字。\n你打印出来，厚得像一块砖。', next: 'h22' },
+
+    h22: { ch: 'hch5', day: 88, scene: 'library', who: 'narrator', expr: 'panic', text: '查重报告：总文字复制比 8.7%。\nAIGC 检测：67%。\n你松了口气，又提了口气。', choices: [
+      { label: '手动改，把 AI 味洗掉', tag: '老实人', flag: { aiFixed: true }, cnt: { late: 1 }, fx: { progress: 6, sanity: -8, hair: -4 }, result: '你一句一句改。\n改到第十天，AIGC 降到了 18%。\n你说话都开始像自己了。', next: 'h23' },
+      { label: '加引用，多引几本书', tag: '学术裁缝', fx: { progress: 4, sanity: -3 }, result: '你加了五十条引注。\nAIGC 变成了 66%。\n你开始怀疑这个检测器。', next: 'h23' },
+      { label: '把长句拆短，把短句改长', tag: '玄学', fx: { progress: 2, sanity: -5, hair: -2 }, result: '你来回折腾了三天。\nAIGC 变成了 71%。\n你人麻了。', next: 'h23' },
+      { label: '不管了，查重过了就行', tag: '摆烂', flag: { aiCaught: true }, fx: { sanity: 2 }, result: '你把报告关掉。\n一个月后，外审意见里多了一行：\n『建议说明生成式 AI 的使用情况。』', next: 'h23' }
+    ] },
+
+    h23: { ch: 'hch5', day: 88, scene: 'library', who: 'narrator', expr: 'normal', text: '手机亮了。\n是周导。', chat: [
+      { text: '在吗' },
+      { text: '查重怎么样' },
+      { text: 'AI 率多少' }
+    ], choices: [
+      { label: '查了，8.7%', tag: '避重就轻', cnt: { lie: 1 }, fx: { favor: 1, sanity: -2 }, result: '（三秒后）\n周导：「AI 率呢？」\n你：「……67。」\n周导：「？」', next: 'h24' },
+      { label: '老师，AI 率有点高，我在改', tag: '坦白', fx: { favor: 3, sanity: -3 }, result: '周导：「多少？」\n你：「67。」\n周导：「改。改完发我。」\n你看着那个句号，觉得它比骂人还重。', next: 'h24' },
+      { label: '装死', tag: '逃避', fx: { sanity: 4, favor: -6 }, result: '两小时后，周导在师门群里@了你：\n「有的同学，微信不回，论文也不改。」\n全组已读。', next: 'h24' },
+      { label: '回：在的，老师您说', tag: '乖巧', fx: { sanity: -2, favor: 1 }, result: '周导：「查重多少？」\n你：「8.7。」\n周导：「AI 率？」\n你：「……」\n周导：「我就知道。」', next: 'h24' }
+    ] },
+
+    h24: { ch: 'hch5', day: 89, scene: 'office', who: 'advisor', expr: 'stern', text: '周导指着你的稿子：\n「你这个 AI 味，比你师兄的咖啡还浓。」', choices: [
+      { label: '老师，我确实用了 AI', tag: '坦白', flag: { aiFixed: true }, fx: { favor: 3, sanity: -3 }, result: '周导叹了口气：「工具可以用，但话得自己说。」\n你点了点头，这次是真心的。', rw: 'advisor', re: 'normal', next: 'h25' },
+      { label: '是润色软件自动改的', tag: '甩锅', cnt: { lie: 1 }, fx: { favor: -4, sanity: 1 }, result: '周导看了你一眼：「哪个润色软件会把『综上所述』用九次？」', rw: 'advisor', re: 'angry', next: 'h25' },
+      { label: '我当场改一段给您看', tag: '补救', cnt: { late: 1 }, fx: { favor: 6, progress: 4, sanity: -6 }, result: '你改了一段。\n周导说：「这不是会写吗？」\n你心想：那是因为您在旁边看着。', next: 'h25' },
+      { label: '老师，现在都这样', tag: '顶嘴', flag: { aiCaught: true }, fx: { favor: -8, sanity: 2 }, result: '周导沉默了很久：「那你毕业的时候，也让 AI 去答辩吧。」', rw: 'advisor', re: 'angry', next: 'h25' }
+    ] },
+
+    h25: { ch: 'hch5', day: 95, scene: 'meeting', who: 'narrator', expr: 'panic', text: '预答辩。\n你讲了二十分钟，评委翻了翻论文：\n「你的样本只有十二个人，代表性在哪里？」', choices: [
+      { label: '质性研究不追求统计代表性', tag: '方法论', fx: { favor: 5, progress: 4, sanity: -2 }, result: '评委点点头：「那你追求什么？」\n你说：「机制和意义。」\n他让你过了。', next: 'h26' },
+      { label: '我补了问卷', tag: '量化', fx: { progress: 6, sanity: -5, hair: -2 }, result: '你发了一百份问卷，回收了九十份。\n评委说：「样本还是小。」\n但至少你能说『混合方法』了。', next: 'h26' },
+      { label: '老师，我已经尽力了', tag: '认怂', fx: { favor: -3, sanity: 3 }, result: '评委叹了口气：「现在的学生都不容易。」\n你差点破防。', next: 'h26' },
+      { label: '那您觉得多少算够？', tag: '反问', fx: { favor: -2, sanity: -2 }, result: '评委看了你三秒：「至少再加十个人。」\n你后悔问了。', next: 'h26' }
+    ] },
+
+    h26: { ch: 'hch5', day: 100, scene: 'library', who: 'narrator', expr: 'panic', text: '外审意见回来了。\n三个专家：\n「选题有意义，田野扎实，但理论提升不足。」\n「文字功底不错，学术性一般。」\n「同意答辩，建议修改。」\n最后一行：「是否同意答辩：修改后答辩。」', branch: [
+      { if: function (s) { return s.flags.fakeData && !s.flags.dataFixed; }, to: 'h27fake' },
+      { if: function (s) { return s.flags.aiCaught && !s.flags.aiFixed; }, to: 'h26ai' }
+    ], next: 'h27' },
+
+    h26ai: { ch: 'hch5', day: 100, scene: 'library', who: 'narrator', expr: 'panic', text: '意见最后还有一行小字：\n「建议说明 AIGC 工具使用情况。」\n你想起周导那句「话得自己说」，\n手心又开始出汗。', next: 'h27' },
+
+    h27fake: { ch: 'hch5', day: 101, scene: 'library', who: 'narrator', expr: 'panic', text: '你刚松了口气，学院打来电话：\n「有专家提出，你的访谈记录与原始录音不一致，请配合核查。」\n你的手心开始出汗。', choices: [
+      { label: '主动说明，重新访谈', tag: '补救', flag: { dataFixed: true }, fx: { sanity: -10, progress: 5 }, result: '你重新联系了访谈对象。\n有人拒绝了你，有人原谅了你。\n你把说明写了八千字，比论文还真诚。', next: 'h27' },
+      { label: '删掉有问题的部分', tag: '掩盖', flag: { fakeCaught: true }, fx: { sanity: -12, favor: -10 }, result: '你删了记录。\n但录音还在。\n三天后，学院启动了学术不端调查。', ending: 'fake', next: '__end:fake' },
+      { label: '找导师帮忙', tag: '求助', flag: { dataFixed: true }, fx: { favor: -3, sanity: -5 }, result: '周导看了你很久：「你知道这是什么性质吗？」\n他帮你联系了学院，也让你写了检查。', rw: 'advisor', re: 'stern', next: 'h27' },
+      { label: '装死，不回复', tag: '逃避', flag: { fakeCaught: true }, fx: { sanity: -15 }, result: '你没有回复。\n学院发了第二封邮件，抄送了导师和院长。\n你的手机响了。你没接。', ending: 'fake', next: '__end:fake' }
+    ] },
+
+    h27: { ch: 'hch5', day: 101, scene: 'library', who: 'narrator', expr: 'tired', text: '你开始改论文。\n外审说的『理论提升』，其实是要你重写绪论。\n距离答辩还有十五天。', choices: [
+      { label: '肝，通宵肝', tag: '硬核', cnt: { late: 1 }, fx: { progress: 8, sanity: -10, hair: -6 }, result: '你连续熬了五个通宵。\n第六天，你在图书馆醒来，脸上印着书脊的痕迹。', next: 'h28' },
+      { label: '抓大放小，先保证能答辩', tag: '策略', fx: { progress: 5, sanity: -5 }, result: '你改了能改的，剩下的写「已补充说明」。\n你学会了学术太极拳。', next: 'h28' },
+      { label: '找师妹帮忙', tag: '摇人', req: { flag: 'juniorHelp' }, fx: { progress: 4, sanity: -2, favor: 1 }, result: '苏师妹帮你整理了三章参考文献。\n你说请她吃饭，她说：「师兄，你先毕业吧。」', rw: 'junior', re: 'happy', next: 'h28' },
+      { label: '先哭一场', tag: '情绪价值', fx: { sanity: 9, progress: -3 }, result: '你哭了二十分钟。\n哭完点了炸鸡，继续改。\n成年人的崩溃，是要排期的。', next: 'h28' },
+      { label: '头发和论文，总要没一个', tag: '献祭', flag: { baldPush: true }, cnt: { late: 1 }, fx: { progress: 12, sanity: -10, hair: -15 }, result: '你又熬了五个通宵。\n发际线后退，论文前进。\n你安慰自己：聪明绝顶。', next: 'h28' }
+    ] },
+
+    h28: { ch: 'hch6', day: 108, scene: 'defense', who: 'narrator', expr: 'panic', text: '答辩日。\n你穿上唯一一件衬衫，站在教室门口。\n周导帮你理了理领子：\n「别紧张，他们都是我朋友。」\n你更紧张了。', next: 'h29' },
+
+    h29: { ch: 'hch6', day: 110, scene: 'defense', who: 'narrator', expr: 'panic', text: '答辩开始。\n你讲了二十分钟，评委席上有人在翻论文，有人在看手机。\n评委 A：「你的理论贡献是什么？」', choices: [
+      { label: '我提出了一个分析框架', tag: '背稿', fx: { favor: 4, progress: 2, sanity: -3 }, result: '评委 A 点点头：「框架很完整。」\n你听不出是夸还是别的。', next: 'h30' },
+      { label: '我提供了一个扎实的案例', tag: '诚实', fx: { favor: 2, sanity: 2 }, result: '评委 A 笑了一下：「案例也是贡献。」\n你松了口气。', next: 'h30' },
+      { label: '这个……周导比较清楚', tag: '社死', fx: { favor: -8, sanity: -6 }, result: '周导在台下闭上了眼睛。\n评委 B：「那你清楚什么？」', rw: 'advisor', re: 'dead', next: 'h30' },
+      { label: '理论贡献在于把两个不相干的东西缝在一起', tag: '诚实', fx: { favor: -3, sanity: 3 }, result: '评委们互相看了一眼。\n评委 C：「缝合也是一种能力。」\n你分不清是不是在骂你。', next: 'h30' }
+    ] },
+
+    h30: { ch: 'hch6', day: 110, scene: 'defense', who: 'narrator', expr: 'panic', text: '评委 B 翻开论文：\n「十二个访谈，你就敢写八万字？」', choices: [
+      { label: '质性研究看重深度，不是数量', tag: '方法论', fx: { favor: 5, progress: 2, sanity: -2 }, result: '评委 B 合上论文：「行，那你告诉我，深度在哪？」\n你讲了小周的故事。\n他听完，没再追问。', next: 'h31' },
+      { label: '我还做了参与观察', tag: '补充', fx: { favor: 3, sanity: 1 }, result: '你讲了你在社区蹲点的三个月。\n评委 B 说：「这还差不多。」', next: 'h31' },
+      { label: '坦白：样本确实少', tag: '诚实', fx: { favor: -4, sanity: 4 }, result: '评委 B 愣了一下：「你倒是诚实。以后记得补。」', next: 'h31' },
+      { label: '那您觉得多少算够？', tag: '嘴硬', fx: { favor: -6, sanity: 1 }, result: '评委 B 挑了下眉：「你先回答我的问题。」\n你想找个地缝。', next: 'h31' }
+    ] },
+
+    h31: { ch: 'hch6', day: 110, scene: 'defense', who: 'narrator', expr: 'panic', text: '评委 C 合上论文：\n「工作量感觉不太够啊。」\n这是今天第三次听到这句话。', choices: [
+      { label: '我写了八万字，注释两万字', tag: '有备而来', req: { min: { progress: 75 } }, fx: { favor: 6, progress: 3 }, result: '评委 C 翻了翻：「字数不等于工作量。」\n但他还是点了点头。', next: 'h32' },
+      { label: '老师，我已经尽力了', tag: '认怂', fx: { favor: -3, sanity: 3 }, result: '评委 C 叹了口气：「现在的学生都不容易。」', next: 'h32' },
+      { label: '那您觉得加到多少算够？', tag: '反问', fx: { favor: -2, sanity: -2 }, result: '评委 C 看了你三秒：「至少再加一章。」\n你后悔问了。', next: 'h32' },
+      { label: '沉默，然后讲情怀', tag: '煽情', fx: { favor: -4, sanity: 2 }, result: '你讲了你的田野。\n评委 C 打断你：「我问的是工作量。」', next: 'h32' }
+    ] },
+
+    h32: { ch: 'hch6', day: 112, scene: 'corridor', who: 'narrator', expr: 'panic', text: '答辩结束。你被请出教室。\n走廊里，你听到了自己的心跳。\n周导走出来，表情看不出喜怒。\n「进来吧。」', next: 'h33' },
+
+    h33: { ch: 'hch6', day: 115, scene: 'defense', who: 'narrator', expr: 'panic', text: '你深吸一口气，推开门。\n评委主席抬起头，摘下眼镜。\n「经过答辩委员会讨论……」\n你听见自己的心跳，比图书馆的闭馆音乐还响。', ending: true }
+  };
+
+  var STORY = Object.assign({}, STEM_STORY, HUM_STORY);
+
+  var HUM_ENDINGS_TEXT = {
+    star: [
+      '你的论文被评为优秀毕业论文。答辩主席说：「这是今年最扎实的田野。」',
+      '周导在朋友圈发了九宫格，配文：「这是我带过最省心的学生。」你看着这句话，想起那些在县城蹲点的下午。',
+      '后来你读了博。再后来，你开始劝别人别读博。',
+      '命运的齿轮开始转动，但你至今不知道它往哪转。'
+    ],
+    excellent: [
+      '优秀毕业论文。你在致谢里写了周导、赵师兄、苏师妹、图书馆四楼，还有每一个接受过访谈的人。',
+      '周导看完说：「还行。」你知道，这是他的最高评价。',
+      '毕业照上，你笑得很标准。只有你自己知道，为了这个笑，你改了多少遍绪论。'
+    ],
+    smooth: [
+      '顺利毕业。你穿着学位服在图书馆前拍照，发朋友圈：「轻舟已过万重山。」',
+      '评论区第一条：「延毕人发来贺电。」你笑了，然后给赵师兄点了个赞。',
+      '你把八万字的论文打印出来，厚得像一块砖。你摸了摸封面，觉得这三年，好像也没白过。'
+    ],
+    scrape: [
+      '答辩通过，成绩「合格」。外审专家说：「文字功底不错，学术性一般。」',
+      '周导说：「能毕业就行。」你想想也对。',
+      '你把「合格」两个字截图存了下来。以后每次自我怀疑，就拿出来看看。'
+    ],
+    delay: [
+      '你延毕了。看着同门一个个搬走，你成了图书馆四楼最老的人。',
+      '你开始理解赵师兄的保温杯，也开始对新来的师弟说：「文科博士，延毕是常态。」',
+      '第二年，你终于写完了。你发现延毕也没那么可怕——可怕的是延毕了还没写完。'
+    ],
+    dropout: [
+      '你提交了退学申请。走出校门那天，天很蓝。',
+      '你去了大理，开了一家书店。店里有咖啡，有一整面墙的书，还有一只猫。',
+      '有客人问你为什么不再做研究了。你说：「我研究过了，我不适合。」',
+      '你偶尔会想起图书馆四楼，但更多时候，你在看云。'
+    ],
+    bald: [
+      '答辩通过了。这学期你熬了 {late} 个通宵，学位照上，你的发际线又后退了一点。',
+      '苏师妹说：「师兄，你变强了。」你摸了摸头，笑了。',
+      '周导在毕业典礼上拍了拍你的肩：「头发可以再长，学位只有一次。」',
+      '你觉得他说得对。但你还是买了顶帽子。'
+    ],
+    fake: [
+      '学术不端调查成立。你的学位被撤销。',
+      '周导在办公室里坐了很久，没有骂你。他只是把你的访谈录音听了一遍。',
+      '你后来去了一家公司。面试官问你为什么没有毕业，你说：「我犯过一个错。」',
+      '访谈可以重做，有些信任不行。'
+    ],
+    burnout: [
+      '你的精神状态清零了。你办理了休学，去了大理。',
+      '你在洱海边住了三个月，每天看云，偶尔想起图书馆四楼的座位。',
+      '后来你回来了，换了一个题目，也换了一种活法。',
+      '读研不是人生的全部，你也不是。'
+    ]
+  };
+  /* === STORY_DATA_END === */
+
+  /* ============================================================
+   * 存档 / 状态
+   * ============================================================ */
+  function newState(route) {
+    var hum = route === 'hum';
+    return {
+      route: hum ? 'hum' : 'stem',
+      node: hum ? 'h1' : 'p1',
+      stats: hum
+        ? { progress: 6, favor: 50, sanity: 80, hair: 94 }
+        : { progress: 8, favor: 50, sanity: 78, hair: 92 },
+      flags: {},
+      cnt: { late: 0, ai: 0, lie: 0 },
+      day: 1,
+      chapter: ''
+    };
+  }
+  var S = newState('stem');
+  var mode = 'title';
+  var phase = 'title';
+  var view = 'story';
+  var current = null;
+  var pendingNext = null;
+  var unlocked = loadUnlocked();
+  var cardActive = false;
+  var cardTimer = null;
+  var muted = false;
+
+  function loadUnlocked() {
+    try {
+      var raw = localStorage.getItem(UNLOCK_KEY);
+      var arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) { return []; }
+  }
+  function unlockEnding(id) {
+    if (unlocked.indexOf(id) < 0) {
+      unlocked.push(id);
+      try { localStorage.setItem(UNLOCK_KEY, JSON.stringify(unlocked)); } catch (e) {}
+    }
+  }
+  function save() {
+    try {
+      var sn = STORY[S.node];
+      var data = {
+        v: 1, route: S.route, node: S.node, stats: S.stats, flags: S.flags, cnt: S.cnt,
+        day: (sn && sn.day) || S.day, chapter: (sn && sn.ch) || S.chapter, ts: Date.now()
+      };
+      localStorage.setItem(SAVE_KEY, JSON.stringify(data));
+    } catch (e) {}
+  }
+  function loadSave() {
+    try {
+      var raw = localStorage.getItem(SAVE_KEY);
+      if (!raw) return null;
+      var d = JSON.parse(raw);
+      if (!d || !d.node || !STORY[d.node]) return null;
+      return d;
+    } catch (e) { return null; }
+  }
+  function clearSave() { try { localStorage.removeItem(SAVE_KEY); } catch (e) {} }
+
+  /* ============================================================
+   * DOM
+   * ============================================================ */
+  document.body.innerHTML = '';
+  document.title = TITLE;
+
+  var CSS = [
+    '*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}',
+    'html,body{margin:0;height:100%;background:#07090d;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;color:#fff}',
+    '#vn{position:fixed;inset:0;display:flex;justify-content:center;background:#07090d}',
+    '.vn-app{position:relative;width:100%;max-width:520px;height:100%;overflow:hidden;background:#0b0e14;box-shadow:0 0 90px rgba(0,0,0,.9);isolation:isolate;display:flex;flex-direction:column;user-select:none}',
+    '.vn-app.covered #hud,.vn-app.covered #stage,.vn-app.covered #dialog{visibility:hidden}',
+    '#bg{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}',
+    '.vignette{position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(125% 85% at 50% 32%,transparent 38%,rgba(0,0,0,.62) 100%)}',
+    '#hud{position:relative;z-index:6;padding:calc(9px + env(safe-area-inset-top)) 13px 0;background:linear-gradient(180deg,rgba(6,8,12,.92),rgba(6,8,12,.4) 72%,transparent)}',
+    '.hud-row{display:flex;align-items:center;justify-content:space-between;gap:8px}',
+    '.brand{font-size:11px;font-weight:800;letter-spacing:.16em;color:#c7d2e2;display:flex;align-items:center;gap:7px;min-width:0}',
+    '.brand .b-dot{width:5px;height:5px;border-radius:50%;background:#e0b35b;box-shadow:0 0 10px #e0b35b}',
+    '.brand #chapterLabel{color:#e0b35b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
+    '.hud-right{display:flex;align-items:center;gap:8px;flex:0 0 auto}',
+    '#dayLabel{font-size:9.5px;letter-spacing:.14em;color:#8e9bad;font-variant-numeric:tabular-nums}',
+    '.icon-btn{width:27px;height:27px;border-radius:9px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#cfd9e8;font-size:12px;display:grid;place-items:center;cursor:pointer;padding:0}',
+    '.icon-btn.off{opacity:.35;text-decoration:line-through}',
+    '.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}',
+    '.stat{position:relative;padding:5px 7px 6px;border-radius:11px;background:rgba(13,18,26,.66);border:1px solid rgba(150,180,210,.14);backdrop-filter:blur(8px);overflow:visible;transition:border-color .25s,transform .2s}',
+    '.stat .top{display:flex;align-items:center;justify-content:space-between;gap:4px}',
+    '.stat .ic{width:16px;height:16px;border-radius:5px;display:grid;place-items:center;font-size:9.5px;font-weight:800;color:#0b0e14;background:var(--c);flex:0 0 auto}',
+    '.stat .val{font-size:14px;font-weight:900;font-variant-numeric:tabular-nums;color:#edf3fb;letter-spacing:-.02em;line-height:1}',
+    '.stat .lbl{font-size:8.5px;letter-spacing:.06em;color:#8f9db0;margin-top:2px;white-space:nowrap}',
+    '.stat .bar{height:3px;margin-top:4px;border-radius:2px;background:rgba(255,255,255,.10);overflow:hidden}',
+    '.stat .bar i{display:block;height:100%;width:0;background:var(--c);border-radius:2px;transition:width .55s cubic-bezier(.2,.8,.2,1)}',
+    '.stat.low .val{color:#ff8585}',
+    '.stat.low .bar i{background:#ff6b6b}',
+    '.stat.up{animation:statUp .5s}',
+    '.stat.down{animation:statDown .55s}',
+    '@keyframes statUp{0%{transform:none}35%{transform:translateY(-3px);border-color:rgba(120,230,180,.7)}100%{transform:none}}',
+    '@keyframes statDown{0%{transform:none}35%{transform:translateY(2px);border-color:rgba(255,120,120,.7)}100%{transform:none}}',
+    '.stat-float{position:absolute;right:5px;top:2px;font-size:11px;font-weight:900;pointer-events:none;animation:floatUp .9s ease-out both}',
+    '.stat-float.up{color:#8ff0c0;text-shadow:0 2px 6px rgba(0,0,0,.6)}',
+    '.stat-float.down{color:#ff9b8e;text-shadow:0 2px 6px rgba(0,0,0,.6)}',
+    '@keyframes floatUp{0%{opacity:0;transform:translateY(4px)}25%{opacity:1}100%{opacity:0;transform:translateY(-16px)}}',
+    '#stage{position:relative;flex:1;min-height:120px;z-index:3;pointer-events:none}',
+    '#portraitWrap{position:absolute;right:-10px;bottom:-4px;width:52%;max-width:232px;opacity:0;transform:translateY(18px) scale(.97);transition:opacity .45s ease,transform .45s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 22px 28px rgba(0,0,0,.55))}',
+    '#portraitWrap.show{opacity:1;transform:none}',
+    '#portrait{position:relative;z-index:1;display:block;width:100%;height:auto;animation:breathe 5s ease-in-out infinite}',
+    '#portraitWrap::before{content:"";position:absolute;inset:10% -8% 0;background:radial-gradient(closest-side,rgba(130,190,255,.22),transparent 72%);filter:blur(14px);z-index:0}',
+    '@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}',
+    '#chatBox{position:absolute;left:16px;right:16px;top:6px;bottom:6px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;overflow:hidden;padding:9px 10px 8px;background:rgba(8,12,18,.48);border:1px solid rgba(255,255,255,.09);border-radius:16px;backdrop-filter:blur(5px);box-shadow:0 16px 40px rgba(0,0,0,.35)}',
+    '#chatBox.hidden{display:none}',
+    '.chat-head{font-size:9.5px;letter-spacing:.18em;color:#8e9bad;text-align:center;margin-bottom:auto;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.06)}',
+    '.msg{max-width:84%;padding:7px 10px;border-radius:13px 13px 13px 4px;background:rgba(240,244,249,.95);color:#15191f;font-size:12.5px;line-height:1.5;box-shadow:0 4px 14px rgba(0,0,0,.3);animation:msgIn .32s both;align-self:flex-start;word-break:break-word}',
+    '.msg.me{align-self:flex-end;background:#9ae86b;border-radius:13px 13px 4px 13px}',
+    '.msg .who{display:block;font-size:9px;color:#7a8494;margin-bottom:2px;letter-spacing:.05em}',
+    '@keyframes msgIn{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}',
+    '#dialog{position:relative;z-index:7;flex:0 0 auto;display:flex;flex-direction:column;min-height:min(240px,30vh);margin:0 9px calc(9px + env(safe-area-inset-bottom));background:linear-gradient(180deg,#fcf9f0,#f1e9d8);border-radius:21px;padding:14px 14px 12px;border:1px solid rgba(255,255,255,.7);box-shadow:0 -10px 34px rgba(0,0,0,.45),0 2px 0 rgba(0,0,0,.3);color:#241f19}',
+    '#speaker{position:absolute;top:-13px;left:14px;min-width:54px;text-align:center;padding:4px 12px;border-radius:999px;font-size:11.5px;font-weight:800;letter-spacing:.08em;color:#fff;background:#5b6472;box-shadow:0 5px 12px rgba(0,0,0,.3);border:2px solid rgba(255,255,255,.35);transition:background .25s}',
+    '#text{font-size:15px;line-height:1.75;letter-spacing:.01em;min-height:48px;max-height:30vh;overflow-y:auto;padding:5px 2px 0;white-space:pre-wrap;color:#2a241c;scrollbar-width:none}',
+    '.picked{font-size:10px;color:#8a7a63;letter-spacing:.03em;margin:3px 0 2px;padding:5px 8px;border-left:2px solid #d9b061;background:rgba(217,176,97,.09);border-radius:0 6px 6px 0;line-height:1.5}',
+    '.picked b{color:#5a4a2f;font-weight:800}',
+    '.picked.hidden{display:none}',
+    '#text::-webkit-scrollbar{width:0}',
+    '#deltas{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}',
+    '.delta{font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px;letter-spacing:.02em;animation:deltaIn .35s both}',
+    '.delta.up{color:#0c5c42;background:#c7f0dd;border:1px solid #8ed9ba}',
+    '.delta.down{color:#8a2f22;background:#ffe0d6;border:1px solid #f3b4a3}',
+    '@keyframes deltaIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}',
+    '#choices{display:flex;flex-direction:column;gap:7px;margin-top:auto;padding-top:9px}',
+    '.choice{position:relative;display:flex;gap:8px;align-items:flex-start;width:100%;text-align:left;padding:9px 10px;border-radius:12px;border:1.5px solid #d8cbb6;background:linear-gradient(180deg,#fffdf8,#f8f1e3);color:#2b251d;font:inherit;font-size:13.5px;line-height:1.45;cursor:pointer;transition:transform .15s,border-color .15s,box-shadow .15s;animation:choiceIn .28s both}',
+    '.choice:hover{transform:translateY(-1px);border-color:#b28a4c;box-shadow:0 3px 0 #e3d5bd}',
+    '.choice:active{transform:translateY(0);box-shadow:none}',
+    '.choice .num{flex:0 0 20px;height:20px;border-radius:50%;background:#2f3a48;color:#fff;font-size:11px;font-weight:800;display:grid;place-items:center;margin-top:1px}',
+    '.choice .ctext{flex:1;min-width:0}',
+    '.choice .tag{margin-left:6px;font-size:9px;font-weight:700;padding:1px 6px;border-radius:999px;background:#efe3cd;color:#8a6a35;white-space:nowrap;letter-spacing:.02em;vertical-align:1px}',
+    '.choice.locked{opacity:.45;filter:grayscale(1);cursor:not-allowed}',
+    '.choice.locked .num{background:#8a8175}',
+    '.choice .lock{display:block;font-size:9.5px;color:#8a5a4a;margin-top:2px}',
+    '@keyframes choiceIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}',
+    '.continue-btn{width:100%;padding:10px;border-radius:12px;border:none;background:linear-gradient(180deg,#2f3b4a,#222b37);color:#f7e8c8;font:inherit;font-size:13.5px;font-weight:800;letter-spacing:.06em;cursor:pointer;box-shadow:0 4px 0 #141a22;margin-top:2px}',
+    '.continue-btn:active{transform:translateY(2px);box-shadow:0 2px 0 #141a22}',
+    '.hint{font-size:10.5px;color:#8b8172;text-align:right;margin-top:6px;animation:blink 1.7s infinite;letter-spacing:.04em}',
+    '.hint.hidden{display:none}',
+    '@keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}',
+    '.chapter-card{position:absolute;inset:0;z-index:30;display:grid;place-items:center;background:rgba(5,8,13,.9);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .4s}',
+    '.chapter-card.show{opacity:1;pointer-events:auto}',
+    '.cc-inner{text-align:center;animation:ccIn .8s cubic-bezier(.2,.8,.2,1) both;padding:0 24px}',
+    '.cc-num{font-size:10px;letter-spacing:.55em;color:#d9b061;margin-bottom:10px}',
+    '.cc-name{font-size:34px;font-weight:900;letter-spacing:.12em;color:#f4efe4;text-shadow:0 6px 24px rgba(0,0,0,.7)}',
+    '.cc-line{width:44px;height:1px;background:linear-gradient(90deg,transparent,#d9b061,transparent);margin:12px auto}',
+    '.cc-sub{font-size:11.5px;color:#9aa6b8;letter-spacing:.08em}',
+    '@keyframes ccIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}',
+    '.overlay{position:absolute;inset:0;z-index:40;display:none;overflow-y:auto;background:linear-gradient(180deg,rgba(6,9,15,.62),rgba(6,9,15,.96));scrollbar-width:none}',
+    '.overlay.on{display:block}',
+    '.overlay::-webkit-scrollbar{width:0}',
+    '.title-screen{position:relative;min-height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:0 24px calc(22px + env(safe-area-inset-bottom))}',
+    '.title-words{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}',
+    '.tw{position:absolute;font-size:11px;color:rgba(190,210,235,.26);white-space:nowrap;letter-spacing:.1em;animation:drift linear infinite}',
+    '.title-doc{position:absolute;right:2px;top:41%;width:138px;height:180px;background:linear-gradient(155deg,rgba(247,240,224,.92),rgba(222,209,182,.92));border-radius:3px;transform:rotate(7deg);opacity:.13;box-shadow:0 18px 50px rgba(0,0,0,.5);padding:15px 13px;z-index:1;pointer-events:none}',
+    '.title-doc::before{content:"";position:absolute;inset:9px;border:1px solid rgba(70,55,30,.35);border-radius:2px}',
+    '.title-doc i{display:block;height:2px;background:rgba(70,55,30,.55);margin:9px 0;border-radius:1px}',
+    '.title-doc i:nth-child(1){width:55%}',
+    '.title-doc i:nth-child(4){width:74%}',
+    '.title-doc .stamp{position:absolute;right:10px;bottom:12px;width:46px;height:46px;border:2px solid #b03a2e;border-radius:50%;color:#b03a2e;font-size:9px;font-weight:800;display:grid;place-items:center;transform:rotate(-15deg);opacity:.9}',
+    '@keyframes drift{0%{transform:translate3d(0,0,0)}50%{transform:translate3d(14px,-18px,0)}100%{transform:translate3d(0,0,0)}}',
+    '.title-top{position:relative;z-index:2;padding-top:14vh}',
+    '.title-kicker{font-size:9.5px;letter-spacing:.46em;color:#d9b061;margin-bottom:12px}',
+    'h1.title{font-size:57px;line-height:1;margin:0;font-weight:900;letter-spacing:.07em;color:#f7f1e4;text-shadow:0 12px 44px rgba(0,0,0,.8)}',
+    '.title-sub{margin-top:12px;font-size:13px;letter-spacing:.34em;color:#c9d3e2;font-weight:600}',
+    '.title-quote{margin-top:22px;font-size:11.5px;line-height:1.9;color:#93a0b3;letter-spacing:.04em;border-left:2px solid rgba(217,176,97,.5);padding-left:10px;max-width:290px}',
+    '.seal{position:absolute;right:27px;top:13vh;width:55px;height:55px;border:3px solid #c0392b;color:#c0392b;border-radius:5px;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-9deg);font-size:15px;font-weight:900;line-height:1.05;letter-spacing:.02em;opacity:.92;box-shadow:inset 0 0 0 2px rgba(192,57,43,.18);z-index:3;text-shadow:0 0 1px rgba(192,57,43,.6)}',
+    '.title-bottom{position:relative;z-index:2}',
+    '.big-btn{display:block;width:100%;padding:14px;border-radius:14px;border:none;background:linear-gradient(180deg,#f4cf7b,#d9a53c);color:#241a07;font:inherit;font-size:14.5px;font-weight:900;letter-spacing:.1em;box-shadow:0 8px 24px rgba(217,165,60,.28),0 3px 0 #a87a24;cursor:pointer;margin-top:9px}',
+    '.big-btn:active{transform:translateY(2px);box-shadow:0 4px 14px rgba(217,165,60,.24),0 1px 0 #a87a24}',
+    '.big-btn.ghost{background:rgba(255,255,255,.07);color:#dfe7f2;border:1px solid rgba(255,255,255,.18);box-shadow:none}',
+    '.route-label{font-size:9px;letter-spacing:.2em;color:#8e9bad;margin-bottom:7px}',
+    '.route-row{display:flex;flex-direction:column;gap:8px}',
+    '.route-btn{display:flex;align-items:center;gap:10px;width:100%;padding:10px 11px;border-radius:14px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(100deg,rgba(255,255,255,.09),rgba(255,255,255,.035));color:#f1ead9;font:inherit;text-align:left;cursor:pointer;transition:transform .15s,border-color .15s,box-shadow .15s;box-shadow:0 4px 0 rgba(0,0,0,.25)}',
+    '.route-btn:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.25)}',
+    '.route-btn.stem{border-color:rgba(79,209,197,.34)}',
+    '.route-btn.hum{border-color:rgba(226,168,110,.38)}',
+    '.r-ic{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-size:14px;font-weight:900;color:#0b0e14;flex:0 0 auto}',
+    '.route-btn.stem .r-ic{background:linear-gradient(160deg,#7fe6d8,#3aa99b)}',
+    '.route-btn.hum .r-ic{background:linear-gradient(160deg,#f0c37a,#c98f45)}',
+    '.r-tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}',
+    '.r-tx b{font-size:14px;letter-spacing:.08em;font-weight:900}',
+    '.r-tx small{font-size:9.5px;letter-spacing:.05em;color:#93a0b3}',
+    '.r-arrow{font-size:15px;color:#d9b061;flex:0 0 auto}',
+    '.title-meta{display:flex;justify-content:space-between;align-items:center;margin-top:15px;font-size:9.5px;letter-spacing:.1em;color:#7e8b9e}',
+    '.title-meta b{color:#d9b061;font-weight:800}',
+    '.meta-link{background:none;border:none;color:inherit;font:inherit;font-size:9.5px;letter-spacing:.1em;padding:2px 0;cursor:pointer;display:inline-flex;align-items:center;gap:2px;text-decoration:underline;text-decoration-color:rgba(217,176,97,.45);text-underline-offset:3px}',
+    '.meta-link:active{opacity:.6}',
+    '.ending-wrap{min-height:100%;padding:30px 18px calc(30px + env(safe-area-inset-bottom));display:flex;flex-direction:column;justify-content:flex-start}',
+    '.ending-card{position:relative;background:linear-gradient(180deg,#fcf8ee,#eee4d0);color:#241f19;border-radius:20px;padding:20px 17px 16px;box-shadow:0 30px 70px rgba(0,0,0,.6);overflow:hidden}',
+    '.ending-card::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--rk,#d9a53c)}',
+    '.rank{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;font-size:25px;font-weight:900;margin:0 auto 11px;background:#161d27;color:var(--rk,#f2c96a);border:2.5px solid var(--rk,#f2c96a);box-shadow:0 0 26px rgba(0,0,0,.25)}',
+    '.ending-tag{text-align:center;font-size:9px;letter-spacing:.2em;color:#8a6a35;margin-bottom:5px}',
+    '.ending-title{font-size:25px;font-weight:900;text-align:center;letter-spacing:.06em;margin:0}',
+    '.ending-sub{text-align:center;font-size:10.5px;color:#8a7a63;letter-spacing:.14em;margin:6px 0 15px}',
+    '.ending-text p{font-size:12.5px;line-height:1.78;margin:0 0 7px;color:#3a3228;text-align:justify}',
+    '.ending-stats{border-top:1px dashed #cbbb9f;margin-top:11px;padding-top:10px;display:flex;flex-direction:column;gap:5px}',
+    '.es-row{display:flex;align-items:center;gap:8px;font-size:10px;color:#6f6250}',
+    '.es-row .n{width:48px;flex:0 0 auto;letter-spacing:.04em}',
+    '.es-row .b{flex:1;height:5px;border-radius:3px;background:#ddd0b9;overflow:hidden}',
+    '.es-row .b i{display:block;height:100%;border-radius:3px}',
+    '.es-row .v{width:24px;text-align:right;font-weight:800;color:#3a3228;font-variant-numeric:tabular-nums}',
+    '.ending-counters{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}',
+    '.ec{font-size:9.5px;padding:3px 8px;border-radius:999px;background:#e7dbc6;color:#6f6250;letter-spacing:.03em}',
+    '.ending-unlock{text-align:center;font-size:9.5px;color:#8a7a63;letter-spacing:.1em;margin:10px 0 2px}',
+    '.link-btn{display:block;margin:2px auto 0;background:none;border:none;color:#8a6a35;font:inherit;font-size:10px;letter-spacing:.1em;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:5px}',
+    '.ending-actions{display:flex;gap:8px;margin-top:7px}',
+    '.ending-actions .big-btn{margin-top:0}',
+    '.ending-actions .big-btn.ghost{color:#4a4034;border-color:#c9b99c;background:rgba(255,255,255,.45)}',
+    '.gallery{min-height:100%;padding:30px 18px calc(24px + env(safe-area-inset-bottom))}',
+    '.gallery h2{font-size:24px;font-weight:900;letter-spacing:.1em;margin:4px 0 4px;color:#f4efe4}',
+    '.gallery .g-sub{font-size:10.5px;color:#8e9bad;letter-spacing:.12em;margin-bottom:18px}',
+    '.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}',
+    '.g-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:13px;padding:11px;min-height:86px;position:relative;overflow:hidden}',
+    '.g-card .g-rank{font-size:16px;font-weight:900;margin-bottom:5px;color:var(--rk,#8e9bad)}',
+    '.g-card .g-name{font-size:13px;font-weight:800;color:#e8eef7;letter-spacing:.03em}',
+    '.g-card .g-sub{font-size:9.5px;color:#8592a5;margin-top:4px;line-height:1.5}',
+    '.g-card.locked{opacity:.45}',
+    '.g-card.locked .g-name{color:#9aa6b8}',
+    '.g-back{margin-top:18px}',
+    '.toast-layer{position:absolute;left:0;right:0;bottom:34%;z-index:50;display:flex;flex-direction:column;align-items:center;gap:6px;pointer-events:none}',
+    '.toast{font-size:12px;padding:7px 14px;border-radius:999px;background:rgba(10,14,20,.9);color:#f0e6d2;border:1px solid rgba(255,255,255,.15);box-shadow:0 8px 24px rgba(0,0,0,.5);animation:toastIn .3s both}',
+    '@keyframes toastIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}',
+    '@media (max-height:700px){h1.title{font-size:46px}.title-top{padding-top:9vh}.title-quote{margin-top:14px}#text{font-size:14px;max-height:26vh}.choice{font-size:13px;padding:8px 9px}.stat .lbl{font-size:8px}}'
+  ].join('\n');
+
+  var styleEl = document.createElement('style');
+  styleEl.textContent = CSS;
+  document.head.appendChild(styleEl);
+
+  var app = document.createElement('div');
+  app.id = 'vn';
+  app.innerHTML =
+    '<div class="vn-app" id="app">' +
+      '<canvas id="bg"></canvas>' +
+      '<div class="vignette"></div>' +
+      '<header id="hud">' +
+        '<div class="hud-row">' +
+          '<div class="brand"><span class="b-dot"></span><span id="chapterLabel">序章 · 开学第一课</span></div>' +
+          '<div class="hud-right"><span id="dayLabel">DAY 1</span><button id="muteBtn" class="icon-btn" title="音效">♪</button></div>' +
+        '</div>' +
+        '<div class="stats" id="stats">' +
+          statHTML('progress', '#4fd1c5', 8) +
+          statHTML('favor', '#f0b35b', 50) +
+          statHTML('sanity', '#8bd17c', 78) +
+          statHTML('hair', '#ef8fa8', 92) +
+        '</div>' +
+      '</header>' +
+      '<main id="stage">' +
+        '<div id="portraitWrap"><canvas id="portrait" width="640" height="640"></canvas></div>' +
+        '<div id="chatBox" class="hidden"></div>' +
+      '</main>' +
+      '<section id="dialog">' +
+        '<div id="speaker">旁白</div>' +
+        '<div id="picked" class="picked hidden"></div>' +
+        '<div id="text"></div>' +
+        '<div id="deltas"></div>' +
+        '<div id="choices"></div>' +
+        '<div id="hint" class="hint hidden">点击继续 ▾</div>' +
+      '</section>' +
+      '<div id="chapterCard" class="chapter-card"><div class="cc-inner"><div class="cc-num"></div><div class="cc-name"></div><div class="cc-line"></div><div class="cc-sub"></div></div></div>' +
+      '<div id="overlay" class="overlay"></div>' +
+      '<div id="toast" class="toast-layer"></div>' +
+    '</div>';
+  document.body.appendChild(app);
+  var shell = app.querySelector('.vn-app');
+
+  function statHTML(k, color, val) {
+    return '<div class="stat" data-k="' + k + '" style="--c:' + color + '">' +
+      '<div class="top"><span class="ic">' + STAT_SHORT[k].charAt(0) + '</span><span class="val">' + val + '</span></div>' +
+      '<div class="bar"><i></i></div><div class="lbl">' + STAT_SHORT[k] + '</div></div>';
+  }
+
+  var bgCanvas = $('bg');
+  var bgCtx = bgCanvas.getContext('2d');
+  var portraitCanvas = $('portrait');
+  var portraitCtx = portraitCanvas.getContext('2d');
+  var overlay = $('overlay');
+  var chapterCard = $('chapterCard');
+  var chatBox = $('chatBox');
+  var portraitWrap = $('portraitWrap');
+  var speakerEl = $('speaker');
+  var textEl = $('text');
+  var pickedEl = $('picked');
+  var choicesEl = $('choices');
+  var deltasEl = $('deltas');
+  var hintEl = $('hint');
+  var chapterLabel = $('chapterLabel');
+  var dayLabel = $('dayLabel');
+
+  /* ============================================================
+   * 音效
+   * ============================================================ */
+  var actx = null;
+  function initAudio() {
+    if (actx) return;
+    try {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (AC) actx = new AC();
+    } catch (e) { actx = null; }
+  }
+  function tone(freq, dur, type, vol, when) {
+    if (!actx || muted) return;
+    try {
+      var t0 = actx.currentTime + (when || 0);
+      var o = actx.createOscillator();
+      var g = actx.createGain();
+      o.type = type || 'sine';
+      o.frequency.setValueAtTime(freq, t0);
+      g.gain.setValueAtTime(0, t0);
+      g.gain.linearRampToValueAtTime(vol == null ? 0.05 : vol, t0 + 0.01);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+      o.connect(g); g.connect(actx.destination);
+      o.start(t0); o.stop(t0 + dur + 0.02);
+    } catch (e) {}
+  }
+  function sfx(kind) {
+    if (muted) return;
+    initAudio();
+    if (!actx) return;
+    if (actx.state === 'suspended') { try { actx.resume(); } catch (e) {} }
+    if (kind === 'tap') tone(620, 0.05, 'sine', 0.025);
+    else if (kind === 'choose') { tone(520, 0.06, 'triangle', 0.04); tone(780, 0.09, 'triangle', 0.035, 0.05); }
+    else if (kind === 'good') { tone(660, 0.1, 'sine', 0.045); tone(990, 0.14, 'sine', 0.035, 0.08); }
+    else if (kind === 'bad') { tone(220, 0.14, 'sawtooth', 0.03); tone(160, 0.2, 'sawtooth', 0.025, 0.08); }
+    else if (kind === 'chapter') { tone(392, 0.5, 'sine', 0.035); tone(523, 0.6, 'sine', 0.03, 0.08); tone(784, 0.7, 'sine', 0.02, 0.16); }
+    else if (kind === 'ending') { tone(523, 0.5, 'sine', 0.04); tone(659, 0.55, 'sine', 0.035, 0.12); tone(784, 0.7, 'sine', 0.03, 0.24); }
+  }
+
+  /* ============================================================
+   * 场景绘制
+   * ============================================================ */
+  var sceneNow = 'lab';
+  var sceneT = 0;
+
+  function rr(g, x, y, w, h, r) {
+    var rr2 = Math.min(r, w / 2, h / 2);
+    g.beginPath();
+    g.moveTo(x + rr2, y);
+    g.arcTo(x + w, y, x + w, y + h, rr2);
+    g.arcTo(x + w, y + h, x, y + h, rr2);
+    g.arcTo(x, y + h, x, y, rr2);
+    g.arcTo(x, y, x + w, y, rr2);
+    g.closePath();
+  }
+
+  function drawCity(g, x, y, w, h, t) {
+    g.save();
+    rr(g, x, y, w, h, 4); g.clip();
+    var sky = g.createLinearGradient(0, y, 0, y + h);
+    sky.addColorStop(0, '#0a1526'); sky.addColorStop(1, '#152338');
+    g.fillStyle = sky; g.fillRect(x, y, w, h);
+    g.fillStyle = 'rgba(232,240,252,.85)';
+    g.beginPath(); g.arc(x + w * 0.76, y + h * 0.22, Math.min(w, h) * 0.075, 0, 7); g.fill();
+    g.fillStyle = 'rgba(255,255,255,.18)';
+    for (var s = 0; s < 22; s++) {
+      g.beginPath();
+      g.arc(x + w * rnd(s + 3), y + h * rnd(s + 11) * 0.55, 0.8 + rnd(s + 7) * 0.9, 0, 7);
+      g.fill();
+    }
+    var base = y + h;
+    for (var i = 0; i < 15; i++) {
+      var bw = w * (0.05 + rnd(i + 1) * 0.075);
+      var bh = h * (0.18 + rnd(i + 7) * 0.52);
+      var bx = x + w * rnd(i + 13) * 0.95;
+      g.fillStyle = 'rgba(8,16,29,.96)';
+      g.fillRect(bx, base - bh, bw, bh);
+      for (var j = 0; j < 8; j++) {
+        if (rnd(i * 9 + j) > 0.52) {
+          g.fillStyle = 'rgba(255,212,128,' + (0.28 + 0.55 * rnd(i + j * 3)) + ')';
+          g.fillRect(bx + bw * 0.16 + (j % 2) * bw * 0.42, base - bh + bh * 0.1 + Math.floor(j / 2) * bh * 0.13, bw * 0.16, bh * 0.045);
+        }
+      }
+    }
+    g.restore();
+  }
+
+  function drawDust(g, w, h, t, color) {
+    for (var i = 0; i < 16; i++) {
+      var px = (rnd(i + 1) * w + t * (4 + rnd(i) * 8)) % w;
+      var py = rnd(i + 5) * h * 0.66 + Math.sin(t * 0.4 + i) * 7;
+      g.fillStyle = color || 'rgba(180,220,255,' + (0.05 + 0.09 * rnd(i + 9)) + ')';
+      g.beginPath(); g.arc(px, py, 1 + rnd(i + 3) * 1.3, 0, 7); g.fill();
+    }
+  }
+
+  function drawMonitor(g, x, y, w, h, t) {
+    var sh = h * 0.88;
+    g.fillStyle = '#1b2430'; g.fillRect(x + w * 0.42, y + sh, w * 0.16, h * 0.12);
+    g.fillStyle = '#131a23'; g.fillRect(x + w * 0.3, y + sh - 1, w * 0.4, h * 0.035);
+    g.fillStyle = '#080f16'; rr(g, x, y, w, sh, 5); g.fill();
+    g.strokeStyle = '#2b3c4e'; g.lineWidth = 2.5; rr(g, x, y, w, sh, 5); g.stroke();
+    var glow = g.createRadialGradient(x + w / 2, y + sh / 2, 4, x + w / 2, y + sh / 2, w * 0.9);
+    glow.addColorStop(0, 'rgba(80,230,210,.20)'); glow.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = glow; g.fillRect(x - w * 0.3, y - h * 0.5, w * 1.6, h * 1.9);
+    g.save();
+    rr(g, x + 2, y + 2, w - 4, sh - 4, 4); g.clip();
+    g.strokeStyle = 'rgba(110,235,215,.22)'; g.lineWidth = 1;
+    for (var l = 0; l < 5; l++) { g.beginPath(); g.moveTo(x + 6, y + 10 + l * 9); g.lineTo(x + w - 10, y + 10 + l * 9); g.stroke(); }
+    g.strokeStyle = 'rgba(110,235,215,.9)'; g.lineWidth = 2;
+    g.beginPath();
+    for (var i = 0; i <= 44; i++) {
+      var px = x + w * 0.07 + w * 0.86 * (i / 44);
+      var py = y + sh * 0.16 + sh * 0.62 * (0.45 + 0.32 * Math.sin(i * 0.55 + t * 0.35) * (1 - i / 70));
+      if (i === 0) g.moveTo(px, py); else g.lineTo(px, py);
+    }
+    g.stroke();
+    g.fillStyle = 'rgba(110,235,215,.16)';
+    g.fillRect(x + 6, y + sh * 0.72, w - 12, sh * 0.24);
+    g.restore();
+  }
+
+  function drawNote(g, x, y, color, rot, w, h) {
+    g.save(); g.translate(x, y); g.rotate(rot);
+    g.fillStyle = color; g.fillRect(-w / 2, -h / 2, w, h);
+    g.fillStyle = 'rgba(0,0,0,.07)'; g.fillRect(-w / 2, -h / 2, w, 4);
+    g.strokeStyle = 'rgba(60,45,20,.28)'; g.lineWidth = 1;
+    for (var i = 0; i < 3; i++) { g.beginPath(); g.moveTo(-w * 0.32, -h * 0.1 + i * 5); g.lineTo(w * 0.3, -h * 0.1 + i * 5); g.stroke(); }
+    g.restore();
+  }
+
+  function sceneLab(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#141d2b'); grad.addColorStop(0.5, '#0d141e'); grad.addColorStop(1, '#080b10');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+
+    var lg = g.createRadialGradient(w * 0.2, h * 0.02, 0, w * 0.2, h * 0.02, w * 0.8);
+    lg.addColorStop(0, 'rgba(120,190,230,.16)'); lg.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = lg; g.fillRect(0, 0, w, h);
+
+    var wx = w * 0.54, wy = h * 0.10, ww = w * 0.41, wh = h * 0.29;
+    g.fillStyle = '#080e18'; rr(g, wx, wy, ww, wh, 3); g.fill();
+    drawCity(g, wx + 4, wy + 4, ww - 8, wh - 8, t);
+    g.strokeStyle = 'rgba(150,185,220,.32)'; g.lineWidth = 3; g.strokeRect(wx, wy, ww, wh);
+    g.beginPath(); g.moveTo(wx + ww / 2, wy); g.lineTo(wx + ww / 2, wy + wh);
+    g.moveTo(wx, wy + wh / 2); g.lineTo(wx + ww, wy + wh / 2); g.stroke();
+
+    drawNote(g, w * 0.1, h * 0.17, '#f2d06b', -0.08, w * 0.11, w * 0.1);
+    drawNote(g, w * 0.24, h * 0.13, '#f5a3a3', 0.07, w * 0.095, w * 0.09);
+    drawNote(g, w * 0.16, h * 0.29, '#9fd9c0', -0.03, w * 0.08, w * 0.075);
+
+    var dy = h * 0.6;
+    g.fillStyle = '#141a22'; g.fillRect(0, dy, w, h - dy);
+    g.fillStyle = 'rgba(140,190,220,.10)'; g.fillRect(0, dy, w, 3);
+    g.fillStyle = 'rgba(0,0,0,.28)'; g.fillRect(0, dy + 3, w, 10);
+
+    drawMonitor(g, w * 0.1, dy - h * 0.235, w * 0.36, h * 0.235, t);
+
+    var lamp = g.createRadialGradient(w * 0.42, dy - h * 0.13, 0, w * 0.42, dy - h * 0.13, w * 0.34);
+    lamp.addColorStop(0, 'rgba(255,205,120,.16)'); lamp.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = lamp; g.fillRect(0, dy - h * 0.4, w, h * 0.45);
+
+    // coffee cup on the desk
+    var cx = w * 0.435, cy = dy - h * 0.058, cw = w * 0.045, chh = h * 0.052;
+    g.fillStyle = '#e8ddc8';
+    g.beginPath();
+    g.moveTo(cx, cy);
+    g.lineTo(cx + cw, cy);
+    g.lineTo(cx + cw * 0.86, cy + chh);
+    g.lineTo(cx + cw * 0.14, cy + chh);
+    g.closePath(); g.fill();
+    g.fillStyle = '#8a5a3a';
+    g.beginPath(); g.ellipse(cx + cw / 2, cy, cw / 2, cw * 0.16, 0, 0, 7); g.fill();
+    g.strokeStyle = '#e8ddc8'; g.lineWidth = Math.max(2, w * 0.008);
+    g.beginPath(); g.arc(cx + cw * 1.02, cy + chh * 0.42, chh * 0.22, -1.2, 1.2); g.stroke();
+    g.strokeStyle = 'rgba(255,235,205,.22)'; g.lineWidth = 1.5;
+    g.beginPath(); g.moveTo(cx + cw * 0.35, cy - h * 0.02); g.quadraticCurveTo(cx + cw * 0.1, cy - h * 0.05, cx + cw * 0.38, cy - h * 0.085); g.stroke();
+    g.beginPath(); g.moveTo(cx + cw * 0.66, cy - h * 0.02); g.quadraticCurveTo(cx + cw * 0.9, cy - h * 0.05, cx + cw * 0.64, cy - h * 0.085); g.stroke();
+
+    drawDust(g, w, h, t);
+  }
+
+  function sceneOffice(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#251d16'); grad.addColorStop(0.55, '#191410'); grad.addColorStop(1, '#0e0b09');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+
+    var warm = g.createRadialGradient(w * 0.24, h * 0.08, 0, w * 0.24, h * 0.08, w * 0.6);
+    warm.addColorStop(0, 'rgba(255,190,110,.16)'); warm.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = warm; g.fillRect(0, 0, w, h);
+
+    // bookshelf
+    var bx = w * 0.03, by = h * 0.1, bw = w * 0.3, bh = h * 0.43;
+    g.fillStyle = '#2a2018'; g.fillRect(bx, by, bw, bh);
+    g.strokeStyle = 'rgba(0,0,0,.35)'; g.lineWidth = 4;
+    for (var r = 0; r < 4; r++) {
+      var sy = by + bh * (r + 1) / 4;
+      g.beginPath(); g.moveTo(bx, sy); g.lineTo(bx + bw, sy); g.stroke();
+      for (var b = 0; b < 7; b++) {
+        var bwd = bw * (0.07 + rnd(r * 9 + b) * 0.06);
+        var bhh = bh / 4 * (0.5 + rnd(r + b * 4) * 0.34);
+        var bxx = bx + bw * 0.04 + b * bw * 0.13;
+        var cols = ['#8a5a3a', '#5a6e8a', '#7a4a4a', '#6d7a52', '#8a7a4a', '#4e5a6a'];
+        g.fillStyle = cols[Math.floor(rnd(r + b) * cols.length)];
+        g.fillRect(bxx, sy - bhh, bwd, bhh);
+        g.fillStyle = 'rgba(255,255,255,.12)'; g.fillRect(bxx, sy - bhh, bwd, 2);
+      }
+    }
+    g.fillStyle = '#2a2018'; g.fillRect(bx, by + bh, bw, 5);
+
+    // window with blinds
+    var wx = w * 0.55, wy = h * 0.09, ww = w * 0.38, wh = h * 0.3;
+    g.fillStyle = '#0b1220'; rr(g, wx, wy, ww, wh, 3); g.fill();
+    drawCity(g, wx + 4, wy + 4, ww - 8, wh - 8, t);
+    g.fillStyle = 'rgba(30,24,18,.7)';
+    for (var i = 0; i < 9; i++) g.fillRect(wx, wy + i * wh / 9, ww, wh / 20);
+    g.strokeStyle = '#3a2c1f'; g.lineWidth = 4; g.strokeRect(wx, wy, ww, wh);
+
+    // desk
+    var dy = h * 0.6;
+    g.fillStyle = '#1e1712'; g.fillRect(0, dy, w, h - dy);
+    g.fillStyle = '#3a2b1e'; g.fillRect(0, dy, w, 7);
+    // certificate
+    g.fillStyle = '#d9c9a8'; g.fillRect(w * 0.4, h * 0.16, w * 0.1, h * 0.075);
+    g.strokeStyle = '#8a744e'; g.lineWidth = 2; g.strokeRect(w * 0.4, h * 0.16, w * 0.1, h * 0.075);
+    g.fillStyle = '#a8905f'; g.fillRect(w * 0.425, h * 0.175, w * 0.05, h * 0.012);
+
+    // lamp
+    var lamp = g.createRadialGradient(w * 0.15, dy - h * 0.12, 0, w * 0.15, dy - h * 0.12, w * 0.3);
+    lamp.addColorStop(0, 'rgba(255,190,110,.22)'); lamp.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = lamp; g.fillRect(0, 0, w * 0.6, h * 0.7);
+    g.fillStyle = '#3a2c20'; g.fillRect(w * 0.14, dy - h * 0.06, w * 0.05, h * 0.06);
+    g.fillStyle = '#d9b06a'; g.beginPath();
+    g.ellipse(w * 0.165, dy - h * 0.075, w * 0.055, h * 0.028, 0, 0, 7); g.fill();
+
+    drawDust(g, w, h, t, 'rgba(255,220,170,.05)');
+  }
+
+  function sceneDorm(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#1c1524'); grad.addColorStop(0.6, '#120e18'); grad.addColorStop(1, '#0a080e');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+
+    var wx = w * 0.06, wy = h * 0.1, ww = w * 0.3, wh = h * 0.27;
+    g.fillStyle = '#0a1020'; rr(g, wx, wy, ww, wh, 3); g.fill();
+    drawCity(g, wx + 4, wy + 4, ww - 8, wh - 8, t);
+    g.strokeStyle = 'rgba(140,170,210,.3)'; g.lineWidth = 3; g.strokeRect(wx, wy, ww, wh);
+    g.beginPath(); g.moveTo(wx + ww / 2, wy); g.lineTo(wx + ww / 2, wy + wh); g.stroke();
+
+    // string lights
+    g.strokeStyle = 'rgba(255,220,150,.3)'; g.lineWidth = 1;
+    g.beginPath(); g.moveTo(0, h * 0.07);
+    g.quadraticCurveTo(w * 0.3, h * 0.12, w * 0.6, h * 0.075); g.stroke();
+    for (var i = 0; i < 9; i++) {
+      var lx = w * 0.03 + i * w * 0.065;
+      var ly = h * 0.08 + Math.sin(i * 0.8) * h * 0.012 + h * 0.012;
+      g.fillStyle = 'rgba(255,214,140,' + (0.5 + 0.4 * Math.sin(t * 1.6 + i)) + ')';
+      g.beginPath(); g.arc(lx, ly, 1.8, 0, 7); g.fill();
+    }
+
+    // bed
+    g.fillStyle = '#2a2233'; g.fillRect(w * 0.56, h * 0.52, w * 0.46, h * 0.28);
+    g.fillStyle = '#3a3048'; rr(g, w * 0.54, h * 0.48, w * 0.47, h * 0.12, 8); g.fill();
+    g.fillStyle = '#c9bfd6'; rr(g, w * 0.57, h * 0.46, w * 0.14, h * 0.06, 8); g.fill();
+    g.fillStyle = 'rgba(255,255,255,.05)'; g.fillRect(w * 0.56, h * 0.6, w * 0.46, 2);
+
+    // desk
+    var dy = h * 0.68;
+    g.fillStyle = '#1c1622'; g.fillRect(0, dy, w * 0.56, h - dy);
+    g.fillStyle = '#2e2438'; g.fillRect(0, dy, w * 0.56, 5);
+    drawMonitor(g, w * 0.06, dy - h * 0.19, w * 0.3, h * 0.19, t);
+
+    var lamp = g.createRadialGradient(w * 0.45, dy - h * 0.1, 0, w * 0.45, dy - h * 0.1, w * 0.25);
+    lamp.addColorStop(0, 'rgba(255,200,130,.22)'); lamp.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = lamp; g.fillRect(0, 0, w, h * 0.8);
+
+    // poster
+    g.fillStyle = 'rgba(230,220,200,.14)'; g.fillRect(w * 0.4, h * 0.2, w * 0.1, h * 0.13);
+    g.strokeStyle = 'rgba(230,220,200,.3)'; g.lineWidth = 2; g.strokeRect(w * 0.4, h * 0.2, w * 0.1, h * 0.13);
+
+    drawDust(g, w, h, t, 'rgba(255,220,170,.05)');
+  }
+
+  function sceneMeeting(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#181c24'); grad.addColorStop(0.6, '#10141b'); grad.addColorStop(1, '#080a0e');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+
+    var sx = w * 0.1, sy = h * 0.1, sw = w * 0.44, sh = h * 0.29;
+    g.fillStyle = '#e8e3d6'; g.fillRect(sx, sy, sw, sh);
+    g.fillStyle = '#2b4a66'; g.fillRect(sx + 2, sy + 2, sw - 4, h * 0.035);
+    g.fillStyle = '#f4f0e6'; g.font = 'bold ' + Math.round(w * 0.026) + 'px "Microsoft YaHei",sans-serif';
+    g.fillText('组会现场', sx + 8, sy + h * 0.027);
+    g.fillStyle = '#8a95a4'; g.font = Math.round(w * 0.014) + 'px "Microsoft YaHei",sans-serif';
+    g.fillText('汇报人：你    进度：待定', sx + 8, sy + h * 0.055);
+
+    // bar chart
+    var bx = sx + sw * 0.08, by = sy + sh * 0.9, bwd = sw * 0.84, bhh = sh * 0.62;
+    g.strokeStyle = '#9aa6b4'; g.lineWidth = 1.5;
+    g.beginPath(); g.moveTo(bx, by); g.lineTo(bx + bwd, by); g.moveTo(bx, by); g.lineTo(bx, by - bhh); g.stroke();
+    for (var i = 0; i < 7; i++) {
+      var hh = bhh * (0.15 + rnd(i + 2) * 0.7);
+      g.fillStyle = i === 6 ? 'rgba(210,80,60,.85)' : 'rgba(60,110,150,.75)';
+      g.fillRect(bx + bwd * 0.06 + i * bwd * 0.125, by - hh, bwd * 0.075, hh);
+    }
+
+    var beam = g.createLinearGradient(sx + sw / 2, sy, sx + sw / 2, h * 0.75);
+    beam.addColorStop(0, 'rgba(220,235,255,.10)'); beam.addColorStop(1, 'rgba(220,235,255,0)');
+    g.fillStyle = beam; g.beginPath();
+    g.moveTo(sx + sw * 0.2, sy + sh); g.lineTo(sx + sw * 0.8, sy + sh);
+    g.lineTo(sx + sw * 1.35, h * 0.72); g.lineTo(sx - sw * 0.3, h * 0.72); g.closePath(); g.fill();
+
+    // table
+    g.fillStyle = '#241f19'; g.fillRect(0, h * 0.66, w, h * 0.06);
+    g.fillStyle = '#332b22'; g.fillRect(0, h * 0.64, w, h * 0.025);
+    g.fillStyle = 'rgba(255,255,255,.05)'; g.fillRect(0, h * 0.665, w, 1);
+
+    // chairs silhouettes
+    for (var c = 0; c < 5; c++) {
+      var cx = w * 0.12 + c * w * 0.19;
+      g.fillStyle = 'rgba(10,12,16,.85)';
+      rr(g, cx, h * 0.7, w * 0.13, h * 0.05, 6); g.fill();
+      g.fillRect(cx + w * 0.03, h * 0.74, w * 0.07, h * 0.12);
+    }
+
+    drawDust(g, w, h, t);
+  }
+
+  function sceneDefense(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#1d2028'); grad.addColorStop(0.6, '#12151b'); grad.addColorStop(1, '#080a0e');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+
+    // blackboard
+    var bx = w * 0.05, by = h * 0.1, bw = w * 0.5, bh = h * 0.3;
+    g.fillStyle = '#24352c'; rr(g, bx, by, bw, bh, 4); g.fill();
+    g.strokeStyle = '#3a2a1e'; g.lineWidth = 5; g.strokeRect(bx, by, bw, bh);
+    g.strokeStyle = 'rgba(230,240,230,.35)'; g.lineWidth = 1.4;
+    g.font = Math.round(w * 0.02) + 'px "Microsoft YaHei",sans-serif';
+    g.fillStyle = 'rgba(230,240,230,.55)';
+    g.fillText('创新点 = ?', bx + w * 0.03, by + h * 0.08);
+    g.fillText('工作量 → 再加一章', bx + w * 0.03, by + h * 0.13);
+    g.strokeStyle = 'rgba(230,240,230,.18)';
+    for (var i = 0; i < 4; i++) { g.beginPath(); g.moveTo(bx + w * 0.04, by + h * 0.17 + i * h * 0.028); g.lineTo(bx + w * 0.44, by + h * 0.17 + i * h * 0.028); g.stroke(); }
+
+    // red banner
+    g.fillStyle = 'rgba(150,40,32,.7)'; g.fillRect(w * 0.55, h * 0.12, w * 0.4, h * 0.055);
+    g.fillStyle = 'rgba(250,235,215,.85)'; g.font = 'bold ' + Math.round(w * 0.028) + 'px "Microsoft YaHei",sans-serif';
+    g.fillText('毕 业 答 辩', w * 0.63, h * 0.158);
+
+    // committee desk
+    g.fillStyle = '#231e18'; g.fillRect(0, h * 0.66, w, h * 0.08);
+    g.fillStyle = '#3a3025'; g.fillRect(0, h * 0.64, w, h * 0.025);
+    for (var c = 0; c < 4; c++) {
+      var cx = w * 0.08 + c * w * 0.23;
+      g.fillStyle = 'rgba(10,12,16,.9)';
+      rr(g, cx, h * 0.7, w * 0.14, h * 0.06, 8); g.fill();
+      g.beginPath(); g.arc(cx + w * 0.07, h * 0.72, w * 0.035, 0, 7); g.fill();
+    }
+
+    // podium
+    g.fillStyle = '#3a2c22'; rr(g, w * 0.66, h * 0.48, w * 0.24, h * 0.2, 4); g.fill();
+    g.fillStyle = '#4a382a'; g.fillRect(w * 0.66, h * 0.48, w * 0.24, h * 0.02);
+
+    drawDust(g, w, h, t);
+  }
+
+  function sceneCorridor(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#161b23'); grad.addColorStop(1, '#080b0f');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+
+    var cx = w * 0.5, cy = h * 0.42;
+    g.strokeStyle = 'rgba(150,180,210,.12)'; g.lineWidth = 1.5;
+    for (var i = 0; i < 8; i++) {
+      var k = i / 8;
+      g.beginPath(); g.moveTo(0, h * (0.62 + k * 0.06)); g.lineTo(cx, cy); g.stroke();
+      g.beginPath(); g.moveTo(w, h * (0.62 + k * 0.06)); g.lineTo(cx, cy); g.stroke();
+    }
+    g.fillStyle = 'rgba(255,240,210,.06)';
+    g.beginPath(); g.moveTo(w * 0.2, h * 0.02); g.lineTo(w * 0.8, h * 0.02); g.lineTo(w * 0.55, h * 0.6); g.lineTo(w * 0.45, h * 0.6); g.closePath(); g.fill();
+    g.fillStyle = 'rgba(255,255,255,.55)'; g.fillRect(w * 0.39, h * 0.02, w * 0.22, 4);
+    for (var d = 0; d < 3; d++) {
+      var s = 1 - d * 0.22;
+      var dw = w * 0.1 * s, dh = h * 0.22 * s;
+      g.fillStyle = 'rgba(30,36,46,.9)';
+      g.fillRect(w * (0.06 + d * 0.06), h * (0.3 + d * 0.06), dw, dh);
+      g.strokeStyle = 'rgba(150,180,210,.2)'; g.strokeRect(w * (0.06 + d * 0.06), h * (0.3 + d * 0.06), dw, dh);
+    }
+    drawDust(g, w, h, t);
+  }
+
+  function sceneNight(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#0a1024'); grad.addColorStop(0.5, '#131a30'); grad.addColorStop(1, '#1a1f2c');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+
+    for (var i = 0; i < 70; i++) {
+      var sx = rnd(i + 1) * w, sy = rnd(i + 7) * h * 0.55;
+      g.fillStyle = 'rgba(230,240,255,' + (0.15 + 0.6 * rnd(i + 3) * (0.7 + 0.3 * Math.sin(t * 1.4 + i))) + ')';
+      g.beginPath(); g.arc(sx, sy, 0.7 + rnd(i + 11) * 1.1, 0, 7); g.fill();
+    }
+    g.fillStyle = 'rgba(240,235,210,.9)';
+    g.beginPath(); g.arc(w * 0.72, h * 0.15, Math.min(w, h) * 0.07, 0, 7); g.fill();
+    g.fillStyle = 'rgba(240,235,210,.1)';
+    g.beginPath(); g.arc(w * 0.72, h * 0.15, Math.min(w, h) * 0.1, 0, 7); g.fill();
+
+    // campus silhouette
+    var base = h * 0.66;
+    g.fillStyle = '#0b0f18';
+    g.fillRect(0, base, w, h - base);
+    for (var b = 0; b < 7; b++) {
+      var bw = w * (0.08 + rnd(b + 2) * 0.1);
+      var bh = h * (0.08 + rnd(b + 5) * 0.18);
+      var bx = w * rnd(b + 9) * 0.92;
+      g.fillStyle = '#0b0f18'; g.fillRect(bx, base - bh, bw, bh);
+      for (var win = 0; win < 6; win++) {
+        if (rnd(b * 5 + win) > 0.55) {
+          g.fillStyle = 'rgba(255,210,130,.55)';
+          g.fillRect(bx + bw * 0.15 + (win % 3) * bw * 0.28, base - bh + bh * (0.2 + Math.floor(win / 3) * 0.3), bw * 0.12, bh * 0.1);
+        }
+      }
+    }
+    // street lamp
+    g.strokeStyle = '#2a3140'; g.lineWidth = 3;
+    g.beginPath(); g.moveTo(w * 0.12, base); g.lineTo(w * 0.12, base - h * 0.22); g.lineTo(w * 0.18, base - h * 0.22); g.stroke();
+    var lg = g.createRadialGradient(w * 0.18, base - h * 0.21, 0, w * 0.18, base - h * 0.21, w * 0.2);
+    lg.addColorStop(0, 'rgba(255,215,140,.3)'); lg.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = lg; g.beginPath(); g.arc(w * 0.18, base - h * 0.21, w * 0.2, 0, 7); g.fill();
+    g.fillStyle = 'rgba(255,225,160,.8)'; g.beginPath(); g.arc(w * 0.18, base - h * 0.21, 3, 0, 7); g.fill();
+  }
+
+  function sceneLibrary(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#211a13'); grad.addColorStop(0.55, '#15100c'); grad.addColorStop(1, '#0b0907');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+
+    var warm = g.createRadialGradient(w * 0.28, h * 0.12, 0, w * 0.28, h * 0.12, w * 0.7);
+    warm.addColorStop(0, 'rgba(255,190,110,.14)'); warm.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = warm; g.fillRect(0, 0, w, h);
+
+    // tall bookshelves
+    var rows = 5, top = h * 0.06, bottom = h * 0.62;
+    for (var s = 0; s < 2; s++) {
+      var bx = s === 0 ? w * 0.02 : w * 0.26, bw = w * 0.22;
+      g.fillStyle = '#2b2117'; g.fillRect(bx, top, bw, bottom - top);
+      g.strokeStyle = 'rgba(0,0,0,.4)'; g.lineWidth = 3;
+      for (var r = 0; r < rows; r++) {
+        var sy = top + (bottom - top) * (r + 1) / rows;
+        g.beginPath(); g.moveTo(bx, sy); g.lineTo(bx + bw, sy); g.stroke();
+        for (var b = 0; b < 8; b++) {
+          var bwd = bw * (0.055 + rnd(r * 7 + b + s) * 0.045);
+          var bhh = (bottom - top) / rows * (0.5 + rnd(r + b * 3 + s) * 0.36);
+          var bxx = bx + bw * 0.03 + b * bw * 0.118;
+          var cols = ['#8a5a3a', '#5a6e8a', '#7a4a4a', '#6d7a52', '#8a7a4a', '#4e5a6a', '#9a7a4a'];
+          g.fillStyle = cols[Math.floor(rnd(r * 3 + b + s) * cols.length)];
+          g.fillRect(bxx, sy - bhh, bwd, bhh);
+          g.fillStyle = 'rgba(255,220,160,.18)'; g.fillRect(bxx, sy - bhh, bwd, 2);
+        }
+      }
+      g.fillStyle = '#241b12'; g.fillRect(bx, bottom, bw, 5);
+    }
+
+    // arched window
+    var wx = w * 0.56, wy = h * 0.07, ww = w * 0.36, wh = h * 0.33;
+    g.save();
+    g.beginPath();
+    g.moveTo(wx, wy + wh);
+    g.lineTo(wx, wy + wh * 0.35);
+    g.quadraticCurveTo(wx, wy, wx + ww / 2, wy);
+    g.quadraticCurveTo(wx + ww, wy, wx + ww, wy + wh * 0.35);
+    g.lineTo(wx + ww, wy + wh);
+    g.closePath();
+    g.clip();
+    var sky = g.createLinearGradient(0, wy, 0, wy + wh);
+    sky.addColorStop(0, '#1a2740'); sky.addColorStop(0.6, '#2f3f52'); sky.addColorStop(1, '#6b5a45');
+    g.fillStyle = sky; g.fillRect(wx, wy, ww, wh);
+    g.fillStyle = 'rgba(240,220,170,.55)';
+    g.beginPath(); g.arc(wx + ww * 0.7, wy + wh * 0.3, ww * 0.06, 0, 7); g.fill();
+    g.fillStyle = 'rgba(20,24,30,.8)';
+    for (var c = 0; c < 8; c++) {
+      var cw = ww * (0.08 + rnd(c + 4) * 0.1);
+      var chh = wh * (0.12 + rnd(c + 9) * 0.25);
+      g.fillRect(wx + ww * rnd(c + 2) * 0.92, wy + wh - chh, cw, chh);
+    }
+    g.restore();
+    g.strokeStyle = '#3a2c1e'; g.lineWidth = 6;
+    g.beginPath();
+    g.moveTo(wx, wy + wh);
+    g.lineTo(wx, wy + wh * 0.35);
+    g.quadraticCurveTo(wx, wy, wx + ww / 2, wy);
+    g.quadraticCurveTo(wx + ww, wy, wx + ww, wy + wh * 0.35);
+    g.lineTo(wx + ww, wy + wh);
+    g.stroke();
+    g.beginPath(); g.moveTo(wx + ww / 2, wy); g.lineTo(wx + ww / 2, wy + wh); g.stroke();
+
+    // reading table + green lamps
+    var ty = h * 0.62;
+    g.fillStyle = '#241a12'; g.fillRect(0, ty, w, h - ty);
+    g.fillStyle = '#3a2a1c'; g.fillRect(0, ty, w, 6);
+    for (var l = 0; l < 2; l++) {
+      var lx = w * (0.12 + l * 0.28);
+      var glow = g.createRadialGradient(lx, ty - h * 0.08, 0, lx, ty - h * 0.08, w * 0.22);
+      glow.addColorStop(0, 'rgba(255,210,120,.22)'); glow.addColorStop(1, 'rgba(0,0,0,0)');
+      g.fillStyle = glow; g.fillRect(lx - w * 0.2, ty - h * 0.3, w * 0.4, h * 0.35);
+      g.fillStyle = '#1f3a2c';
+      g.beginPath(); g.moveTo(lx - w * 0.07, ty); g.lineTo(lx - w * 0.035, ty - h * 0.08); g.lineTo(lx + w * 0.035, ty - h * 0.08); g.lineTo(lx + w * 0.07, ty); g.closePath(); g.fill();
+      g.fillStyle = '#d9b06a'; g.fillRect(lx - 2, ty - h * 0.16, 4, h * 0.08);
+      g.beginPath(); g.ellipse(lx, ty - h * 0.16, w * 0.05, h * 0.012, 0, 0, 7); g.fill();
+      // open book
+      g.fillStyle = '#e6dcc6'; g.fillRect(lx - w * 0.13, ty - h * 0.02, w * 0.09, h * 0.02);
+      g.fillRect(lx + w * 0.04, ty - h * 0.02, w * 0.09, h * 0.02);
+    }
+
+    drawDust(g, w, h, t, 'rgba(255,220,170,.05)');
+  }
+
+  function sceneField(g, w, h, t) {
+    var sky = g.createLinearGradient(0, 0, 0, h * 0.8);
+    sky.addColorStop(0, '#26313f'); sky.addColorStop(0.45, '#4a4a4a'); sky.addColorStop(0.8, '#8a6a4a');
+    g.fillStyle = sky; g.fillRect(0, 0, w, h);
+    var sun = g.createRadialGradient(w * 0.72, h * 0.34, 0, w * 0.72, h * 0.34, w * 0.4);
+    sun.addColorStop(0, 'rgba(255,200,130,.22)'); sun.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = sun; g.fillRect(0, 0, w, h * 0.8);
+
+    // distant buildings
+    g.fillStyle = 'rgba(26,30,34,.85)';
+    for (var b = 0; b < 9; b++) {
+      var bw = w * (0.07 + rnd(b + 3) * 0.1);
+      var bh = h * (0.06 + rnd(b + 7) * 0.16);
+      g.fillRect(w * rnd(b + 11) * 0.95, h * 0.62 - bh, bw, bh);
+    }
+    // community gate
+    var gx = w * 0.08, gy = h * 0.38, gw = w * 0.38, gh = h * 0.24;
+    g.strokeStyle = '#4a4038'; g.lineWidth = 5;
+    g.strokeRect(gx, gy, gw, gh);
+    g.fillStyle = 'rgba(120,60,50,.85)'; g.fillRect(gx + gw * 0.08, gy + gh * 0.14, gw * 0.84, gh * 0.24);
+    g.fillStyle = 'rgba(240,230,210,.9)'; g.font = 'bold ' + Math.round(w * 0.03) + 'px "Microsoft YaHei",sans-serif';
+    g.fillText('槐 树 社 区', gx + gw * 0.16, gy + gh * 0.31);
+    g.fillStyle = 'rgba(60,54,46,.9)';
+    g.fillRect(gx + gw * 0.12, gy + gh * 0.5, gw * 0.3, gh * 0.12);
+    g.fillRect(gx + gw * 0.14, gy + gh * 0.62, gw * 0.02, gh * 0.38);
+
+    // ground
+    g.fillStyle = '#201d18'; g.fillRect(0, h * 0.62, w, h - h * 0.62);
+    g.fillStyle = 'rgba(120,100,80,.22)'; g.fillRect(0, h * 0.62, w, 4);
+
+    // big tree on the left
+    g.fillStyle = '#2a2119';
+    g.fillRect(w * 0.03, h * 0.3, w * 0.045, h * 0.42);
+    g.fillStyle = 'rgba(52,64,38,.92)';
+    for (var i = 0; i < 14; i++) {
+      g.beginPath();
+      g.arc(w * (0.02 + rnd(i + 2) * 0.18), h * (0.18 + rnd(i + 5) * 0.2), w * (0.03 + rnd(i + 9) * 0.04), 0, 7);
+      g.fill();
+    }
+    // bench
+    g.fillStyle = '#3a2c1e'; g.fillRect(w * 0.7, h * 0.55, w * 0.15, h * 0.012);
+    g.fillRect(w * 0.71, h * 0.56, w * 0.01, h * 0.06);
+    g.fillRect(w * 0.83, h * 0.56, w * 0.01, h * 0.06);
+
+    drawDust(g, w, h, t, 'rgba(255,220,170,.05)');
+  }
+
+  function sceneCafe(g, w, h, t) {
+    var grad = g.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, '#2b2018'); grad.addColorStop(0.55, '#1b1410'); grad.addColorStop(1, '#0d0a08');
+    g.fillStyle = grad; g.fillRect(0, 0, w, h);
+    var warm = g.createRadialGradient(w * 0.3, h * 0.1, 0, w * 0.3, h * 0.1, w * 0.7);
+    warm.addColorStop(0, 'rgba(255,190,120,.17)'); warm.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = warm; g.fillRect(0, 0, w, h);
+
+    // window with afternoon light
+    var wx = w * 0.05, wy = h * 0.08, ww = w * 0.36, wh = h * 0.3;
+    g.fillStyle = '#8a7458'; rr(g, wx, wy, ww, wh, 3); g.fill();
+    var light = g.createLinearGradient(0, wy, 0, wy + wh);
+    light.addColorStop(0, '#c9a878'); light.addColorStop(1, '#6a5a48');
+    g.fillStyle = light; g.fillRect(wx + 4, wy + 4, ww - 8, wh - 8);
+    g.fillStyle = 'rgba(40,36,30,.5)';
+    for (var i = 0; i < 4; i++) g.fillRect(wx + 4, wy + 10 + i * wh / 4, ww - 8, wh / 12);
+    g.strokeStyle = '#3a2c1e'; g.lineWidth = 5; g.strokeRect(wx, wy, ww, wh);
+
+    // counter + coffee machine
+    var cy = h * 0.58;
+    g.fillStyle = '#241a12'; g.fillRect(0, cy, w, h - cy);
+    g.fillStyle = '#3a2a1c'; g.fillRect(0, cy, w, 6);
+    g.fillStyle = '#2f3a42'; rr(g, w * 0.08, cy - h * 0.15, w * 0.15, h * 0.15, 4); g.fill();
+    g.fillStyle = '#b9c0c8'; g.fillRect(w * 0.1, cy - h * 0.13, w * 0.11, h * 0.02);
+    g.fillStyle = '#d9b06a'; g.fillRect(w * 0.14, cy - h * 0.09, w * 0.02, h * 0.02);
+    g.fillStyle = '#e8ddc8'; g.fillRect(w * 0.27, cy - h * 0.035, w * 0.035, h * 0.035);
+    g.fillStyle = '#8a5a3a'; g.beginPath(); g.ellipse(w * 0.2875, cy - h * 0.035, w * 0.017, h * 0.006, 0, 0, 7); g.fill();
+
+    // tables
+    for (var d = 0; d < 2; d++) {
+      var tx = w * (0.42 + d * 0.28), ty = cy + h * 0.06;
+      g.fillStyle = '#3a2a1c'; g.fillRect(tx, ty, w * 0.16, h * 0.012);
+      g.fillRect(tx + w * 0.015, ty + h * 0.012, w * 0.01, h * 0.06);
+      g.fillRect(tx + w * 0.135, ty + h * 0.012, w * 0.01, h * 0.06);
+      g.fillStyle = '#4a3a28'; g.fillRect(tx + w * 0.02, ty - h * 0.08, w * 0.012, h * 0.08);
+      g.fillRect(tx + w * 0.13, ty - h * 0.08, w * 0.012, h * 0.08);
+    }
+
+    // hanging bulbs
+    g.strokeStyle = 'rgba(255,220,160,.3)'; g.lineWidth = 1.5;
+    for (var l = 0; l < 4; l++) {
+      var lx = w * (0.14 + l * 0.24);
+      g.beginPath(); g.moveTo(lx, 0); g.lineTo(lx, h * (0.08 + (l % 2) * 0.03)); g.stroke();
+      g.fillStyle = 'rgba(255,214,140,.75)';
+      g.beginPath(); g.arc(lx, h * (0.09 + (l % 2) * 0.03), w * 0.012, 0, 7); g.fill();
+    }
+
+    drawDust(g, w, h, t, 'rgba(255,220,170,.06)');
+  }
+
+  function drawScene(g, w, h, scene, t) {
+    if (scene === 'office') sceneOffice(g, w, h, t);
+    else if (scene === 'dorm') sceneDorm(g, w, h, t);
+    else if (scene === 'meeting') sceneMeeting(g, w, h, t);
+    else if (scene === 'defense') sceneDefense(g, w, h, t);
+    else if (scene === 'corridor') sceneCorridor(g, w, h, t);
+    else if (scene === 'night') sceneNight(g, w, h, t);
+    else if (scene === 'library') sceneLibrary(g, w, h, t);
+    else if (scene === 'field') sceneField(g, w, h, t);
+    else if (scene === 'cafe') sceneCafe(g, w, h, t);
+    else sceneLab(g, w, h, t);
+    // soft top-down light haze
+    var haze = g.createLinearGradient(0, 0, 0, h);
+    haze.addColorStop(0, 'rgba(180,210,240,.045)'); haze.addColorStop(0.4, 'rgba(0,0,0,0)');
+    g.fillStyle = haze; g.fillRect(0, 0, w, h);
+  }
+
+  /* ============================================================
+   * 人物绘制
+   * ============================================================ */
+  var PALETTE = {
+    hero: { skin: '#f2c8a4', skin2: '#e0ae86', hair: '#25262f', hair2: '#3a3c4c', cloth: '#3d4d63', cloth2: '#314052', accent: '#6fe0cd', glasses: true },
+    advisor: { skin: '#eec19a', skin2: '#d9a67d', hair: '#4a4642', hair2: '#6a6560', cloth: '#4a4038', cloth2: '#3a322c', shirt: '#d8d2c4', accent: '#d9a441', glasses: true },
+    senior: { skin: '#e9bd98', skin2: '#d4a27c', hair: '#35353c', hair2: '#4a4a54', cloth: '#6f5f4a', cloth2: '#5a4d3c', shirt: '#3c4148', accent: '#c98b5e' },
+    junior: { skin: '#f7d2b2', skin2: '#e8b892', hair: '#3f2b26', hair2: '#5a3e34', cloth: '#c96f8d', cloth2: '#b45d7b', shirt: '#f6e6d8', accent: '#ffd166' }
+  };
+
+  function drawCharacter(g, key, size, expr) {
+    if (hasCustomArt(key) && images[key] && images[key].naturalWidth) {
+      drawImageFit(g, images[key], size);
+      return;
+    }
+    drawVector(g, key, size, expr);
+  }
+
+  function drawImageFit(g, img, size) {
+    var iw = img.naturalWidth || img.width || size;
+    var ih = img.naturalHeight || img.height || size;
+    var ar = iw / ih, dw, dh;
+    if (ar >= 1) { dw = size; dh = size / ar; } else { dh = size; dw = size * ar; }
+    g.drawImage(img, -dw / 2, -dh / 2, dw, dh);
+  }
+
+  function drawVector(g, key, size, expr) {
+    var P = PALETTE[key] || PALETTE.hero;
+    g.save();
+    var k = size / 320;
+    g.scale(k, k);
+    if (key === 'junior') drawBackHair(g, P);
+    drawBody(g, key, P);
+    drawHead(g, key, P);
+    drawFace(g, key, P, expr || 'normal');
+    drawHair(g, key, P);
+    drawExtras(g, key, P);
+    g.restore();
+  }
+
+  function drawBackHair(g, P) {
+    g.fillStyle = P.hair;
+    g.beginPath();
+    g.moveTo(-64, -90);
+    g.bezierCurveTo(-92, -20, -96, 100, -86, 168);
+    g.lineTo(-58, 168);
+    g.bezierCurveTo(-66, 90, -66, 10, -56, -60);
+    g.lineTo(56, -60);
+    g.bezierCurveTo(66, 10, 66, 90, 58, 168);
+    g.lineTo(86, 168);
+    g.bezierCurveTo(96, 100, 92, -20, 64, -90);
+    g.closePath();
+    g.fill();
+    g.fillStyle = P.hair2;
+    g.globalAlpha = 0.35;
+    g.beginPath(); g.ellipse(-70, 40, 14, 90, 0.08, 0, 7); g.fill();
+    g.globalAlpha = 1;
+  }
+
+  function drawBody(g, key, P) {
+    if (key === 'hero') {
+      // hood behind neck
+      g.fillStyle = P.cloth2;
+      g.beginPath(); g.ellipse(0, 92, 78, 40, 0, 0, 7); g.fill();
+    }
+    // shoulders
+    g.fillStyle = P.cloth;
+    g.beginPath();
+    g.moveTo(-162, 190);
+    g.bezierCurveTo(-150, 112, -118, 88, -50, 80);
+    g.lineTo(50, 80);
+    g.bezierCurveTo(118, 88, 150, 112, 162, 190);
+    g.closePath();
+    g.fill();
+    // shading
+    g.fillStyle = 'rgba(0,0,0,.14)';
+    g.beginPath();
+    g.moveTo(60, 84);
+    g.bezierCurveTo(122, 92, 150, 120, 162, 190);
+    g.lineTo(96, 190);
+    g.bezierCurveTo(92, 132, 78, 100, 60, 84);
+    g.closePath(); g.fill();
+    // neck
+    g.fillStyle = P.skin;
+    g.fillRect(-23, 18, 46, 68);
+    g.fillStyle = P.skin2;
+    g.beginPath(); g.ellipse(0, 86, 23, 12, 0, 0, 7); g.fill();
+    // collar
+    if (key === 'advisor') {
+      g.fillStyle = P.shirt;
+      g.beginPath(); g.moveTo(-34, 82); g.lineTo(0, 118); g.lineTo(34, 82); g.closePath(); g.fill();
+      g.fillStyle = P.cloth2;
+      g.beginPath(); g.moveTo(-34, 82); g.lineTo(-14, 116); g.lineTo(-2, 86); g.closePath(); g.fill();
+      g.beginPath(); g.moveTo(34, 82); g.lineTo(14, 116); g.lineTo(2, 86); g.closePath(); g.fill();
+      // tie
+      g.fillStyle = '#7c3a32';
+      g.beginPath(); g.moveTo(-7, 92); g.lineTo(7, 92); g.lineTo(10, 118); g.lineTo(0, 132); g.lineTo(-10, 118); g.closePath(); g.fill();
+      g.fillStyle = '#93473d';
+      g.beginPath(); g.moveTo(-8, 90); g.lineTo(8, 90); g.lineTo(5, 100); g.lineTo(-5, 100); g.closePath(); g.fill();
+    } else if (key === 'hero') {
+      g.fillStyle = P.cloth2;
+      g.beginPath(); g.moveTo(-46, 82); g.quadraticCurveTo(0, 112, 46, 82); g.lineTo(28, 70); g.quadraticCurveTo(0, 90, -28, 70); g.closePath(); g.fill();
+      g.strokeStyle = '#d9d3c4'; g.lineWidth = 3;
+      g.beginPath(); g.moveTo(-16, 96); g.lineTo(-16, 132); g.moveTo(16, 96); g.lineTo(16, 132); g.stroke();
+      g.fillStyle = '#d9d3c4';
+      g.fillRect(-19, 132, 6, 10); g.fillRect(13, 132, 6, 10);
+    } else if (key === 'senior') {
+      // plaid shirt
+      g.strokeStyle = 'rgba(40,32,24,.28)'; g.lineWidth = 2;
+      for (var i = -4; i < 6; i++) { g.beginPath(); g.moveTo(-160 + i * 32, 190); g.lineTo(-110 + i * 32, 80); g.stroke(); }
+      for (var j = 0; j < 4; j++) { g.beginPath(); g.moveTo(-170, 100 + j * 24); g.lineTo(170, 100 + j * 24); g.stroke(); }
+      g.fillStyle = P.shirt;
+      g.beginPath(); g.moveTo(-30, 82); g.lineTo(0, 124); g.lineTo(30, 82); g.closePath(); g.fill();
+    } else if (key === 'junior') {
+      g.fillStyle = P.shirt;
+      g.beginPath(); g.moveTo(-30, 82); g.lineTo(0, 108); g.lineTo(30, 82); g.closePath(); g.fill();
+      g.fillStyle = P.cloth2;
+      g.beginPath(); g.arc(0, 132, 4, 0, 7); g.fill();
+    }
+  }
+
+  function drawHead(g, key, P) {
+    // ears
+    g.fillStyle = P.skin;
+    g.beginPath(); g.ellipse(-66, -28, 11, 15, 0, 0, 7); g.fill();
+    g.beginPath(); g.ellipse(66, -28, 11, 15, 0, 0, 7); g.fill();
+    g.fillStyle = P.skin2;
+    g.beginPath(); g.ellipse(-66, -28, 5, 8, 0, 0, 7); g.fill();
+    g.beginPath(); g.ellipse(66, -28, 5, 8, 0, 0, 7); g.fill();
+    // head
+    g.fillStyle = P.skin;
+    g.beginPath(); g.ellipse(0, -40, 65, 76, 0, 0, 7); g.fill();
+    // jaw shading
+    g.fillStyle = 'rgba(0,0,0,.05)';
+    g.beginPath(); g.ellipse(0, 6, 52, 30, 0, 0, 7); g.fill();
+    // cheek highlight
+    g.fillStyle = 'rgba(255,255,255,.10)';
+    g.beginPath(); g.ellipse(-34, -62, 18, 12, -0.3, 0, 7); g.fill();
+  }
+
+  function drawFace(g, key, P, expr) {
+    var eyeY = -46, ex = 26;
+    var dark = '#2a211c';
+    var browY = -72;
+
+    // eyebrows
+    g.strokeStyle = P.hair2; g.lineWidth = 4.5; g.lineCap = 'round';
+    var browTilt = 0, browRaise = 0;
+    if (expr === 'angry' || expr === 'stern') browTilt = 6;
+    if (expr === 'sad') browTilt = -5;
+    if (expr === 'panic') { browTilt = -3; browRaise = -5; }
+    if (expr === 'smug') browTilt = 2;
+    g.beginPath(); g.moveTo(-42, browY + browRaise + browTilt); g.lineTo(-14, browY + browRaise - 2); g.stroke();
+    g.beginPath(); g.moveTo(42, browY + browRaise + browTilt); g.lineTo(14, browY + browRaise - 2); g.stroke();
+
+    // eyes
+    if (expr === 'happy') {
+      g.strokeStyle = dark; g.lineWidth = 4; g.lineCap = 'round';
+      g.beginPath(); g.arc(-ex, eyeY + 2, 9, 3.35, 6.05); g.stroke();
+      g.beginPath(); g.arc(ex, eyeY + 2, 9, 3.35, 6.05); g.stroke();
+    } else if (expr === 'dead') {
+      g.strokeStyle = dark; g.lineWidth = 4; g.lineCap = 'round';
+      [-1, 1].forEach(function (s) {
+        var x = s * ex;
+        g.beginPath(); g.moveTo(x - 8, eyeY - 7); g.lineTo(x + 8, eyeY + 7); g.stroke();
+        g.beginPath(); g.moveTo(x + 8, eyeY - 7); g.lineTo(x - 8, eyeY + 7); g.stroke();
+      });
+    } else if (expr === 'smug' || expr === 'tired') {
+      g.fillStyle = '#fff';
+      g.beginPath(); g.ellipse(-ex, eyeY, 10, 6, 0, 0, 7); g.fill();
+      g.beginPath(); g.ellipse(ex, eyeY, 10, 6, 0, 0, 7); g.fill();
+      g.fillStyle = dark;
+      g.beginPath(); g.arc(-ex, eyeY + 1, 4.2, 0, 7); g.fill();
+      g.beginPath(); g.arc(ex, eyeY + 1, 4.2, 0, 7); g.fill();
+      g.strokeStyle = P.skin2; g.lineWidth = 3; g.lineCap = 'round';
+      g.beginPath(); g.moveTo(-ex - 11, eyeY - 4); g.lineTo(-ex + 11, eyeY - 4); g.stroke();
+      g.beginPath(); g.moveTo(ex - 11, eyeY - 4); g.lineTo(ex + 11, eyeY - 4); g.stroke();
+    } else if (expr === 'panic') {
+      g.fillStyle = '#fff';
+      g.beginPath(); g.ellipse(-ex, eyeY, 12, 14, 0, 0, 7); g.fill();
+      g.beginPath(); g.ellipse(ex, eyeY, 12, 14, 0, 0, 7); g.fill();
+      g.fillStyle = dark;
+      g.beginPath(); g.arc(-ex, eyeY + 1, 3.4, 0, 7); g.fill();
+      g.beginPath(); g.arc(ex, eyeY + 1, 3.4, 0, 7); g.fill();
+    } else if (expr === 'sad') {
+      g.fillStyle = '#fff';
+      g.beginPath(); g.ellipse(-ex, eyeY + 2, 10, 8, 0, 0, 7); g.fill();
+      g.beginPath(); g.ellipse(ex, eyeY + 2, 10, 8, 0, 0, 7); g.fill();
+      g.fillStyle = dark;
+      g.beginPath(); g.arc(-ex, eyeY + 4, 4.8, 0, 7); g.fill();
+      g.beginPath(); g.arc(ex, eyeY + 4, 4.8, 0, 7); g.fill();
+      g.strokeStyle = P.skin2; g.lineWidth = 2.5;
+      g.beginPath(); g.moveTo(-ex - 10, eyeY - 5); g.lineTo(-ex + 10, eyeY - 3); g.stroke();
+      g.beginPath(); g.moveTo(ex - 10, eyeY - 3); g.lineTo(ex + 10, eyeY - 5); g.stroke();
+    } else {
+      g.fillStyle = '#fff';
+      g.beginPath(); g.ellipse(-ex, eyeY, 10, 9, 0, 0, 7); g.fill();
+      g.beginPath(); g.ellipse(ex, eyeY, 10, 9, 0, 0, 7); g.fill();
+      g.fillStyle = dark;
+      g.beginPath(); g.arc(-ex + 1, eyeY + 1, 5.2, 0, 7); g.fill();
+      g.beginPath(); g.arc(ex + 1, eyeY + 1, 5.2, 0, 7); g.fill();
+      g.fillStyle = '#fff';
+      g.beginPath(); g.arc(-ex - 1, eyeY - 2, 1.7, 0, 7); g.fill();
+      g.beginPath(); g.arc(ex - 1, eyeY - 2, 1.7, 0, 7); g.fill();
+    }
+
+    // dark circles for tired characters
+    if (key === 'hero' || key === 'senior') {
+      g.strokeStyle = 'rgba(110,80,100,.28)'; g.lineWidth = 3;
+      g.beginPath(); g.arc(-ex, eyeY + 13, 10, 0.2, 2.9); g.stroke();
+      g.beginPath(); g.arc(ex, eyeY + 13, 10, 0.2, 2.9); g.stroke();
+    }
+
+    // glasses
+    if (P.glasses) {
+      g.strokeStyle = key === 'advisor' ? '#5a4a38' : '#3a3d46';
+      g.lineWidth = 3;
+      g.fillStyle = 'rgba(180,220,235,.09)';
+      rr(g, -ex - 15, eyeY - 13, 30, 26, 9); g.fill(); g.stroke();
+      rr(g, ex - 15, eyeY - 13, 30, 26, 9); g.fill(); g.stroke();
+      g.beginPath(); g.moveTo(-ex + 15, eyeY - 2); g.lineTo(ex - 15, eyeY - 2); g.stroke();
+    }
+
+    // nose
+    g.strokeStyle = P.skin2; g.lineWidth = 2.5; g.lineCap = 'round';
+    g.beginPath(); g.moveTo(0, -24); g.lineTo(-3, -12); g.stroke();
+
+    // mouth
+    g.strokeStyle = '#8a4a42'; g.lineWidth = 3; g.lineCap = 'round';
+    if (expr === 'happy') {
+      g.beginPath(); g.arc(0, -4, 11, 0.25, 2.9); g.stroke();
+    } else if (expr === 'angry' || expr === 'stern') {
+      g.beginPath(); g.moveTo(-9, 1); g.lineTo(9, 1); g.stroke();
+    } else if (expr === 'panic') {
+      g.fillStyle = '#7a3d38';
+      g.beginPath(); g.ellipse(0, 0, 6, 8, 0, 0, 7); g.fill();
+    } else if (expr === 'sad') {
+      g.beginPath(); g.arc(0, 8, 9, 3.5, 6.0); g.stroke();
+    } else if (expr === 'smug') {
+      g.beginPath(); g.moveTo(-8, 0); g.quadraticCurveTo(2, 5, 11, -3); g.stroke();
+    } else if (expr === 'dead') {
+      g.beginPath(); g.moveTo(-8, 1); g.lineTo(8, 1); g.stroke();
+    } else {
+      g.beginPath(); g.arc(0, -3, 8, 0.45, 2.7); g.stroke();
+    }
+
+    // age lines for the two senior men
+    if (key === 'advisor' || key === 'senior') {
+      g.strokeStyle = 'rgba(120,80,60,.24)'; g.lineWidth = 1.6;
+      g.beginPath(); g.moveTo(-20, -84); g.quadraticCurveTo(0, -88, 20, -84); g.stroke();
+      g.beginPath(); g.moveTo(-14, -76); g.quadraticCurveTo(0, -79, 14, -76); g.stroke();
+      g.beginPath(); g.moveTo(-19, -13); g.quadraticCurveTo(-24, -2, -17, 3); g.stroke();
+      g.beginPath(); g.moveTo(19, -13); g.quadraticCurveTo(24, -2, 17, 3); g.stroke();
+    }
+
+    // sweat drop
+    if (expr === 'panic') {
+      g.fillStyle = 'rgba(150,210,240,.85)';
+      g.beginPath(); g.moveTo(58, -62); g.quadraticCurveTo(66, -48, 58, -42); g.quadraticCurveTo(50, -48, 58, -62); g.fill();
+    }
+  }
+
+  function drawHair(g, key, P) {
+    if (key === 'hero') {
+      g.fillStyle = P.hair;
+      g.beginPath();
+      g.moveTo(-70, -40);
+      g.bezierCurveTo(-82, -104, -48, -134, 0, -134);
+      g.bezierCurveTo(48, -136, 82, -106, 70, -42);
+      g.lineTo(66, -14);
+      g.bezierCurveTo(60, -38, 56, -52, 50, -58);
+      g.lineTo(43, -46); g.lineTo(35, -66); g.lineTo(25, -46); g.lineTo(15, -68);
+      g.lineTo(6, -46); g.lineTo(-4, -68); g.lineTo(-14, -46); g.lineTo(-24, -66);
+      g.lineTo(-34, -46); g.lineTo(-44, -64); g.lineTo(-52, -44); g.lineTo(-62, -18);
+      g.closePath(); g.fill();
+      g.strokeStyle = P.hair2; g.lineWidth = 3; g.globalAlpha = 0.55;
+      g.beginPath(); g.moveTo(-38, -112); g.quadraticCurveTo(-10, -124, 26, -112); g.stroke();
+      g.globalAlpha = 1;
+    } else if (key === 'advisor') {
+      g.fillStyle = P.hair;
+      g.beginPath();
+      g.moveTo(-68, -58);
+      g.bezierCurveTo(-74, -112, -40, -132, 0, -130);
+      g.bezierCurveTo(42, -132, 76, -110, 68, -58);
+      g.lineTo(62, -46);
+      g.bezierCurveTo(58, -82, 42, -96, 20, -98);
+      g.lineTo(18, -86); g.lineTo(-18, -88); g.lineTo(-22, -98);
+      g.bezierCurveTo(-46, -96, -60, -80, -62, -46);
+      g.closePath(); g.fill();
+      g.strokeStyle = 'rgba(200,200,200,.35)'; g.lineWidth = 2;
+      g.beginPath(); g.moveTo(-22, -108); g.quadraticCurveTo(0, -118, 20, -106); g.stroke();
+    } else if (key === 'senior') {
+      // receding hairline: side islands + a doomed comb-over
+      g.fillStyle = P.hair;
+      g.beginPath(); g.ellipse(-58, -60, 13, 27, -0.14, 0, 7); g.fill();
+      g.beginPath(); g.ellipse(58, -60, 13, 27, 0.14, 0, 7); g.fill();
+      g.beginPath();
+      g.moveTo(-66, -64); g.quadraticCurveTo(-72, -42, -62, -26);
+      g.lineTo(-55, -30); g.quadraticCurveTo(-62, -46, -56, -64); g.closePath(); g.fill();
+      g.beginPath();
+      g.moveTo(66, -64); g.quadraticCurveTo(72, -42, 62, -26);
+      g.lineTo(55, -30); g.quadraticCurveTo(62, -46, 56, -64); g.closePath(); g.fill();
+      g.strokeStyle = P.hair; g.lineWidth = 3.2; g.lineCap = 'round';
+      g.beginPath(); g.moveTo(-46, -104); g.bezierCurveTo(-24, -116, 2, -115, 30, -104); g.stroke();
+      g.beginPath(); g.moveTo(-40, -110); g.bezierCurveTo(-14, -121, 10, -119, 40, -108); g.stroke();
+      g.beginPath(); g.moveTo(-30, -114); g.bezierCurveTo(-4, -123, 18, -120, 44, -111); g.stroke();
+      // scalp shine
+      g.fillStyle = 'rgba(255,255,255,.16)';
+      g.beginPath(); g.ellipse(2, -102, 24, 12, -0.08, 0, 7); g.fill();
+      g.fillStyle = 'rgba(255,255,255,.08)';
+      g.beginPath(); g.ellipse(2, -102, 13, 6, -0.08, 0, 7); g.fill();
+    } else if (key === 'junior') {
+      g.fillStyle = P.hair;
+      g.beginPath();
+      g.moveTo(-68, -46);
+      g.bezierCurveTo(-80, -110, -44, -134, 0, -134);
+      g.bezierCurveTo(44, -134, 80, -110, 68, -46);
+      g.lineTo(64, -30);
+      g.bezierCurveTo(58, -74, 44, -92, 24, -96);
+      g.quadraticCurveTo(16, -80, 4, -82);
+      g.quadraticCurveTo(-10, -80, -18, -96);
+      g.bezierCurveTo(-42, -92, -58, -76, -64, -30);
+      g.closePath(); g.fill();
+      // bangs
+      g.fillStyle = P.hair;
+      g.beginPath();
+      g.moveTo(-58, -76);
+      g.quadraticCurveTo(-30, -58, -2, -72);
+      g.quadraticCurveTo(22, -56, 56, -78);
+      g.lineTo(56, -96);
+      g.quadraticCurveTo(0, -118, -58, -96);
+      g.closePath(); g.fill();
+      // hair highlight
+      g.strokeStyle = P.hair2; g.lineWidth = 3; g.globalAlpha = 0.5;
+      g.beginPath(); g.moveTo(-40, -112); g.quadraticCurveTo(-8, -126, 30, -112); g.stroke();
+      g.globalAlpha = 1;
+      // scrunchie
+      g.fillStyle = P.accent;
+      g.beginPath(); g.ellipse(66, -24, 9, 13, 0.2, 0, 7); g.fill();
+    }
+  }
+
+  function drawExtras(g, key, P) {
+    if (key === 'hero') {
+      // lanyard + card
+      g.strokeStyle = '#c9d4e2'; g.lineWidth = 3;
+      g.beginPath(); g.moveTo(-18, 116); g.lineTo(-30, 152); g.moveTo(18, 116); g.lineTo(30, 152); g.stroke();
+      g.fillStyle = '#e9edf3'; rr(g, -34, 150, 68, 44, 4); g.fill();
+      g.fillStyle = '#9fb2c6'; g.fillRect(-12, 158, 24, 18);
+      g.fillStyle = '#6b7c90'; g.fillRect(16, 160, 12, 3); g.fillRect(16, 167, 10, 3); g.fillRect(16, 174, 12, 3);
+      g.fillStyle = P.accent; g.fillRect(-34, 150, 68, 5);
+    } else if (key === 'advisor') {
+      // thermos
+      g.fillStyle = '#8f96a0'; rr(g, 96, 120, 34, 54, 6); g.fill();
+      g.fillStyle = '#b9c0c8'; g.fillRect(99, 124, 8, 46);
+      g.fillStyle = '#7a2f2a'; rr(g, 94, 112, 38, 14, 4); g.fill();
+      g.strokeStyle = 'rgba(255,255,255,.32)'; g.lineWidth = 2;
+      g.beginPath(); g.moveTo(103, 108); g.quadraticCurveTo(98, 98, 105, 90); g.stroke();
+      g.beginPath(); g.moveTo(113, 108); g.quadraticCurveTo(118, 96, 111, 86); g.stroke();
+    } else if (key === 'senior') {
+      // stubble
+      g.fillStyle = 'rgba(40,36,34,.35)';
+      for (var i = 0; i < 26; i++) {
+        var a = -0.9 + rnd(i) * 1.8;
+        var rad = 44 + rnd(i + 3) * 12;
+        g.beginPath(); g.arc(Math.sin(a) * rad, 12 + Math.cos(a) * rad * 0.55, 1.2, 0, 7); g.fill();
+      }
+    } else if (key === 'junior') {
+      // headphones around neck
+      g.strokeStyle = '#33333d'; g.lineWidth = 9; g.lineCap = 'round';
+      g.beginPath(); g.arc(0, 80, 58, 0.1, Math.PI - 0.1); g.stroke();
+      g.fillStyle = '#33333d';
+      rr(g, -68, 66, 20, 28, 8); g.fill();
+      rr(g, 48, 66, 20, 28, 8); g.fill();
+      g.fillStyle = '#7fe0c8';
+      rr(g, -63, 72, 10, 16, 5); g.fill();
+      rr(g, 53, 72, 10, 16, 5); g.fill();
+    }
+  }
+
+  /* ============================================================
+   * 图片 / 背景
+   * ============================================================ */
+  var images = {};
+  function hasCustomArt(key) {
+    return !!(SLOTS[key] && SLOTS[key].custom);
+  }
+  function preload() {
+    Object.keys(ASSETS).forEach(function (k) {
+      if (!ASSETS[k]) return;
+      var img = new Image();
+      img.onload = function () { images[k] = img; if (k === 'background') drawBg(); };
+      img.src = ASSETS[k];
+    });
+  }
+
+  var bgW = 0, bgH = 0, dpr = 1;
+  function resizeAll() {
+    var rect = shell.getBoundingClientRect();
+    dpr = Math.min(2, window.devicePixelRatio || 1);
+    bgW = Math.max(1, Math.round(rect.width));
+    bgH = Math.max(1, Math.round(rect.height));
+    bgCanvas.width = Math.round(bgW * dpr);
+    bgCanvas.height = Math.round(bgH * dpr);
+    bgCanvas.style.width = bgW + 'px';
+    bgCanvas.style.height = bgH + 'px';
+    drawBg();
+  }
+
+  function drawBg() {
+    if (!bgW || !bgH) return;
+    var g = bgCtx;
+    g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    g.clearRect(0, 0, bgW, bgH);
+    if (hasCustomArt('background') && images.background && images.background.naturalWidth && S.route === 'stem' && sceneNow === 'lab') {
+      var img = images.background;
+      var ar = img.naturalWidth / img.naturalHeight;
+      var cr = bgW / bgH, dw, dh;
+      if (ar > cr) { dh = bgH; dw = bgH * ar; } else { dw = bgW; dh = bgW / ar; }
+      g.drawImage(img, (bgW - dw) / 2, (bgH - dh) / 2, dw, dh);
+      g.fillStyle = 'rgba(5,8,13,.48)'; g.fillRect(0, 0, bgW, bgH);
+    } else {
+      drawScene(g, bgW, bgH, sceneNow, sceneT);
+    }
+  }
+
+  function renderPortrait(who, expr) {
+    var key = (who === 'narrator' || who === 'system') ? 'hero' : who;
+    if (!PALETTE[key]) key = 'hero';
+    var c = portraitCanvas, g = portraitCtx;
+    g.setTransform(1, 0, 0, 1, 0, 0);
+    g.clearRect(0, 0, c.width, c.height);
+    g.save();
+    g.translate(c.width / 2, c.height * 0.53);
+    drawCharacter(g, key, c.width * 0.94, expr || 'normal');
+    g.restore();
+    portraitWrap.classList.remove('show');
+    portraitWrap.dataset.who = key;
+    // force reflow so the entrance animation replays
+    void portraitWrap.offsetWidth;
+    portraitWrap.classList.add('show');
+    portraitCanvas.style.opacity = (who === 'narrator' || who === 'system') ? '0.92' : '1';
+  }
+
+  /* ============================================================
+   * HUD
+   * ============================================================ */
+  function updateHud() {
+    var c = CHAPTERS[S.chapter] || CHAPTERS.ch0;
+    chapterLabel.textContent = c.num + ' · ' + c.name;
+    dayLabel.textContent = 'DAY ' + S.day;
+    for (var k in S.stats) {
+      var card = document.querySelector('.stat[data-k="' + k + '"]');
+      if (!card) continue;
+      var v = Math.round(S.stats[k]);
+      card.querySelector('.val').textContent = v;
+      card.querySelector('.bar i').style.width = clamp(v, 0, MAX) + '%';
+      if (v <= 22) card.classList.add('low'); else card.classList.remove('low');
+    }
+  }
+  function pulseStat(k, d) {
+    var card = document.querySelector('.stat[data-k="' + k + '"]');
+    if (!card) return;
+    card.classList.remove('up', 'down');
+    void card.offsetWidth;
+    card.classList.add(d > 0 ? 'up' : 'down');
+    setTimeout(function () { card.classList.remove('up', 'down'); }, 700);
+    var f = document.createElement('span');
+    f.className = 'stat-float ' + (d > 0 ? 'up' : 'down');
+    f.textContent = (d > 0 ? '+' : '') + d;
+    card.appendChild(f);
+    setTimeout(function () { if (f.parentNode) f.parentNode.removeChild(f); }, 950);
+  }
+
+  /* ============================================================
+   * 打字机 / 对话
+   * ============================================================ */
+  var typing = false, typeTimer = null, fullText = '', typeDone = null;
+  var TYPE_MS = Math.max(4, Number(RULES.typeSpeed) || 18);
+
+  function typeText(txt, done) {
+    if (typeTimer) { clearInterval(typeTimer); typeTimer = null; }
+    fullText = txt || '';
+    typeDone = done || null;
+    typing = true;
+    textEl.textContent = '';
+    textEl.scrollTop = 0;
+    var shown = 0;
+    var stepMs = Math.max(6, Number(RULES.typeSpeed) || 18);
+    typeTimer = setInterval(function () {
+      shown += 2;
+      if (shown >= fullText.length) {
+        textEl.textContent = fullText;
+        textEl.scrollTop = textEl.scrollHeight;
+        stopTyping(true);
+      } else {
+        textEl.textContent = fullText.slice(0, shown);
+        textEl.scrollTop = textEl.scrollHeight;
+      }
+    }, stepMs);
+  }
+  function stopTyping(natural) {
+    if (typeTimer) { clearInterval(typeTimer); typeTimer = null; }
+    typing = false;
+    textEl.textContent = fullText;
+    var cb = typeDone; typeDone = null;
+    if (cb) cb();
+  }
+  function finishTyping() {
+    if (!typing) return;
+    stopTyping(false);
+  }
+
+  function speakerName(who) {
+    if (S.route === 'hum' && HUM_NAMES[who]) return HUM_NAMES[who];
+    return (SPEAKERS[who] || SPEAKERS.narrator).name;
+  }
+  function setSpeaker(who) {
+    var sp = SPEAKERS[who] || SPEAKERS.narrator;
+    speakerEl.textContent = speakerName(who);
+    speakerEl.style.background = sp.color;
+  }
+
+  function renderDeltas(deltas) {
+    deltasEl.innerHTML = '';
+    if (!deltas || !deltas.length) return;
+    deltas.forEach(function (d) {
+      var s = document.createElement('span');
+      s.className = 'delta ' + (d.d > 0 ? 'up' : 'down');
+      s.textContent = STAT_SHORT[d.k] + ' ' + (d.d > 0 ? '+' : '') + d.d;
+      deltasEl.appendChild(s);
+    });
+  }
+
+  function showHint(txt) {
+    hintEl.textContent = txt || '点击继续 ▾';
+    hintEl.classList.remove('hidden');
+  }
+  function hideHint() { hintEl.classList.add('hidden'); }
+
+  function clearChoices() {
+    choicesEl.innerHTML = '';
+    deltasEl.innerHTML = '';
+    pickedEl.classList.add('hidden');
+    pickedEl.innerHTML = '';
+    hideHint();
+  }
+
+  /* ============================================================
+   * 章节卡
+   * ============================================================ */
+  function showChapterCard(chKey) {
+    var c = CHAPTERS[chKey];
+    if (!c) return;
+    chapterCard.querySelector('.cc-num').textContent = c.num;
+    chapterCard.querySelector('.cc-name').textContent = c.name;
+    chapterCard.querySelector('.cc-sub').textContent = c.sub;
+    chapterCard.classList.add('show');
+    cardActive = true;
+    sfx('chapter');
+    if (cardTimer) clearTimeout(cardTimer);
+    cardTimer = setTimeout(hideChapterCard, 1900);
+  }
+  function hideChapterCard() {
+    if (cardTimer) { clearTimeout(cardTimer); cardTimer = null; }
+    chapterCard.classList.remove('show');
+    cardActive = false;
+  }
+
+  /* ============================================================
+   * 剧情流程
+   * ============================================================ */
+  function nodeNext(n) {
+    if (!n) return null;
+    if (n.branch) {
+      for (var i = 0; i < n.branch.length; i++) {
+        var b = n.branch[i];
+        if (!b.if || b.if(S)) return b.to;
+      }
+      return n.next || null;
+    }
+    return n.next || null;
+  }
+
+  function goto(id) {
+    if (!id) return;
+    if (id.indexOf('__end:') === 0) { endGame(id.slice(6)); return; }
+    if (id === '__burnout') { endGame('burnout'); return; }
+    var n = STORY[id];
+    if (!n) { console.warn('[story] missing node', id); return; }
+    mode = 'play';
+    phase = 'playing';
+    shell.classList.remove('covered');
+    overlay.classList.remove('on');
+    overlay.innerHTML = '';
+    current = n;
+    view = 'story';
+    pendingNext = null;
+    if (n.ch && n.ch !== S.chapter) { S.chapter = n.ch; showChapterCard(n.ch); }
+    if (n.day) S.day = n.day;
+    S.node = id;
+    save();
+    updateHud();
+    postState();
+    if (n.scene) sceneNow = n.scene;
+    renderNode(n);
+  }
+
+  function renderNode(n) {
+    view = 'story';
+    pendingNext = null;
+    clearChoices();
+    if (n.chat) { renderChat(n.chat); portraitWrap.classList.remove('show'); }
+    else { chatBox.classList.add('hidden'); chatBox.innerHTML = ''; }
+    var who = n.who || 'narrator';
+    setSpeaker(who);
+    if (!n.chat) renderPortrait(who, n.expr || (who === 'narrator' ? 'tired' : 'normal'));
+    textEl.textContent = '';
+    typeText(n.text || '', function () { afterText(n); });
+  }
+
+  function afterText(n) {
+    if (view !== 'story') return;
+    if (n.choices && n.choices.length) {
+      renderChoices(n);
+      return;
+    }
+    if (n.ending) { showHint('点击，听结果 ▸'); return; }
+    if (nodeNext(n)) { showHint('点击继续 ▾'); return; }
+    showHint('点击继续 ▾');
+  }
+
+  function renderChat(msgs) {
+    chatBox.innerHTML = '<div class="chat-head">微信 · ' + esc(speakerName('advisor')) + '</div>';
+    chatBox.classList.remove('hidden');
+    msgs.forEach(function (m, i) {
+      var d = document.createElement('div');
+      d.className = 'msg' + (m.me ? ' me' : '');
+      d.style.animationDelay = (i * 0.35) + 's';
+      d.innerHTML = (m.who ? '<span class="who">' + esc(m.who) + '</span>' : '') + esc(m.text);
+      chatBox.appendChild(d);
+    });
+  }
+
+  function renderChoices(n) {
+    choicesEl.innerHTML = '';
+    hideHint();
+    n.choices.forEach(function (c, i) {
+      var ok = reqOk(c.req);
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'choice' + (ok ? '' : ' locked');
+      b.style.animationDelay = (i * 0.06) + 's';
+      b.innerHTML =
+        '<span class="num">' + (i + 1) + '</span>' +
+        '<span class="ctext">' + esc(c.label) +
+        (c.tag ? '<span class="tag">' + esc(c.tag) + '</span>' : '') +
+        (ok ? '' : '<span class="lock">🔒 ' + esc(reqLabel(c.req)) + '</span>') +
+        '</span>';
+      if (ok) b.addEventListener('click', function (e) { e.stopPropagation(); choose(c); });
+      choicesEl.appendChild(b);
+    });
+  }
+
+  function reqOk(req) {
+    if (!req) return true;
+    if (req.flag && !S.flags[req.flag]) return false;
+    if (req.notFlag && S.flags[req.notFlag]) return false;
+    if (req.min) {
+      for (var k in req.min) if ((S.stats[k] || 0) < req.min[k]) return false;
+    }
+    return true;
+  }
+  function reqLabel(req) {
+    if (!req) return '';
+    if (req.flag) return '需要：' + ({ seniorHelp: '师兄的帮助', juniorHelp: '师妹的帮助', rigorous: '扎实的实验' }[req.flag] || req.flag);
+    if (req.notFlag) return '已无法选择';
+    if (req.min) {
+      var parts = [];
+      for (var k in req.min) parts.push(STAT_SHORT[k] + ' ≥ ' + req.min[k]);
+      return parts.join('，');
+    }
+    return '未满足条件';
+  }
+
+  function applyFx(fx) {
+    var out = [];
+    if (!fx) return out;
+    for (var k in fx) {
+      if (!(k in S.stats)) continue;
+      var before = S.stats[k];
+      S.stats[k] = clamp(before + fx[k], 0, MAX);
+      var d = Math.round(S.stats[k] - before);
+      if (d !== 0) { out.push({ k: k, d: d }); pulseStat(k, d); }
+    }
+    return out;
+  }
+  function applyFlags(flags) {
+    if (!flags) return;
+    for (var k in flags) S.flags[k] = flags[k];
+  }
+  function applyCnt(cnt) {
+    if (!cnt) return;
+    for (var k in cnt) S.cnt[k] = (S.cnt[k] || 0) + cnt[k];
+  }
+
+  function choose(c) {
+    if (mode !== 'play' || view !== 'story') return;
+    if (!reqOk(c.req)) return;
+    sfx('choose');
+    var deltas = applyFx(c.fx);
+    applyFlags(c.flag);
+    applyCnt(c.cnt);
+    updateHud();
+    view = 'result';
+    pendingNext = c.next || nodeNext(current);
+    if (c.ending) pendingNext = '__end:' + c.ending;
+    if (S.stats.sanity <= 0) pendingNext = '__burnout';
+    if (pendingNext && pendingNext.charAt(0) !== '_') S.node = pendingNext;
+    save();
+
+    var who = c.rw || 'narrator';
+    setSpeaker(who === 'narrator' ? 'narrator' : who);
+    if (!current.chat) renderPortrait(who, c.re || (who === 'narrator' ? 'tired' : 'normal'));
+    clearChoices();
+    pickedEl.innerHTML = '你选择了 · <b>' + esc(c.label) + '</b>';
+    pickedEl.classList.remove('hidden');
+    renderDeltas(deltas);
+    textEl.textContent = '';
+    typeText(c.result || '', function () {
+      if (view !== 'result') return;
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'continue-btn';
+      btn.textContent = pendingNext && pendingNext.indexOf('__end') === 0 ? '继续 ▸' : '继续 ▸';
+      btn.addEventListener('click', function (e) { e.stopPropagation(); continueResult(); });
+      choicesEl.appendChild(btn);
+      showHint('点击继续 ▾');
+    });
+  }
+
+  function continueResult() {
+    if (mode !== 'play' || view !== 'result') return;
+    if (typing) { finishTyping(); return; }
+    var nx = pendingNext;
+    pendingNext = null;
+    if (!nx) { nx = nodeNext(current); }
+    if (!nx) return;
+    goto(nx);
+  }
+
+  function advance() {
+    if (mode !== 'play') return;
+    if (cardActive) { hideChapterCard(); return; }
+    if (typing) { finishTyping(); return; }
+    if (view === 'result') { continueResult(); return; }
+    if (!current) return;
+    if (current.choices && current.choices.length) return;
+    if (current.ending) { endGame(computeEnding()); return; }
+    var nx = nodeNext(current);
+    if (nx) {
+      if (nx.indexOf('__end:') === 0) endGame(nx.slice(6));
+      else goto(nx);
+    }
+  }
+
+  /* ============================================================
+   * 结局
+   * ============================================================ */
+  function computeEnding() {
+    var st = S.stats;
+    if (S.flags.fakeCaught) return 'fake';
+    if (st.sanity <= 0) return 'burnout';
+    if (st.progress >= 65 && (S.flags.baldPush || (S.cnt.late >= 7 && st.hair <= 60))) return 'bald';
+    if (st.progress >= 86 && st.favor >= 72 && st.sanity >= 25) return 'star';
+    if (st.progress >= 78 && st.favor >= 55 && st.sanity >= 25) return 'excellent';
+    if (st.progress >= 64) return 'smooth';
+    if (st.progress >= 52) return 'scrape';
+    if (st.progress >= 38) return 'delay';
+    return 'dropout';
+  }
+
+  function endGame(id) {
+    var e = ENDINGS[id] || ENDINGS.smooth;
+    mode = 'ending';
+    phase = (id === 'fake' || id === 'burnout' || id === 'dropout') ? 'lost' : 'won';
+    unlockEnding(id);
+    shell.classList.add('covered');
+    sfx('ending');
+    clearSave();
+    renderEnding(id, e);
+    postState();
+  }
+
+  function endingStatsHTML() {
+    var html = '<div class="ending-stats">';
+    ['progress', 'favor', 'sanity', 'hair'].forEach(function (k) {
+      var v = Math.round(S.stats[k]);
+      var color = { progress: '#4fd1c5', favor: '#f0b35b', sanity: '#8bd17c', hair: '#ef8fa8' }[k];
+      html += '<div class="es-row"><span class="n">' + STAT_SHORT[k] + '</span><span class="b"><i style="width:' + clamp(v, 0, MAX) + '%;background:' + color + '"></i></span><span class="v">' + v + '</span></div>';
+    });
+    html += '</div>';
+    return html;
+  }
+  function endingCountersHTML() {
+    var items = [];
+    if (S.cnt.late) items.push('熬夜 ' + S.cnt.late + ' 次');
+    if (S.cnt.ai) items.push('让 AI 帮忙 ' + S.cnt.ai + ' 次');
+    if (S.cnt.lie) items.push('撒了个小谎 ' + S.cnt.lie + ' 次');
+    if (S.flags.aiCaught) items.push('AI 争议 1 次');
+    if (!items.length) items.push('平安无事地活到了答辩');
+    return '<div class="ending-counters">' + items.map(function (t) { return '<span class="ec">' + esc(t) + '</span>'; }).join('') + '</div>';
+  }
+
+  function renderEnding(id, e) {
+    currentEndingId = id;
+    overlay.classList.add('on');
+    overlay.scrollTop = 0;
+    var total = Object.keys(ENDINGS).length;
+    var paras = (S.route === 'hum' && HUM_ENDINGS_TEXT[id]) ? HUM_ENDINGS_TEXT[id] : e.text;
+    var html = '<div class="ending-wrap"><div class="ending-card" style="--rk:' + e.color + '">' +
+      '<div class="rank">' + esc(e.rank) + '</div>' +
+      (e.tag ? '<div class="ending-tag">' + esc(e.tag) + '</div>' : '') +
+      '<h2 class="ending-title">' + esc(e.name) + '</h2>' +
+      '<div class="ending-sub">' + esc(e.sub) + '</div>' +
+      '<div class="ending-text">' + paras.map(function (p) { return '<p>' + esc(p.replace(/\{late\}/g, String(S.cnt.late))) + '</p>'; }).join('') + '</div>' +
+      endingStatsHTML() +
+      endingCountersHTML() +
+      '<div class="ending-unlock">结局图鉴 ' + unlocked.length + ' / ' + total + '</div>' +
+      '<button class="link-btn" id="galleryBtn">查看全部结局 →</button>' +
+      '<div class="ending-actions"><button class="big-btn" id="replayBtn">再来一局</button><button class="big-btn ghost" id="titleBtn">返回标题</button></div>' +
+      '</div></div>';
+    overlay.innerHTML = html;
+    $('replayBtn').addEventListener('click', function (ev) { ev.stopPropagation(); startNew(); });
+    $('titleBtn').addEventListener('click', function (ev) { ev.stopPropagation(); showTitle(); });
+    $('galleryBtn').addEventListener('click', function (ev) { ev.stopPropagation(); showGallery(); });
+    overlay.onclick = null;
+  }
+
+  function showGallery() {
+    shell.classList.add('covered');
+    overlay.classList.add('on');
+    overlay.scrollTop = 0;
+    overlay.onclick = null;
+    var ids = Object.keys(ENDINGS);
+    var html = '<div class="gallery"><h2>结局图鉴</h2><div class="g-sub">已解锁 ' + unlocked.length + ' / ' + ids.length + ' · 每一种选择都算数</div><div class="gallery-grid">';
+    ids.forEach(function (id) {
+      var e = ENDINGS[id];
+      var got = unlocked.indexOf(id) >= 0;
+      html += '<div class="g-card ' + (got ? '' : 'locked') + '" style="--rk:' + e.color + '">' +
+        '<div class="g-rank">' + (got ? esc(e.rank) : '?') + '</div>' +
+        '<div class="g-name">' + (got ? esc(e.name) : '？？？') + '</div>' +
+        '<div class="g-sub">' + (got ? esc(e.sub) : '还没走到这里') + '</div></div>';
+    });
+    html += '</div><button class="big-btn ghost g-back" id="galleryBack">返回</button></div>';
+    overlay.innerHTML = html;
+    $('galleryBack').addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      if (mode === 'ending') renderEnding(currentEndingId, ENDINGS[currentEndingId]);
+      else showTitle();
+    });
+  }
+  var currentEndingId = 'smooth';
+
+  /* ============================================================
+   * 标题
+   * ============================================================ */
+  function showTitle() {
+    mode = 'title';
+    phase = 'title';
+    sceneNow = 'night';
+    shell.classList.add('covered');
+    overlay.classList.add('on');
+    overlay.scrollTop = 0;
+    var words = ['已读不回', '创新点？', '延毕', '查重 2.8%', 'AI 率 97%', '盲审', '组会', '发量 -1', '收到', '在吗', '降重', '新文件夹'];
+    var wordHtml = words.map(function (w, i) {
+      return '<span class="tw" style="left:' + (5 + rnd(i) * 82) + '%;top:' + (8 + rnd(i + 30) * 78) + '%;animation-duration:' + (10 + rnd(i + 7) * 9) + 's;animation-delay:-' + (rnd(i + 3) * 10) + 's;font-size:' + (10 + Math.round(rnd(i + 11) * 4)) + 'px">' + w + '</span>';
+    }).join('');
+    var sv = loadSave();
+    var contLabel = '';
+    if (sv) {
+      var chKey = sv.chapter || (sv.route === 'hum' ? 'hch0' : 'ch0');
+      var c = CHAPTERS[chKey] || CHAPTERS.ch0;
+      contLabel = '继续 · ' + (sv.route === 'hum' ? '人文社科' : '理工科') + ' · ' + c.num + ' ' + c.name;
+    }
+    var total = Object.keys(ENDINGS).length;
+    overlay.innerHTML =
+      '<div class="title-screen">' +
+        '<div class="title-words">' + wordHtml + '</div>' +
+        '<div class="title-doc"><i></i><i></i><i></i><i></i><div class="stamp">待修改</div></div>' +
+        '<div class="seal">求<br>生</div>' +
+        '<div class="title-top">' +
+          '<div class="title-kicker">A GRADUATE STORY · 2026</div>' +
+          '<h1 class="title">论文求生</h1>' +
+          '<div class="title-sub">从开题到答辩</div>' +
+          '<div class="title-quote">科研就像在黑暗里洗衣服。<br>灯亮的时候，你得穿着它去答辩。</div>' +
+        '</div>' +
+        '<div class="title-bottom">' +
+          '<div class="route-label">选择你的研究生宇宙</div>' +
+          '<div class="route-row">' +
+            '<button class="route-btn stem" id="routeStem"><span class="r-ic">理</span><span class="r-tx"><b>理工科</b><small>实验室 · 数据 · 顶会</small></span><span class="r-arrow">→</span></button>' +
+            '<button class="route-btn hum" id="routeHum"><span class="r-ic">文</span><span class="r-tx"><b>人文社科</b><small>田野 · 访谈 · C刊</small></span><span class="r-arrow">→</span></button>' +
+          '</div>' +
+          (contLabel ? '<button class="big-btn ghost" id="contBtn" style="margin-top:9px">' + esc(contLabel) + '</button>' : '') +
+          '<div class="title-meta"><button class="meta-link" id="titleGallery">结局图鉴 <b>' + unlocked.length + '</b> / ' + total + '</button><span>两条路线 · 各约 10 分钟</span></div>' +
+          '<div class="title-meta" style="justify-content:center;margin-top:9px;color:#5f6b7d">本故事纯属虚构 · 如有雷同，说明我们都在读研</div>' +
+        '</div>' +
+      '</div>';
+    $('routeStem').addEventListener('click', function (e) { e.stopPropagation(); startNew('stem'); });
+    $('routeHum').addEventListener('click', function (e) { e.stopPropagation(); startNew('hum'); });
+    if (contLabel) $('contBtn').addEventListener('click', function (e) { e.stopPropagation(); continueGame(); });
+    $('titleGallery').addEventListener('click', function (e) { e.stopPropagation(); showGallery(); });
+    overlay.onclick = null;
+    postState();
+  }
+
+  function startNew(route) {
+    route = route === 'hum' ? 'hum' : 'stem';
+    S = newState(route);
+    unlocked = loadUnlocked();
+    clearSave();
+    mode = 'play';
+    phase = 'playing';
+    shell.classList.remove('covered');
+    overlay.classList.remove('on');
+    overlay.innerHTML = '';
+    overlay.onclick = null;
+    currentEndingId = 'smooth';
+    hideChapterCard();
+    goto(S.node);
+  }
+
+  function continueGame() {
+    var sv = loadSave();
+    if (!sv) { startNew('stem'); return; }
+    var route = sv.route === 'hum' ? 'hum' : 'stem';
+    S = {
+      route: route, node: sv.node, stats: sv.stats || newState(route).stats, flags: sv.flags || {},
+      cnt: sv.cnt || { late: 0, ai: 0, lie: 0 }, day: sv.day || 1, chapter: sv.chapter || ''
+    };
+    mode = 'play';
+    phase = 'playing';
+    shell.classList.remove('covered');
+    overlay.classList.remove('on');
+    overlay.innerHTML = '';
+    overlay.onclick = null;
+    goto(S.node);
+  }
+
+  /* ============================================================
+   * 交互
+   * ============================================================ */
+  var dialogEl = $('dialog');
+  dialogEl.addEventListener('click', function (e) {
+    if (e.target.closest('button')) return;
+    if (e.target.closest('#text') || e.target === dialogEl) advance();
+  });
+  textEl.addEventListener('click', function (e) { e.stopPropagation(); advance(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (mode === 'title') {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        startNew('stem');
+      }
+      return;
+    }
+    if (mode === 'ending') return;
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      if (view === 'story' && current && current.choices && current.choices.length && !typing) {
+        var first = choicesEl.querySelector('.choice:not(.locked)');
+        if (first) first.click();
+      } else advance();
+    } else if (/^[1-4]$/.test(e.key)) {
+      var idx = parseInt(e.key, 10) - 1;
+      var btns = choicesEl.querySelectorAll('.choice:not(.locked)');
+      if (btns[idx]) btns[idx].click();
+    }
+  });
+
+  $('muteBtn').addEventListener('click', function (e) {
+    e.stopPropagation();
+    muted = !muted;
+    this.classList.toggle('off', muted);
+    if (!muted) sfx('tap');
+    try { localStorage.setItem('lunwen-vn-muted', muted ? '1' : '0'); } catch (err) {}
+  });
+  try { muted = localStorage.getItem('lunwen-vn-muted') === '1'; } catch (e) {}
+  if (muted) $('muteBtn').classList.add('off');
+
+  document.addEventListener('pointerdown', function () { initAudio(); }, { passive: true });
+
+  chapterCard.addEventListener('click', function (e) { e.stopPropagation(); hideChapterCard(); });
+
+  window.addEventListener('resize', resizeAll);
+
+  /* ============================================================
+   * 调试 / 工作室接口
+   * ============================================================ */
+  var fps = 60, fpsFrames = 0, fpsAccum = 0, lastTs = 0;
+
+  function loop(ts) {
+    requestAnimationFrame(loop);
+    if (!lastTs) lastTs = ts;
+    var dt = Math.min(0.05, Math.max(0, (ts - lastTs) / 1000));
+    lastTs = ts;
+    sceneT += dt;
+    fpsFrames++;
+    fpsAccum += dt;
+    if (fpsAccum >= 0.5) { fps = Math.round(fpsFrames / fpsAccum); fpsFrames = 0; fpsAccum = 0; }
+    drawBg();
+  }
+
+  function postState() {
+    try {
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ source: 'dsh-game-studio', type: 'state', phase: phase, score: Math.round(S.stats.progress) }, '*');
+      }
+    } catch (e) {}
+  }
+
+  function postError(msg) {
+    try {
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ source: 'dsh-game-studio', type: 'error', message: String(msg).slice(0, 300) }, '*');
+      }
+    } catch (e) {}
+  }
+
+  function renderSlots(size) {
+    size = size || 256;
+    var out = {};
+    ['hero', 'advisor', 'senior', 'junior'].forEach(function (key) {
+      if (!SLOTS[key] || hasCustomArt(key)) return;
+      var c = document.createElement('canvas');
+      c.width = size; c.height = size;
+      var g = c.getContext('2d');
+      g.translate(size / 2, size / 2);
+      drawCharacter(g, key, size * 0.86, 'normal');
+      out[key] = c.toDataURL('image/png');
+    });
+    return out;
+  }
+  window.__renderSlots = renderSlots;
+
+  window.__gameState = function () {
+    return {
+      phase: phase,
+      score: Math.round(S.stats.progress),
+      hearts: Math.max(0, Math.ceil(S.stats.sanity / 25)),
+      fps: fps,
+      hero: { x: 195, y: 400 },
+      pickups: [],
+      enemies: [],
+      world: { w: 390, h: 844 },
+      route: S.route,
+      chapter: S.chapter,
+      node: S.node,
+      stats: { progress: S.stats.progress, favor: S.stats.favor, sanity: S.stats.sanity, hair: S.stats.hair }
+    };
+  };
+
+  window.__autoplay = function () {
+    if (mode === 'title') { startNew('stem'); return; }
+    if (mode === 'ending') return;
+    if (cardActive) { hideChapterCard(); return; }
+    if (typing) { finishTyping(); return; }
+    if (view === 'result') { continueResult(); return; }
+    if (mode === 'play' && current) {
+      if (current.choices && current.choices.length) {
+        var c = autoPick(current);
+        if (c) choose(c);
+      } else {
+        advance();
+      }
+    }
+  };
+
+  function autoPick(n) {
+    var best = null, bestScore = -1e9;
+    n.choices.forEach(function (c) {
+      if (!reqOk(c.req)) return;
+      var sc = 0;
+      if (c.fx) {
+        sc += (c.fx.progress || 0) * 2.4 + (c.fx.favor || 0) * 1.4 + (c.fx.sanity || 0) * 1.1 + (c.fx.hair || 0) * 0.35;
+      }
+      if (c.flag && (c.flag.fakeData || c.flag.fakeCaught || c.flag.aiCaught)) sc -= 800;
+      if (c.flag && c.flag.baldPush) sc -= 40;
+      if (c.ending) sc -= 2000;
+      if (c.tag === '作死' || c.tag === '危险' || c.tag === '摆烂') sc -= 6;
+      if (!best || sc > bestScore) { best = c; bestScore = sc; }
+    });
+    return best || n.choices[0];
+  }
+
+  window.addEventListener('error', function (e) { postError(e && e.message ? e.message : 'Unknown error'); });
+  window.addEventListener('unhandledrejection', function (e) {
+    var m = (e && e.reason && e.reason.message) ? e.reason.message : String(e && e.reason);
+    postError(m);
+  });
+
+  /* ============================================================
+   * 启动
+   * ============================================================ */
+  preload();
+  updateHud();
+  resizeAll();
+  showTitle();
+  requestAnimationFrame(loop);
+
+  setTimeout(function () {
+    try {
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ source: 'dsh-game-studio', type: 'renders', renders: renderSlots(256) }, '*');
+      }
+    } catch (e) { postError('character renders failed: ' + (e && e.message || e)); }
+  }, 500);
+})();
+</script>
+</body></html>
